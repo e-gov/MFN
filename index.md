@@ -23,7 +23,6 @@ Käesolev dokument sätestab mittefunktsionaalsed nõuded RIA tellitavale tarkva
 ___MFN___ - mittefunktsionaalsed nõuded (ka nõuete dokumendi mõistes)<br>
 ___tarkvara___ - hõlmab ka dokumentatsiooni, sh kavandeid
 
-{% assign c = 1 %}
 | Liik       | Nr                      | Nõude sõnastus   | Nõude selgitus |
 |------------|:-----------------------:|------------------|----------------|
 | meta       | {% increment c %} | Nõuete rakendamisel arvestada konkreetse tarkvara eripära. | Rakenduvad ainult need nõuded, mida konkreetse tarkvara iseloomu, ülesehituse ja kasutatavate komponentide kontekstis on mõistlik rakendada. |
@@ -31,46 +30,25 @@ ___tarkvara___ - hõlmab ka dokumentatsiooni, sh kavandeid
 | andmevorming | {% increment c %} | Andmebaasid ja rakendused peavad kasutama UTF-8 kodeeringut. |                |
 | andmevorming | {% increment c %} | Ühe faili piires kasutatakse alati sama reavahetuse kodeeringut - kas Windowsi standardile vastavat (`CR+LF; 0x0D0A; U+000D U+000A`) või Linux/Unix standardile vastavat (`LF; 0x0A; U+000A`). |                |
 | litsents | {% increment c %} | Tarkvara tuleb markeerida litsentsiga. | Teose autoriõigused tuleb selgelt välja tuua. Standardseks vahendiks selleks on litsents. Litsents esitatakse ühel või mitmel alljärgnevatest viisidest: 1) LICENCE-fail repos; 2) litsentsi tekst iga faili päises. RIA põhimõte on arendada tarkvara avatult ja avaldada tarkvara vaba litsentsiga, v.a turva- jm õigusega pandud piirangud. Soovitatav on kasutada [MIT litsentsi](https://en.wikipedia.org/wiki/MIT_License) - nii tagatakse paremini tarkvarade litsentsiline ühtesobivus. |
-| meta       | {% increment c %} |                  |                |
-| meta       | {% increment c %} |                  |                |
-| meta       | {% increment c %} |                  |                |
-| meta       | {% increment c %} |                  |                |
-| meta       | {% increment c %} |                  |                |
-| meta       | {% increment c %} |                  |                |
-| meta       | {% increment c %} |                  |                |
-| meta       | {% increment c %} |                  |                |
+| tõrkekindlus | {% increment c %} | Rakenduse liidesed peavad olema tõrkekindlad. Välise süsteemi tõrge tohib mõjutada ainult sellest otseselt sõltuvate kasutuslugude toimimist. |                |
+| moodulehitus | {% increment c %} | Rakendus peab olema tehniliselt tükeldatud vastavalt loogilisele jaotusele. Saadud osised peavad olema eraldi versioneeritavad ja paigaldatavad. |  Näiteks, kui rakendusel on eraldi turvakontekstidega liidesed ametnikule ja kodanikule, peab rakendus olema jaotatud kaheks eraldi liidesekomponendiks ning nende mõlema poolt kasutatavaks andmebaasiks. |
+| keel | {% increment c %} | Lähtekoodi dokumentatsioon, lähtekood ise ning logiteated peavad olema läbivalt inglisekeelsed. |                |
+| testimine | {% increment c %} | Lähtekood peab olema varustatud ühiktestidega. |                |
+| koodi kvaliteet | {% increment c %} | Lõplik kood peab olema läbinud staatilise koodianalüüsi. | Kasutada otstarbekat tööriista: Java puhul [Checkstyle](https://github.com/checkstyle/checkstyle) ja [PMD](https://pmd.github.io/) vms; Javascripti puhul [ESLint](https://eslint.org/). Samuti kasutada arendusredaktoritesse sisseehitatud kontrollijaid. |
+| frontend | {% increment c %} | Stiiliteave asetada CSS-failidesse. | Stiile ei tohiks kasutada HTML-tekstis `<style>` taagide vahel antud tekstina ega `style`-atribuutide abil. |
+| frontend | {% increment c %} | Mahukate laadilehtede puhul kaaluda [Sass](http://sass-lang.com/)-i kasutamist. | Võib suurendada laadilehtede loetavust ja hallatavust.  |
+| frontend | {% increment c %} | Järgida ajakohaseid veebistandardeid. | HTML5, CSS3 jms.  |
+| frontend | {% increment c %} | Rakendus peab töötama veebisirvijaga, mida toetavad eID baastarkvara kaks viimast versiooni. | HTML5, CSS3 jms.  |
+| frontend | {% increment c %} | Veebisirvija toe puudumisel anda veateade. | Kui kasutajaliides, mille poole kasutaja pöördub, ei ole ühilduv kasutatava veebisirvijaga, peab rakendus arusaadaval ja juhendaval viisil sellest kasutajat teavitama. |
+| URL-id | {% increment c %} | Kasutada selge, ühtse mustriga, inimloetavaid veebiaadresse (URL-e). |                |
+| URL-id | {% increment c %} | Igal lehel peab olema unikaalne veebiaadress. |                |
+| URL-id | {% increment c %} | URL ei tohi sisaldada tundlikke isikuandmeid. |                |
+| URL-id | {% increment c %} | URL ei tohi sisaldada sessioonivõtit. |                |
+| teated | {% increment c %} | Vea- jm teated peavad oleva arusaadavad. | Muuhulgas, rakendus peab asendama vaikimisi veateate (`404` vms) lehekülje, kuid säilitama algse HTTP vastuskoodi. |
 
-## 4 Tõrkekindlus
 
-4.1 Rakenduse liidesed peavad olema tõrkekindlad. Välise süsteemi tõrge tohib mõjutada ainult sellest otseselt sõltuvate kasutuslugude toimimist.
 
-## 5 Moodulehitus
 
-5. 1 Rakendus peab olema tehniliselt tükeldatud vastavalt loogilisele jaotusele. Saadud osised peavad olema eraldi versioneeritavad ja paigaldatavad. Näiteks, kui rakendusel on eraldi turvakontekstidega liidesed ametnikule ja kodanikule, peab rakendus olema jaotatud kaheks eraldi liidesekomponendiks ning nende mõlema poolt kasutatavaks andmebaasiks.
-
-## 6 Koodi kvaliteet
-
-6.1 Lähtekoodi dokumentatsioon, lähtekood ise ning logiteated peavad olema läbivalt inglisekeelsed.
-
-6.2 Lähtekood peab olema varustatud ühiktestidega.
-
-6.3 Java puhul kasutatakse stiilikontrolli.  Checkstyle (http://checkstyle.sourceforge.net/) ei tohi käivitamisel Lisas 1 oleva konfiguratsioonifailiga väljastada ühtegi viga.
-
-6.4 Java puhul staatilise koodianalüüsi PMD (http://pmd.sourceforge.net/) reeglistikud „Basic Rules“, „Import Statement Rules“, „Security Code Guidelines“ ja „Unused Code Rules“ ei tohi väljastada ühtegi viga.
-
-## 7 Kasutajaliides
-
-7.1 CSS-failide kasutamine. Stiilid peavad asuma CSS-failides, st style elementi ja style parameetrit CSS-koodiga ei tohi kasutada.
-
-7.2 Otselinkide kasutamine. Süsteemis tuleb rakendada otselinke (deeplinking). Igal lehel peab olema unikaalne, automaatselt genereeritud ja inimloetav veebiaadress (URL) ning see ei tohi olla seotud kasutaja sessiooniga ega kasutaja tundlike isikuandmetega.
-
-7.3. Kasutajale arusaadavad veateated. Süsteem peab asendama vaikimisi veateate (404 jms) lehekülje, kuid säilitama algse HTTP vastuskoodi.
-
-7.4 Tänapäevased veebistandardid. Tuleb kasutada veebistandardeid HTML5 ja CSS3.
-
-7.5. Veebisirvija tugi. Kasutajaliides peab veatult toimima veebisirvijaga, mida toetab eID baastarkvara. Toetatakse kahte viimast ID-kaardi baastarkvara versiooni (major version).
-
-Kui kasutajaliides, mille poole kasutaja pöördub, ei ole ühilduv kasutatava veebisirvijaga, peab rakendus arusaadaval ja juhendaval viisil sellest kasutajata teavitama.
 8 Identiteedi- ja pääsuhaldus
 
 8.1 Registrikoodide kasutamine. Riiklikesse registritesse kantavad objektid (isikud, katastriüksused jne) kantakse andmebaasi nende registrikoodiga, mida täiendab riigiprefiks vastavalt ISO3166-1 Alpha 2 standardile. Näiteks isikute sidumiseks süsteemi kasutajakontoga peab kasutama isikukoodi rahvastikuregistrist.
