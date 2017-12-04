@@ -1,0 +1,12 @@
+title: MFN
+baseurl: "https://e-gov.github.io/MFN"
+
+defaults:
+  -
+    scope:
+      path: "" # Kõik failid
+    values:
+      layout: "Times"
+      sidebar: "false"
+
+  

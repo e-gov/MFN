@@ -1,0 +1,127 @@
+/* ---- Keha -------- */
+body {
+  max-width: 60em;
+  margin: 0 0; 
+  padding: 0.6em 1.5em 2em 2em; 
+  font-family: 'Times New Roman', serif;
+  font-size: 12pt; 
+  color: black !important;
+  line-height: 1.25 !important;
+  }
+
+/* Kursuse päis */
+.pais { font-family: 'Anonymous Pro', sans-serif;
+  font-size: 13pt; margin-bottom: 8px; }
+
+#Tekst { width: 40rem; }
+
+/* ---- Avalehe paigutus ---- */  
+#Container { display: flex; max-width: 60em; }
+#Avatekst {
+  flex-grow: 1; margin-left: 2rem;
+  max-width: 63rem; /* Teksti loetavuse huvides */
+}  
+
+/* ==== Pealkirjad ==== */
+h1 {
+  font-size: 16pt !important;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 14pt !important;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+h3 {
+  font-size: 12pt !important;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.vaike { font-size: 9pt; }
+
+/* Tekstiparagrahv */
+p { margin: 0 0 1em 0; }
+
+/* ==== Loetelud ==== */
+#Tekst > ul {
+  list-style-type: none;
+  margin: 0 0 1em 0;
+  padding-left: 1em;
+}
+#Tekst > ol {
+  padding-left: 1em;
+}
+
+/* ==== TOC genereeritud === */
+#markdown-toc { padding-left: 0 !important; }
+#markdown-toc li:before {
+    content: none !important;
+    margin-left: 0 !important;
+}
+#markdown-toc > li {
+  list-style: none;
+}
+
+/* ==== Tabelid ==== */
+table { table-layout: fixed;
+    width: 100%; margin: 0 4em 2em 0; }
+table { border-collapse: collapse; }    
+table, th, td { border: 1px solid black; }
+th, td { padding: 2px; }
+
+/* Allkriipsutus */
+.u { text-decoration: underline; }
+
+/* Plokktsitaat */
+blockquote { 
+  font-style: italic; 
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 16px;
+  margin-left: 0;
+}
+
+/* Kood; asciiflow joonised */
+pre, code, samp {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 16px; color: IndianRed !important;
+  background-color: LightCyan !important;
+  overflow-y: hidden; overflow-x: hidden;
+  page-break-inside: avoid; hyphens: none;
+  text-transform: none;
+}
+pre code,
+code code {
+  font-size: 100%;
+}
+pre { margin-top: 1em; margin-bottom: 1em; }
+
+/* Määra üle Bootstrapi lingivärv */
+a, a:hover, a:active, a:visited {
+  color: #292B2C !important;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: DarkBlue;
+}
+
+/* ======== Paneelid ======== */
+.note, .teade { border-radius: 8px; padding: 1rem; }
+
+/* Märkus */
+.note { 
+  border: 1px solid coral;
+  background-color: lavenderblush;
+  color: coral;
+}
+
+.teade {
+  border: 1px solid darkcyan;
+  background-color: Azure;
+}
+
