@@ -23,34 +23,31 @@ Käesolev dokument sätestab mittefunktsionaalsed nõuded RIA tellitavale tarkva
 ___MFN___ - mittefunktsionaalsed nõuded (ka nõuete dokumendi mõistes)<br>
 ___tarkvara___ - hõlmab ka dokumentatsiooni, sh kavandeid
 
-{% assign c = 0 %}
-| Nõude liik | Nr  | Nõue | Selgitus |
-|------------|:---:|------|----------|
-| meta       | {% increment counter %} |  |  |
-|  | {% increment counter %}  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+{% assign c = 1 %}
+| Liik       | Nr                      | Nõude sõnastus   | Nõude selgitus |
+|------------|:-----------------------:|------------------|----------------|
+| meta       | {% increment counter %} | Nõuete rakendamisel arvestada konkreetse tarkvara eripära. | Rakenduvad ainult need nõuded, mida konkreetse tarkvara iseloomu, ülesehituse ja kasutatavate komponentide kontekstis on mõistlik rakendada. |
+| meta       | {% increment counter %} | Nõudeid rakendada hierarhia põhimõttel. | 
+RIA MFN-i nõudeid tuleb rakendada kõigis RIA infosüsteemides. Valdkonna MFN määratleb valdkonna tarkvara spetsiifilised nõuded. Hanke MFN-i nõuded täpsustavad ja täiendavad asutuse või valdkonna nõudeid.<br>- ___X-tee___ tuumtarkvara arendatakse ühiselt Soome riigiga. Vastavalt on ka MFN inglise keeles ja avaldatud Soome partnerasutuse GitHub-repos: [X-Road Non-Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md)<br>
+RIHA nõuded asuvad [arhitektuuriteatmikus](https://arhitektuur.riha.ee/)<br>
+teabevärava eesti.ee [MFN](https://confluence.ria.ee/pages/viewpage.action?pageId=6619157) &#128274; |
+| meta       | {% increment counter %} |                  |                |
+| meta       | {% increment counter %} |                  |                |
+| meta       | {% increment counter %} |                  |                |
+| meta       | {% increment counter %} |                  |                |
+| meta       | {% increment counter %} |                  |                |
+| meta       | {% increment counter %} |                  |                |
+| meta       | {% increment counter %} |                  |                |
+| meta       | {% increment counter %} |                  |                |
+| meta       | {% increment counter %} |                  |                |
+| meta       | {% increment counter %} |                  |                |
+| meta       | {% increment counter %} |                  |                |
 
 ## 1 Nõuete struktuur ja rakendamine
 
-1.1 Adekvaatne rakendamine. Konkreetse tarkvara puhul rakenduvad ainult need nõuded, mis on selle tarkvara iseloomu, ülesehituse ja kasutatavate komponentide tõttu on adekvaatselt rakendatavad.
+1.1 . 
 
-1.2 MFN-de hierarhia. Kõiki tarkvarasid hõlmava, täieliku nõuetekogumi loomine ei ole otstarbekas. Seetõttu organiseeritakse mittefunktsionaalsed nõuded hierarhiliselt, kolme tasandi nõudekogumitena.
-
-RIA MFN-s kirjeldatakse nõuded, mida peab rakendama kõigis RIA infosüsteemides. Valdkonna MFN-s kirjeldatakse nõuded, mida rakendatakse ainult antud valdkonna tarkvaras. (Nt X.tee MFN). Valdkonna MFN kirjutatakse asutuse taseme MFN täiendusena. Hanke MFN-i nõuded täpsustavad asutuse või valdkonna nõudeid.
+1.2 
 
 1.3 Nõude ülekate jm muudatused. Kui valdkonna või hanke MFN muudab ülemise taseme MFN-s kirjeldatut, siis tuleb muudatus täpselt määratleda. Muudatuse tüübiks võib olla:
 
