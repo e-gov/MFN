@@ -27,9 +27,10 @@ ___tarkvara___ - hõlmab ka dokumentatsiooni, sh kavandeid
 | Liik       | Nr                      | Nõude sõnastus   | Nõude selgitus |
 |------------|:-----------------------:|------------------|----------------|
 | meta       | {% increment c %} | Nõuete rakendamisel arvestada konkreetse tarkvara eripära. | Rakenduvad ainult need nõuded, mida konkreetse tarkvara iseloomu, ülesehituse ja kasutatavate komponentide kontekstis on mõistlik rakendada. |
-| meta       | {% increment c %} | Nõudeid rakendada hierarhia põhimõttel. | RIA MFN-i nõudeid tuleb rakendada kõigis RIA infosüsteemides. Valdkonna MFN määratleb valdkonna tarkvara spetsiifilised nõuded. Hanke MFN-i nõuded täpsustavad ja täiendavad asutuse või valdkonna nõudeid.<br>- ___X-tee___ tuumtarkvara arendatakse ühiselt Soome riigiga. Vastavalt on ka MFN inglise keeles ja avaldatud Soome partnerasutuse GitHub-repos: [X-Road Non-Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md)<br>
-RIHA nõuded asuvad [arhitektuuriteatmikus](https://arhitektuur.riha.ee/)<br>
-teabevärava eesti.ee [MFN](https://confluence.ria.ee/pages/viewpage.action?pageId=6619157) &#128274; |
+| meta       | {% increment c %} | Nõudeid rakendada hierarhia põhimõttel. | RIA MFN-i nõudeid tuleb rakendada kõigis RIA infosüsteemides. Valdkonna MFN määratleb valdkonna tarkvara spetsiifilised nõuded. Hanke MFN-i nõuded täpsustavad ja täiendavad asutuse või valdkonna nõudeid.<br>- ___X-tee___ tuumtarkvara arendatakse ühiselt Soome riigiga. Vastavalt on ka MFN inglise keeles ja avaldatud Soome partnerasutuse GitHub-repos: [X-Road Non-Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md)<br>RIHA nõuded asuvad [arhitektuuriteatmikus](https://arhitektuur.riha.ee/)<br>teabevärava eesti.ee [MFN](https://confluence.ria.ee/pages/viewpage.action?pageId=6619157) &#128274; |
+| andmevorming | {% increment c %} | Andmebaasid ja rakendused peavad kasutama UTF-8 kodeeringut. |                |
+| andmevorming | {% increment c %} | Ühe faili piires kasutatakse alati sama reavahetuse kodeeringut - kas Windowsi standardile vastavat (`CR+LF; 0x0D0A; U+000D U+000A`) või Linux/Unix standardile vastavat (`LF; 0x0A; U+000A`). |                |
+| litsents | {% increment c %} | Tarkvara tuleb markeerida litsentsiga. | Teose autoriõigused tuleb selgelt välja tuua. Standardseks vahendiks selleks on litsents. Litsents esitatakse ühel või mitmel alljärgnevatest viisidest: 1) LICENCE-fail repos; 2) litsentsi tekst iga faili päises. RIA põhimõte on arendada tarkvara avatult ja avaldada tarkvara vaba litsentsiga, v.a turva- jm õigusega pandud piirangud. Soovitatav on kasutada [MIT litsentsi](https://en.wikipedia.org/wiki/MIT_License) - nii tagatakse paremini tarkvarade litsentsiline ühtesobivus. |
 | meta       | {% increment c %} |                  |                |
 | meta       | {% increment c %} |                  |                |
 | meta       | {% increment c %} |                  |                |
@@ -38,45 +39,6 @@ teabevärava eesti.ee [MFN](https://confluence.ria.ee/pages/viewpage.action?page
 | meta       | {% increment c %} |                  |                |
 | meta       | {% increment c %} |                  |                |
 | meta       | {% increment c %} |                  |                |
-| meta       | {% increment c %} |                  |                |
-| meta       | {% increment c %} |                  |                |
-| meta       | {% increment c %} |                  |                |
-
-## 1 Nõuete struktuur ja rakendamine
-
-1.1 . 
-
-1.2 
-
-1.3 Nõude ülekate jm muudatused. Kui valdkonna või hanke MFN muudab ülemise taseme MFN-s kirjeldatut, siis tuleb muudatus täpselt määratleda. Muudatuse tüübiks võib olla:
-
-    loobumine –  loobutakse mõnest asutuse taseme MFN-ga kehtestatud nõudest – näidatakse täpselt ära milline asutuse või taseme nõude (number) valdkonnas ei kehti;
-    ülekate – muudetakse asutuse taseme MFN-ga kehtestatud mõne nõude sisu – näidatakse muudetud nõue (number) ja kirjutatakse nõude uus täistekst;
-    lisandus – kehtestatakse nõue, mida asutuse taseme MFN-s ei ole.
-
-1.4 Hanke MFN. Konkreetse hanke MFN moodustub hanke toimumise  hetkel kehtivate asutuse ja valdkonna MFN-des kehtestatud piirangutest, millele lisanduvad hanke MFN-s kirjeldatud täiendavad piirangud.  Selliselt moodustunud  MFN-i  puhul kehtib reegel, mis ütleb, et konkreetsete tööde teostamisel kohanduvad ainult need piirangud, mis konkreetsete tööde puhul on kohaldatavad st. ei saa rakendada nõudeid, mis ei haaku konkreetse tööga.
-
-Kui siseriiklikult on sama projektiga seotud mitu organisatsiooni, siis rakendatakse asutuse MFN-na selle asutuse ja valdkonna MFN-e, mis on tööde tegelikuks tellijaks. Teiste organisatsioonide MFN-dest tulenevad erinevused kirjeldatakse hangete MFN-des. Suuremate projektide puhul on õigus rakendada samu nõudeid, mis kehtivad rahvusvaheliste takvara arenduste MFN-de koostamisel.
-
-1.5 Rahvusvahelise koostöö vormis toimuva arenduse puhul luuakse eraldiseisev mittefunktsionaalsete nõuete kirjeldus, mida saab täpsustada iga konkreetse projekti või hanke korral. Mittefunktsionaalsed nõude sellise projekti jaoks luuakse kahe tasemelise struktureeritud nõuete kogumina: a) koostööprojekti tasemel kehtivad mittefunktsionaalsed nõuded (näit. X-tee MFN); b)hankega täpsustatud koostööprojekti mittefunktsionaalsed nõuded (pakkumuskutse osa). Koostööprojekti taseme MFN-s kirjeldatakse ainult need piirangud, mida peab rakendama kõigis antud projekti raames loodavates infosüsteemides.
-
-Hanke MFN-s muudetavad piirangud saavad täpsustada olemasolevaid koostööprojekti MFN-i. Kui hanke  MFN muudab koostööprojekti taseme MFN-s kirjeldatut siis tuleb määratleda täpselt, millise muudatusega on tegemist (vt muudatustüübid ülalpool). Konkreetse hanke MFN moodustub hanke toimumise  hetkel kehtivate koostööprojekti MFN-s kehtestatud piirangutest, millele lisanduvad hanke MFN-s kirjeldatud täiendavad piirangud.
-
-## 2 Kodeering
-
-2.1 Andmebaasid ja rakendused peavad kasutama UTF-8 kodeeringut.
-
-2.2 Ühe faili piires kasutatakse alati sama reavahetuse kodeeringut - kas Windowsi standardile vastavat (CR+LF; 0x0D0A; U+000D U+000A) või Linux/Unix standardile vastavat (LF; 0x0A; U+000A).
-
-## 3 Litsents
-
-3.1 Loodud teose autoriõigused tuleb selgelt välja tuua. Standardseks vahendiks selleks on litsents. 
-
-<strike>Lähtekood peab olema faili päises markeeritud litsentsiga. Litsents esitatakse ka dokumentatsioonis.</strike> Nõue on "üle võlli" paljudel juhtudel. Piisab litsentsi nähtaval kohal väljapanemisest.
-{: .teade}
-
-3.2 Litsents esitatakse ühel või mitmel alljärgnevatest viisidest:
-- LICENCE
 
 ## 4 Tõrkekindlus
 
