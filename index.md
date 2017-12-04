@@ -7,20 +7,21 @@ permalink: /
 # Mittefunktsionaalsed nõuded
 {: .no_toc}
 
-v 3.2  26.06.2017
+v 3.2  04.12.2017
 
-Sisukord
+_Kasutajale. Nõuetekogum on mõeldud eelkõige RIA arhitektidele, toote- ja projektijuhtidele tarkvara kavandamisel ja arendustööde tellimisel ja kontrollimisel._
 
-- TOC
-{:toc}
+_Nõuete ülesanne on suunata nii tellijat kui ka arendajaid, pakkudes nõuete valmissõnastusi ja toimides meelespeana. Lõppeesmärk on kasutajatele väärtust pakkuv ja turvaline tarkvara, mille arendus- ja käitluskulud on madal, mida on võimalik agiilselt arendada ja mis on jätkusuutlik ka pikemas perspektiivis._
 
-Lisa 1. Java Checkstyle seadistusfail
+_Dokumendi varasemate versioonidega võrreldes on mõned raskesti kohaldatavad või ebaselged nõuded kõrvaldatud. Mitmeid nõudeid on üritatud selgemalt sõnastada. Nõuete sõnastamisel on lähtutud lühiduse printsiibist. Nõuded on liigitatud; kui vaja, on nõuet lahti selgitatud. Järgides partnerasutuste (RIK, RMIT) head praktikat, on nõuded esitatud tabelina._
 
-Käesolev dokument sätestab mittefunktsionaalsed nõuded RIA tellitavale tarkvarale.
+_Käesolev dokument loomulikult sa saa katta kõiki võimalikke mittefunktsionaalseid nõudeid. Dokument on ühtlasi meelespea kui ka abivahend nõuete väljaselgitamiseks ja juhtimiseks konkreetsetes projektis. Nõuded ei ole ka imerohi, mis asendaks tarkvaraarenduses vajalikke kogemusi, teadmisi ja talenti.
+
+Võimalikest vigadest palume teada anda ja ettepanekuid dokumendi täiendamiseks teha arutelude algatamisega dokumendi [GitHub-repos](https://github.com/e-gov/MFN/issues)._ 
 
 ## Lühendid ja mõisted
 
-___MFN___ - mittefunktsionaalsed nõuded (ka nõuete dokumendi mõistes)<br>
+___MFN___ - mittefunktsionaalsed nõuded (ka nõuete dokumendi mõistes); vt [mittefunktsionaalsed nõuded](https://et.wikipedia.org/wiki/Mittefunktsionaalsed_n%C3%B5uded) (Vikipeedia)<br>
 ___tarkvara___ - hõlmab ka dokumentatsiooni, sh kavandeid
 
 | Liik       | Nr                      | Nõude sõnastus   | Nõude selgitus |
@@ -87,55 +88,27 @@ ___tarkvara___ - hõlmab ka dokumentatsiooni, sh kavandeid
 | aadressid | {% increment c %} | Eesti aadressiandmete sisestamisel, kuvamisel ja hoidmisel tuleb lähtuda Vabariigi Valitsuse 8. oktoobri 2015. a määrusest nr 103 „Aadressiandmete süsteem“. |  |
 | tegevusalad | {% increment c %} | Eesti tegevusalade andmete sisestamisel, kuvamisel ja hoidmisel tuleb lähtuda Vabariigi Valitsuse 10. jaanuari 2008. a määrusest nr 11 „Klassifikaatorite süsteem“ ja kasutada EMTAK infosüsteemis kehtivat klassifikaatorit. |  |
 
-----
+## Viiteid
 
-[Mittefunktsionaalsed nõuded](https://et.wikipedia.org/wiki/Mittefunktsionaalsed_n%C3%B5uded)
+[Riigipilve MFN BI allnõukogule](https://confluence.ria.ee/pages/viewpage.action?pageId=19562975) &#128274;
 
-----
+[RIA MFN dokumendi arendustsükkel](https://confluence.ria.ee/pages/viewpage.action?pageId=40698241) &#128274;
 
-Vt ka nõuded dokumentatsioonile
+[RIA mittefunktsionaalsed nõuded](https://confluence.ria.ee/pages/viewpage.action?pageId=47548375) &#128274;
 
-[Riigipilve MFN BI allnõukogule](https://confluence.ria.ee/pages/viewpage.action?pageId=19562975)
+RIK [IT profiil](http://www.rik.ee/et/asutusest/it-profiil) 
 
-[RIA MFN dokumendi arendustsükkel](https://confluence.ria.ee/pages/viewpage.action?pageId=40698241)
+RMIT üldised mittefunktsionaalsed ja tehnilised nõuded &#128274;<br>
+IT profiil &#128274;
 
-[RIA mittefunktsionaalsed nõuded](https://confluence.ria.ee/pages/viewpage.action?pageId=47548375)
+[RIA Mittefunktsionaalsed Nõuded 3.0-RELEASE](https://confluence.ria.ee/pages/viewpage.action?pageId=43385016) &#128274; (eelmine versioon)
 
-----
-
-## MFN-de praktika
-
-nt automaattestide MFN (X-tee testide automatiseerimise projektis)
-
-
-## Riigi teiste asutuste MFN-e
-
-- RIK
-  - [IT profiil](http://www.rik.ee/et/asutusest/it-profiil) 
-- RMIT
-  - üldised mittefunktsionaalsed ja tehnilised nõuded
-  - IT profiil
-
-## Valdkondlikud MFN-id
-
-- ___X-tee___ tuumtarkvara arendatakse ühiselt Soome riigiga. Vastavalt on ka MFN inglise keeles ja avaldatud Soome partnerasutuse GitHub-repos:
-  - [X-Road Non-Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md) v1.2
-- RIHA nõuded asuvad:
-  - [arhitektuuriteatmikus](https://arhitektuur.riha.ee/)  
-- teavevärav eesti.ee
-  - [MFN](https://confluence.ria.ee/pages/viewpage.action?pageId=6619157) &#128274;
-
-## Eelmised versioonid
-
-- [RIA Mittefunktsionaalsed Nõuded 3.0-RELEASE](https://confluence.ria.ee/pages/viewpage.action?pageId=43385016) &#128274;
-- Riigi Infosüsteemide Arenduskeskus (2006) [Mittefunktsionaalsete nõuete kirjeldamise juhend](https://www.ria.ee/public/publikatsioonid/Mittefunk_nouded.doc) v 0.2
-
-## Muud
+Riigi Infosüsteemide Arenduskeskus (2006) [Mittefunktsionaalsete nõuete kirjeldamise juhend](https://www.ria.ee/public/publikatsioonid/Mittefunk_nouded.doc) v 0.2
 
 [Riigi Infosüsteemi mittefunktsionaalsed nõuded](https://www.ria.ee/riigiarhitektuur/wiki/doku.php?id=mfn) v 2.0-TRUNK<br>
 [Riigi Infosüsteemi mittefunktsionaalsed nõuded](https://www.ria.ee/riigiarhitektuur/wiki/lib/exe/fetch.php?media=riigi_infosu%CC%88steemi_mittefunktsionaalsed_no_uded.pdf) v 1.0, kinnitatud Riigi Infosüsteemi peadirektori 09.04.2014 käskkirjaga nr 1-2/14-016
 
 ----
 
-_Viimati muudetud: 28.11.2017_
+_Viimati muudetud: 04.12.2017_
 
