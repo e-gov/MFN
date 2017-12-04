@@ -23,6 +23,27 @@ Käesolev dokument sätestab mittefunktsionaalsed nõuded RIA tellitavale tarkva
 ___MFN___ - mittefunktsionaalsed nõuded (ka nõuete dokumendi mõistes)<br>
 ___tarkvara___ - hõlmab ka dokumentatsiooni, sh kavandeid
 
+{% assign c = 0 %}
+| Nõude liik | Nr  | Nõue | Selgitus |
+|------------|:---:|------|----------|
+| meta       | {% increment counter %} |  |  |
+|  | {% increment counter %}  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
 ## 1 Nõuete struktuur ja rakendamine
 
 1.1 Adekvaatne rakendamine. Konkreetse tarkvara puhul rakenduvad ainult need nõuded, mis on selle tarkvara iseloomu, ülesehituse ja kasutatavate komponentide tõttu on adekvaatselt rakendatavad.
