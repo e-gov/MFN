@@ -27,6 +27,8 @@ ___tarkvara___ - hõlmab ka dokumentatsiooni, sh kavandeid
 | Liik       | Nr                      | Nõude sõnastus   | Nõude selgitus |
 |------------|:-----------------------:|------------------|----------------|
 | meta       | {% increment counter %} | Nõuete rakendamisel arvestada konkreetse tarkvara eripära. | Rakenduvad ainult need nõuded, mida konkreetse tarkvara iseloomu, ülesehituse ja kasutatavate komponentide kontekstis on mõistlik rakendada. |
+
+
 | meta       | {% increment counter %} | Nõudeid rakendada hierarhia põhimõttel. | 
 RIA MFN-i nõudeid tuleb rakendada kõigis RIA infosüsteemides. Valdkonna MFN määratleb valdkonna tarkvara spetsiifilised nõuded. Hanke MFN-i nõuded täpsustavad ja täiendavad asutuse või valdkonna nõudeid.<br>- ___X-tee___ tuumtarkvara arendatakse ühiselt Soome riigiga. Vastavalt on ka MFN inglise keeles ja avaldatud Soome partnerasutuse GitHub-repos: [X-Road Non-Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md)<br>
 RIHA nõuded asuvad [arhitektuuriteatmikus](https://arhitektuur.riha.ee/)<br>
