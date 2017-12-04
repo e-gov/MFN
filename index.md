@@ -45,25 +45,24 @@ ___tarkvara___ - hõlmab ka dokumentatsiooni, sh kavandeid
 | URL-id | {% increment c %} | URL ei tohi sisaldada tundlikke isikuandmeid. |                |
 | URL-id | {% increment c %} | URL ei tohi sisaldada sessioonivõtit. |                |
 | teated | {% increment c %} | Vea- jm teated peavad oleva arusaadavad. | Muuhulgas, rakendus peab asendama vaikimisi veateate (`404` vms) lehekülje, kuid säilitama algse HTTP vastuskoodi. |
+| koodid | {% increment c %} | Objektid identifitseerida registrikoodide abil. | Riiklikesse registritesse kantavad objektid (isikud, katastriüksused jne) kantakse andmebaasi nende registrikoodiga, mida täiendab riigiprefiks vastavalt ISO3166-1 Alpha 2 standardile. Näiteks isikute sidumiseks süsteemi kasutajakontoga peab kasutama isikukoodi rahvastikuregistrist.<br>Eesti Vabariigi kodanik identifitseeritakse Eesti Vabariigi poolt väljastatud eIDga. Igasuguse muu identifitseerimisevahendi kasutamine peab olema selgelt põhjendatud.<br>Mittekodanike isikuidentifikaator saadakse järgmisel viisil: `riigikood + sookood + sünniaeg + [ dok_nr | id_riigis ]`, kus<br>`riigikood` - kolmekohaline ISO 3166-1 Alpha-3 standardile vastav riigi kood<br>`sookood` - soo identifikaator nii nagu Eesti Vabariigi isikukoodis<br>`sünniaeg` - sünniaeg formaadis `YYYYMMDD`<br>`id_riigis` - kui see on olemas, tuleb kasutada isiku koduriigi isikuidentifikaatorit. 16 kohta, 0-polsterdatud vasakult<br>`dok_nr` - kui isiku koduriigis isikuidentifikaatorit ei ole, siis kasutatakse isiku dokumendi numbrit. Dokumendi number, 16 kohta, 0-polsterdatud vasakult. |
+| teated | {% increment c %} |  |  |
+| teated | {% increment c %} |  |  |
+| teated | {% increment c %} |  |  |
+| teated | {% increment c %} |  |  |
+| teated | {% increment c %} |  |  |
+| teated | {% increment c %} |  |  |
+| teated | {% increment c %} |  |  |
+| teated | {% increment c %} |  |  |
+| teated | {% increment c %} |  |  |
+| teated | {% increment c %} |  |  |
+| teated | {% increment c %} |  |  |
+| teated | {% increment c %} |  |  |
 
 
 
 
-8 Identiteedi- ja pääsuhaldus
-
-8.1 Registrikoodide kasutamine. Riiklikesse registritesse kantavad objektid (isikud, katastriüksused jne) kantakse andmebaasi nende registrikoodiga, mida täiendab riigiprefiks vastavalt ISO3166-1 Alpha 2 standardile. Näiteks isikute sidumiseks süsteemi kasutajakontoga peab kasutama isikukoodi rahvastikuregistrist.
-
-8.2 Füüsilise isiku identifitseerimine. Mittekodanike isikuidentifikaator saadakse järgmisel viisil:
-
-riigikood + sookood + sünniaeg + [ dok_nr | id_riigis ]
- 
-riigikood - kolmekohaline ISO 3166-1 alpha-3 standardile vastav riigi kood
-sookood - soo identifikaator nii nagu Eesti Vabariigi isikukoodis
-sünniaeg - sünniaeg formaadis YYYYMMDD
-id_riigis - kui see on olemas, tuleb kasutada isiku koduriigi isikuidentifikaatorit. 16 kohta, 0-polsterdatud vasakult  
-dok_nr - kui isiku koduriigis isikuidentifikaatorit ei ole, siis kasutatakse isiku dokumendi numbrit. Dokumendi number, 16 kohta, 0-polsterdatud vasakult.
-
-Eesti Vabariigi kodanik identifitseeritakse Eesti Vabariigi poolt väljastatud eIDga. Igasuguse muu identifitseerimisevahendi kasutamine peab olema selgelt põhjendatud
+8.2 
 
 8.4 Olemasoleva autentimissüsteemi kasutamine. Rakendus ei tohi luua uut autentimissüsteemi, tuleb tugineda olemasolevatele riiklikele (ID-kaart) või põhiliste op-süsteemide süsteemidele (PAM, Kerberos jms).
 
