@@ -39,7 +39,7 @@ ___tarkvara___ - hõlmab ka dokumentatsiooni, sh kavandeid.
 | keel | {% increment c %} | Lähtekoodi dokumentatsioon, lähtekood ise ning logiteated peavad olema läbivalt inglisekeelsed. |                |
 | keel | {% increment c %} | Rakendustes kasutatud eestikeelsetele tekstidele kehtivad infotehnoloogia reeglid Eesti keele ja kultuuri keskkonnas EVS 8:2008. |                |
 | testimine | {% increment c %} | Lähtekood peab olema varustatud ühiktestidega. |                |
-| koodi kvaliteet | {% increment c %} | Lõplik kood peab olema läbinud staatilise koodianalüüsi. | Kasutada otstarbekat tööriista: Java puhul [Checkstyle](https://github.com/checkstyle/checkstyle) ja [PMD](https://pmd.github.io/) vms; Javascripti puhul [ESLint](https://eslint.org/). Samuti kasutada arendusredaktoritesse sisseehitatud kontrollijaid. |
+| koodi kvaliteet | {% increment c %} | Lõplik kood peab olema läbinud staatilise koodianalüüsi. | Kasutada otstarbekat tööriista: Java puhul [Checkstyle](https://github.com/checkstyle/checkstyle), [PMD](https://pmd.github.io/), [SonaQube](https://www.sonarqube.org/) vms; Javascripti puhul [ESLint](https://eslint.org/). Samuti kasutada arendusredaktoritesse sisseehitatud kontrollijaid. |
 | frontend | {% increment c %} | Stiiliteave asetada CSS-failidesse. | Stiile ei tohiks sisse kirjutada HTML-teksti, ei `<style>` taagide vahelise tekstina ega `style`-atribuutidena. |
 | frontend | {% increment c %} | Mahukate laadilehtede puhul kaaluda [Sass](http://sass-lang.com/)-i kasutamist. | Sass võib suurendada laadilehtede loetavust ja hallatavust.  |
 | frontend | {% increment c %} | Järgida ajakohaseid veebistandardeid. | HTML5, CSS3 jms.  |
@@ -99,7 +99,7 @@ ___tarkvara___ - hõlmab ka dokumentatsiooni, sh kavandeid.
 
 [RIA mittefunktsionaalsed nõuded](https://confluence.ria.ee/pages/viewpage.action?pageId=47548375) &#128274;
 
-RIK [IT profiil](http://www.rik.ee/et/asutusest/it-profiil) 
+RIK arendusnõuded &#128274;<br>[IT profiil](http://www.rik.ee/et/asutusest/it-profiil) 
 
 RMIT üldised mittefunktsionaalsed ja tehnilised nõuded &#128274;<br>
 IT profiil &#128274;
