@@ -20,10 +20,5 @@ ___Nõuetele viitamine___. Üksikule nõudele saab viidata kohaleviiva URL-ga: [
 
 Keskkonnanõuded (op-süsteem, süsteemitarkvara) antakse RIA IT profiilis.
 
-## Lühendid ja mõisted
-
-___MFN___ - mittefunktsionaalsed nõuded; vt [mittefunktsionaalsed nõuded](https://et.wikipedia.org/wiki/Mittefunktsionaalsed_n%C3%B5uded) (Vikipeedia).<br>
-___tarkvara___ - hõlmab ka dokumentatsiooni, sh kavandeid.
-
 ## Nõuded
 
