@@ -1,15 +1,17 @@
-| kategooria | nr | nõude sõnastus | nõude selgitus |
-|------------|:--:|----------------|----------------|
-| kategooria | nr | nõude sõnastus | nõude selgitus |
-
-
 {% assign kn = 0 %}
-| kategooria | nr | nõude sõnastus | nõude selgitus |
-|------------|:--:|----------------|----------------|
-{% for kategooria in site.data.Nouded %}
-  <!-- {% increment kn %} -->
-  {% for noue in kategooria.nouded %}
-    | {{ kn }} {{ kategooria.nimetus }}{% assign nn = 0 %} | {{ kn }}.{% increment nn %} | <a id='{{ kn }}.{{ nn }}'></a>{{ noue.son }} | {{ noue.sel }} |
+<table>
+  <tr>
+      <td> kategooria </td><td> nr  </td><td> nõude sõnastus </td><td> nõude selgitus </td>
+  <tr>
+  {% for kategooria in site.data.Nouded %}
+    <!-- {% increment kn %} -->
+    {% for noue in kategooria.nouded %}
+    <tr>
+      <td> {{ kn }} {{ kategooria.nimetus }}{% assign nn = 0 %} </td>
+      <td> {{ kn }}.{% increment nn %} </td>
+      <td> <a id='{{ kn }}.{{ nn }}'></a>{{ noue.son }} </td>
+      <td> {{ noue.sel }} </td>
+    </tr>
+    {% endfor %}
   {% endfor %}
-{% endfor %}
-
+</table>
