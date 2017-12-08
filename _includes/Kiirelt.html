@@ -1,5 +1,6 @@
-<!-- {% increment kn %} -->
+<!-- {% increment kn1 %} -->
 {% for kategooria in site.data.Nouded %}
-  {% capture abikn %}{% increment kn %}{% endcapture %}
+  {% capture abikn %}{% increment kn1 %}{% endcapture %}
   <a href='#{{ abikn }}.1'>{{ kategooria.nimetus }}</a> 
 {% endfor %}
+<p>&nbsp;</p>
