@@ -7,14 +7,14 @@ permalink: /
 # Mittefunktsionaalsed nõuded
 {: .no_toc}
 
-v 4.0 &nbsp;&nbsp; 04.12.2017
+v 4.0 (tööversioon) &nbsp;&nbsp; 04.12.2017
 
 Märkus. Käesolev dokument on tööversioon. Ametlik, kinnitatud versioon avaldatakse RIA veebilehel.
 {:.note}
 
 Nõuetekogum on mõeldud kasutamiseks:<br>
-- RIA arhitektidele, toote- ja projektijuhtidele -  tarkvara kavandamisel ja arendustööde tellimisel ning kontrollimisel<br>
-- arendajatele - arenduslepingute täitmisel.
+- ___RIA arhitektidele, toote- ja projektijuhtidele___ -  tarkvara kavandamisel ja arendustööde tellimisel ning kontrollimisel<br>
+- ___arendajatele___ - arenduslepingute täitmisel.
 
 _Nõuded suunavad tellijat ja seejärel ka arendajat, pakkudes olulisemate nõuete valmissõnastusi ja toimides meelespeana. Lõppeesmärk on kasutajatele väärtust pakkuv ja turvaline tarkvara, mille arendus- ja käitluskulud on madalad; tarkvara, mida on võimalik agiilselt arendada ja mis on jätkusuutlik ka pikemas perspektiivis._
 
@@ -39,12 +39,13 @@ ___tarkvara___ - hõlmab ka dokumentatsiooni, sh kavandeid.
 | vorming | 2.{% increment vor %} | Ühe faili piires kasutada alati sama reavahetuse kodeeringut - kas Windowsi (`CR+LF; 0x0D0A; U+000D U+000A`) või Linux/Unix standardile vastavat (`LF; 0x0A; U+000A`). |                |
 | vorming | 2.{% increment vor %} | Kuupäeva, kuupäeva ja kellaaja, kellaaja, kestvuse ning ajaintervalli (perioodi) talletamisel tekstikujul lähtuda rahvusvahelisest standardist ISO 8601. | ___Kuupäevad___ kirjutatakse kujul `AAAA-KK-PP`. Näide: `2. juuni 2012` kirjutada kujul `2012-06-02`. ___Kellaajad___ kirjutatakse kujul `hh:mm:ss`, kus `hh` järgib 24-tunnist kellaajaformaati. Millisekundi täpsusega kellaaja teksti kujul esitamisel kasutatakse formaati `hh:mm:ss,nnnn`, kus `nnnn` on millisekundite arv. ___Kuupäev ja kellaaeg samas andmeväljas___ esitatakse kujul, kus kuupäevavormingu ja kellaajavorming vahele lisatakse täht `T`. ___Kestvus___ esitatakse kujul `P[ [<n>Y][<n>M][<n>D]][T[<n>H][<n>M][<n>S] ]` või `P<n>W`, kus `[…]` tähistab kombinatsiooni puudumise võimalikkust, `P` tähistab kestvuse määrangu algust, `<n>` tähendab kestvuse pikkust ja `Y`, `M`, `D`, `H`, `M` (pärast `T`-d, mis tähistab kellaajavorningu algust), `S` ja `W` tähistavad vastavalt kestust aastates, kuudes, päevades, tundides, minutites (`M` pärast `T`-d, mis tähistab kellaajavormingu algust), sekundites ja nädalates. ___Ajaintervallide___ kirjeldamiseks kasutatakse kahte sama täpsusega (kuupäev, kellaaeg või kuupäev ja kellaaeg) ajavormingut (algus ja lõpp), mis eraldatakse sümboliga `/`. |
 | litsents | 4.{% increment lit %} | Tarkvara markeerida litsentsiga. | Teose autoriõigused tuleb selgelt välja tuua. Standardseks vahendiks selleks on litsents. Litsents esitatakse ühel või mõlemal alljärgnevatest viisidest: 1) LICENCE-fail repos; 2) litsentsi tekst iga faili päises. RIA põhimõte on arendada tarkvara avatult ja avaldada tarkvara vaba litsentsiga. Erandid turva- jm õigusega pandud piirangute korral. Soovitatav on kasutada [MIT litsentsi](https://en.wikipedia.org/wiki/MIT_License) - nii tagatakse paremini tarkvarade litsentsiline ühtesobivus. |
-| moodulstruktuur | 5.{% increment mod %} | Rakenduse välissõltuvused peavad olema ilmutatult, selgelt välja toodud. | |
-| moodulstruktuur | 5.{% increment mod %} | Rakendus peab olema väliste süsteemide tõrgete suhtes vastupanuvõimeline. | Välise süsteemi tõrge tohib mõjutada ainult sellest otseselt sõltuvate kasutuslugude toimimist. |
-| moodulehitus | {% increment c %} | Rakendus peab olema tehniliselt tükeldatud vastavalt loogilisele jaotusele. Saadud osised peavad olema eraldi versioneeritavad ja paigaldatavad. |  Näiteks, kui rakendusel on eraldi turvakontekstidega liidesed ametnikule ja kodanikule, peab rakendus olema jaotatud kaheks eraldi liidesekomponendiks ning nende mõlema poolt kasutatavaks andmebaasiks. |
-| keel | {% increment c %} | Lähtekoodi dokumentatsioon, lähtekood ise ning logiteated peavad olema läbivalt inglisekeelsed. |                |
-| keel | {% increment c %} | Rakendustes kasutatud eestikeelsetele tekstidele kehtivad infotehnoloogia reeglid Eesti keele ja kultuuri keskkonnas EVS 8:2008. |                |
-| testimine | {% increment c %} | Lähtekood peab olema varustatud ühiktestidega. |                |
+| moodulstruktuur | 5.{% increment mod %}<a id='#5.{{ mod }}'></a> | Rakenduse välissõltuvused peavad olema ilmutatult, selgelt välja toodud. | |
+| moodulstruktuur | 5.{% increment mod %}<a id='#5.{{ mod }}'></a> | Rakendus peab olema väliste süsteemide tõrgete suhtes vastupanuvõimeline. | Välise süsteemi tõrge tohib mõjutada ainult sellest otseselt sõltuvate kasutuslugude toimimist. |
+| moodulstruktuur | 5.{% increment mod %}<a id='#5.{{ mod }}'></a> | Rakendus peab olema tehniliselt tükeldatud vastavalt loogilisele jaotusele. Saadud osised peavad olema eraldi versioneeritavad ja paigaldatavad. |  Näiteks, kui rakendusel on eraldi turvakontekstidega liidesed ametnikule ja kodanikule, peab rakendus olema jaotatud kaheks eraldi liidesekomponendiks ning nende mõlema poolt kasutatavaks andmebaasiks. |
+| keel | 6.{% increment keel %}<a id='#6.{{ keel }}'></a> | Lähtekoodi dokumentatsioon, lähtekood ise ning logiteated peavad olema läbivalt inglisekeelsed. |                |
+| keel | 6.{% increment keel %}<a id='#6.{{ keel }}'></a> | Rakendustes kasutatud eestikeelsetele tekstidele kehtivad infotehnoloogia reeglid Eesti keele ja kultuuri keskkonnas EVS 8:2008. |                |
+| testimine | 7.{% increment tst %}<a id='#7.{{ tst }}'></a> | Lähtekood peab olema varustatud ühiktestidega. |                |
+| testimine | 7.{% increment tst %}<a id='#7.{{ tst }}'></a> | Tarkvara peab olema enne toodangusse paigaldamist läbinud turvatestimise. |                |
 | koodi kvaliteet | {% increment c %} | Lõplik kood peab olema läbinud staatilise koodianalüüsi. | Kasutada otstarbekat tööriista: Java puhul [Checkstyle](https://github.com/checkstyle/checkstyle), [PMD](https://pmd.github.io/), [SonaQube](https://www.sonarqube.org/) vms; Javascripti puhul [ESLint](https://eslint.org/). Samuti kasutada arendusredaktoritesse sisseehitatud kontrollijaid. |
 | frontend | {% increment c %} | Stiiliteave asetada CSS-failidesse. | Stiile ei tohiks sisse kirjutada HTML-teksti, ei `<style>` taagide vahelise tekstina ega `style`-atribuutidena. |
 | frontend | {% increment c %} | Mahukate laadilehtede puhul kaaluda [Sass](http://sass-lang.com/)-i kasutamist. | Sass võib suurendada laadilehtede loetavust ja hallatavust.  |
