@@ -3,7 +3,7 @@
 |------------|:---:|------------------|----------------| 
 {% for kategooria in site.data.Nouded %}
   {% for noue in kategooria.nouded %}
-    | {% increment kn %} {{ kategooria }}{% assign nn = 0 %} | {{ kn}}.{% increment nn %} | {{ noue.son}} | {{ noue.sel }} |
+    | {% increment kn %} {{ kategooria }}{% assign nn = 0 %} | {{ kn }}.{% increment nn %} | <a id='{{ kn }}.{{ nn }}'></a>{{ noue.son}} | {{ noue.sel }} |
   {% endfor %}
 {% endfor %}
 |------|-------|
