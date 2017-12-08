@@ -10,8 +10,8 @@
     <tr>
       <td> {{ kategooria.nimetus }}</td>
       <td> {{ abikn }}.{% increment nn %} </td>
-      <td> <a id='{{ kn }}.{{ nn }}'></a>{{ noue.son }} </td>
-      <td> {{ noue.sel }} </td>
+      <td> <a id='{{ kn }}.{{ noue.nr }}'></a>{{ noue.son }} </td>
+      <td> {{ noue.sel | markdownify }} </td>
     </tr>
     {% endfor %}
   {% endfor %}

@@ -1,185 +1,249 @@
 - kategooria:
   nimetus: "meta"
   nouded:
-    - son: "Nõuete rakendamisel arvestada konkreetse tarkvara eripära."
+    - nr: 1
+      son: "Nõuete rakendamisel arvestada konkreetse tarkvara eripära."
       sel: "Rakenduvad ainult need nõuded, mida konkreetse tarkvara iseloomu, ülesehituse ja kasutatavate komponentide kontekstis on mõistlik rakendada."
-    - son: "Nõudeid rakendada hierarhia põhimõttel."
+    - nr: 2
+      son: "Nõudeid rakendada hierarhia põhimõttel."
       sel: "RIA MFN-i nõudeid tuleb rakendada kõigis RIA infosüsteemides. Valdkonna MFN määratleb valdkonna tarkvara spetsiifilised nõuded. Hanke MFN-i nõuded täpsustavad ja täiendavad asutuse või valdkonna nõudeid.<br>- ___X-tee___ tuumtarkvara arendatakse ühiselt Soome riigiga. Vastavalt on ka MFN inglise keeles ja avaldatud Soome partnerasutuse GitHub-repos: [X-Road Non-Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md)<br>- ___RIHA___ nõuded asuvad [arhitektuuriteatmikus](https://arhitektuur.riha.ee/)<br>- teabevärava ___eesti.ee___ [MFN](https://confluence.ria.ee/pages/viewpage.action?pageId=6619157) &#128274;<br>"
 - kategooria:
   nimetus: "vorming"
   nouded:
-    - son: "Andmebaasides ja rakendustes kasutada UTF-8 kodeeringut."
+    - nr: 1
+      son: "Andmebaasides ja rakendustes kasutada UTF-8 kodeeringut."
       sel: ""
-    - son: "Ühe faili piires kasutada alati sama reavahetuse kodeeringut - kas Windowsi (`CR+LF; 0x0D0A; U+000D U+000A`) või Linux/Unix standardile vastavat (`LF; 0x0A; U+000A`)."
+    - nr: 2
+      son: "Ühe faili piires kasutada alati sama reavahetuse kodeeringut - kas Windowsi (`CR+LF; 0x0D0A; U+000D U+000A`) või Linux/Unix standardile vastavat (`LF; 0x0A; U+000A`)."
       sel: ""
-    - son: "Kuupäeva, kuupäeva ja kellaaja, kellaaja, kestvuse ning ajaintervalli (perioodi) talletamisel tekstikujul lähtuda rahvusvahelisest standardist ISO 8601."
+    - nr: 3
+      son: "Kuupäeva, kuupäeva ja kellaaja, kellaaja, kestvuse ning ajaintervalli (perioodi) talletamisel tekstikujul lähtuda rahvusvahelisest standardist ISO 8601."
       sel: "___Kuupäevad___ kirjutatakse kujul `AAAA-KK-PP`. Näide: `2. juuni 2012` kirjutada kujul `2012-06-02`. ___Kellaajad___ kirjutatakse kujul `hh:mm:ss`, kus `hh` järgib 24-tunnist kellaajaformaati. Millisekundi täpsusega kellaaja teksti kujul esitamisel kasutatakse formaati `hh:mm:ss,nnnn`, kus `nnnn` on millisekundite arv. ___Kuupäev ja kellaaeg samas andmeväljas___ esitatakse kujul, kus kuupäevavormingu ja kellaajavorming vahele lisatakse täht `T`. ___Kestvus___ esitatakse kujul `P[ [<n>Y][<n>M][<n>D]][T[<n>H][<n>M][<n>S] ]` või `P<n>W`, kus `[…]` tähistab kombinatsiooni puudumise võimalikkust, `P` tähistab kestvuse määrangu algust, `<n>` tähendab kestvuse pikkust ja `Y`, `M`, `D`, `H`, `M` (pärast `T`-d, mis tähistab kellaajavorningu algust), `S` ja `W` tähistavad vastavalt kestust aastates, kuudes, päevades, tundides, minutites (`M` pärast `T`-d, mis tähistab kellaajavormingu algust), sekundites ja nädalates. ___Ajaintervallide___ kirjeldamiseks kasutatakse kahte sama täpsusega (kuupäev, kellaaeg või kuupäev ja kellaaeg) ajavormingut (algus ja lõpp), mis eraldatakse sümboliga `/`." 
 - kategooria:
   nimetus: "litsents"
   nouded:
-    - son: "Tarkvara markeerida litsentsiga."
+    - nr: 1
+      son: "Tarkvara markeerida litsentsiga."
       sel: "Teose autoriõigused tuleb selgelt välja tuua. Standardseks vahendiks selleks on litsents. Litsents esitatakse ühel või mõlemal alljärgnevatest viisidest: 1) LICENCE-fail repos; 2) litsentsi tekst iga faili päises. RIA põhimõte on arendada tarkvara avatult ja avaldada tarkvara vaba litsentsiga. Erandid turva- jm õigusega pandud piirangute korral. Soovitatav on kasutada [MIT litsentsi](https://en.wikipedia.org/wiki/MIT_License) - nii tagatakse paremini tarkvarade litsentsiline ühtesobivus."
 - kategooria:
   nimetus: "moodulstruktuur"
   nouded:
-    - son: "Rakenduse välissõltuvused peavad olema ilmutatult, selgelt välja toodud."
+    - nr: 1
+      son: "Rakenduse välissõltuvused peavad olema ilmutatult, selgelt välja toodud."
       sel: ""
-    - son: "Rakendus peab olema väliste süsteemide tõrgete suhtes vastupanuvõimeline (_resilient_)."
+    - nr: 2
+      son: "Rakendus peab olema väliste süsteemide tõrgete suhtes vastupanuvõimeline (_resilient_)."
       sel: "Välise süsteemi tõrge tohib mõjutada ainult sellest otseselt sõltuvate kasutuslugude toimimist."
-    - son: "Rakendus peab olema tehniliselt tükeldatud vastavalt loogilisele jaotusele. Saadud osised peavad olema eraldi versioneeritavad ja paigaldatavad."
+    - nr: 3
+      son: "Rakendus peab olema tehniliselt tükeldatud vastavalt loogilisele jaotusele. Saadud osised peavad olema eraldi versioneeritavad ja paigaldatavad."
       sel: "Näiteks, kui rakendusel on eraldi turvakontekstidega liidesed ametnikule ja kodanikule, peab rakendus olema jaotatud kaheks eraldi liidesekomponendiks ning nende mõlema poolt kasutatavaks andmebaasiks."
 - kategooria:
   nimetus: "keel"
   nouded:
-    - son: "Lähtekoodi dokumentatsioon, lähtekood ise ning logiteated peavad olema läbivalt inglisekeelsed."
+    - nr: 1
+      son: "Lähtekoodi dokumentatsioon, lähtekood ise ning logiteated peavad olema läbivalt inglisekeelsed."
       sel: ""
-    - son: "Rakendustes kasutatud eestikeelsetele tekstidele kehtivad infotehnoloogia reeglid Eesti keele ja kultuuri keskkonnas EVS 8:2008."
+    - nr: 2
+      son: "Rakendustes kasutatud eestikeelsetele tekstidele kehtivad infotehnoloogia reeglid Eesti keele ja kultuuri keskkonnas EVS 8:2008."
       sel: ""
 - kategooria:
   nimetus: "testimine"
   nouded:
-    - son: "Lähtekood peab olema varustatud ühiktestidega."
+    - nr: 1
+      son: "Lähtekood peab olema varustatud ühiktestidega."
       sel: ""
-    - son: "Tarkvara peab olema enne toodangusse paigaldamist läbinud turvatestimise."
+    - nr: 2
+      son: "Tarkvara peab olema enne toodangusse paigaldamist läbinud turvatestimise."
       sel: ""
 - kategooria:
   nimetus: "koodi kvaliteet"
   nouded:
-    - son: "Lõplik kood peab olema läbinud staatilise koodianalüüsi."
+    - nr: 1
+      son: "Lõplik kood peab olema läbinud staatilise koodianalüüsi."
       sel: "Kasutada otstarbekat tööriista: Java puhul [Checkstyle](https://github.com/checkstyle/checkstyle), [PMD](https://pmd.github.io/), [SonaQube](https://www.sonarqube.org/) vms; Javascripti puhul [ESLint](https://eslint.org/). Samuti kasutada arendusredaktoritesse sisseehitatud kontrollijaid."
 - kategooria:
   nimetus: "frontend"
   nouded:
-    - son: "Stiiliteave asetada CSS-failidesse."
+    - nr: 1
+      son: "Stiiliteave asetada CSS-failidesse."
       sel: "Stiile ei tohiks sisse kirjutada HTML-teksti, ei style-taagide vahelise tekstina ega style-atribuutidena."
-    - son: "Mahukate laadilehtede puhul kaaluda [Sass](http://sass-lang.com/)-i kasutamist."
+    - nr: 2
+      son: "Mahukate laadilehtede puhul kaaluda [Sass](http://sass-lang.com/)-i kasutamist."
       sel: "Sass võib suurendada laadilehtede loetavust ja hallatavust."
-    - son: "Järgida ajakohaseid veebistandardeid."
+    - nr: 3
+      son: "Järgida ajakohaseid veebistandardeid."
       sel: "HTML5, CSS3 jms."
-    - son: "Rakendus peab töötama veebisirvijaga, mida toetavad eID baastarkvara kaks viimast versiooni."
+    - nr: 4
+      son: "Rakendus peab töötama veebisirvijaga, mida toetavad eID baastarkvara kaks viimast versiooni."
       sel: ""
-    - son: "Veebisirvija toe puudumisel andku rakendus veateade."
+    - nr: 5
+      son: "Veebisirvija toe puudumisel andku rakendus veateade."
       sel: "Kui kasutajaliides, mille poole kasutaja pöördub, ei ole ühilduv kasutatava veebisirvijaga, peab rakendus arusaadaval ja juhendaval viisil sellest kasutajat teavitama."
 - kategooria:
   nimetus: "URL-id"
   nouded:
-    - son: "Kasutada selge, ühtse mustriga, inimloetavaid veebiaadresse (URL-e)."
+    - nr: 1
+      son: "Kasutada selge, ühtse mustriga, inimloetavaid veebiaadresse (URL-e)."
       sel: ""
-    - son: "Igal lehel peab olema unikaalne veebiaadress."
+    - nr: 2
+      son: "Igal lehel peab olema unikaalne veebiaadress."
       sel: ""
-    - son: "URL ei tohi sisaldada tundlikke isikuandmeid."
+    - nr: 3
+      son: "URL ei tohi sisaldada tundlikke isikuandmeid."
       sel: ""
-    - son: "URL ei tohi sisaldada sessioonivõtit."
+    - nr: 4
+      son: "URL ei tohi sisaldada sessioonivõtit."
       sel: ""
 - kategooria:
   nimetus: "teated"
   nouded:
-    - son: "Vea- jm teated peavad oleva arusaadavad."
+    - nr: 1
+      son: "Vea- jm teated peavad oleva arusaadavad."
       sel: "Muuhulgas peab rakendus asendama vaikimisi veateate (`404` vms) lehekülje, kuid säilitama algse HTTP vastuskoodi."
 - kategooria:
   nimetus: "koodid"
   nouded:
-    - son: "Objektid identifitseerida registrikoodide abil."
+    - nr: 1
+      son: "Objektid identifitseerida registrikoodide abil."
       sel: "Riiklikesse registritesse kantavad objektid (isikud, katastriüksused jne) kantakse andmebaasi nende registrikoodiga, mida täiendab riigiprefiks vastavalt ISO3166-1 Alpha 2 standardile. Näiteks isikute sidumiseks süsteemi kasutajakontoga peab kasutama isikukoodi rahvastikuregistrist.<br>Eesti Vabariigi kodanik identifitseeritakse Eesti Vabariigi poolt väljastatud eIDga. Igasuguse muu identifitseerimisevahendi kasutamine peab olema selgelt põhjendatud.<br>Mittekodanike isikuidentifikaator saadakse järgmisel viisil: `riigikood + sookood + sünniaeg + [ dok_nr | id_riigis ]`, kus<br>`riigikood` - kolmekohaline ISO 3166-1 Alpha-3 standardile vastav riigi kood<br>`sookood` - soo identifikaator nii nagu Eesti Vabariigi isikukoodis<br>`sünniaeg` - sünniaeg formaadis `YYYYMMDD`<br>`id_riigis` - kui see on olemas, tuleb kasutada isiku koduriigi isikuidentifikaatorit. 16 kohta, 0-polsterdatud vasakult<br>`dok_nr` - kui isiku koduriigis isikuidentifikaatorit ei ole, siis kasutatakse isiku dokumendi numbrit. Dokumendi number, 16 kohta, 0-polsterdatud vasakult."
-    - son: "Rakendus ei tohi luua uut identiteedisüsteemi. Tuleb tugineda olemasolevatele riiklikele (ID-kaart) või põhiliste op-süsteemide süsteemidele (Kerberos jms)."
+    - nr: 2
+      son: "Rakendus ei tohi luua uut identiteedisüsteemi. Tuleb tugineda olemasolevatele riiklikele (ID-kaart) või põhiliste op-süsteemide süsteemidele (Kerberos jms)."
       sel: ""
 - kategooria:
   nimetus: "autentimine"
   nouded:
-    - son: "Väliste kasutajate, so. Eesti Vabariigi residentide ja EL teiste liikmesriikide residentide autentimislahenduse loomisel lähtuda dokumendist [Autentimislahendustele kehtivad nõuded](https://www.ria.ee/public/Arhitektuur/Autentimislahendustele-kehtivad-nouded-kavand.pdf)."
+    - nr: 1
+      son: "Väliste kasutajate, so. Eesti Vabariigi residentide ja EL teiste liikmesriikide residentide autentimislahenduse loomisel lähtuda dokumendist [Autentimislahendustele kehtivad nõuded](https://www.ria.ee/public/Arhitektuur/Autentimislahendustele-kehtivad-nouded-kavand.pdf)."
       sel: ""
 - kategooria:
   nimetus: "rollihaldus"
   nouded:
-    - son: "Rakenduse mitteavalike osade kasutajate rollid asuvad rakendusevälises LDAPs serveris või muus autentimislahenduses. Süsteem ei tohi realiseerida omaenda rollide haldamist."
+    - nr: 1
+      son: "Rakenduse mitteavalike osade kasutajate rollid asuvad rakendusevälises LDAPs serveris või muus autentimislahenduses. Süsteem ei tohi realiseerida omaenda rollide haldamist."
       sel: ""
 - kategooria:
   nimetus: "väljumine"
   nouded:
-    - son: "Süsteemist väljumine peab toimuma sõnaselgelt, kasutajale arusaadaval ja turvalisel viisil."
+    - nr: 1
+      son: "Süsteemist väljumine peab toimuma sõnaselgelt, kasutajale arusaadaval ja turvalisel viisil."
       sel: "Kasutaja saab süsteemist väljuda kahel viisil: tema sessioon on pikem, kui sessiooni pikkuse seadistatav piirväärtus (eraldi määratletavad piirangud kogu sessioonile ning tegevuseta perioodile sessioonis) või kasutaja lõpetab sessiooni enda algatusel."
-    - son: "Juhul kui rakenduse turvanõuded näevad seda ette, peab olema võimalus koheselt lõpetada kasutaja sessiooni nii, et kasutaja saaks arusaadava ja põhjendatud teate sessiooni lõpetamise kohta."
+    - nr: 2
+      son: "Juhul kui rakenduse turvanõuded näevad seda ette, peab olema võimalus koheselt lõpetada kasutaja sessiooni nii, et kasutaja saaks arusaadava ja põhjendatud teate sessiooni lõpetamise kohta."
       sel: ""
 - kategooria:
   nimetus: "andmebaas"
   nouded:
-    - son: "Andmebaasi kasutaval rakendusel on vähemalt kaks andmebaasikasutajat:<br>`<rakendus>` nimeline andmebaasi skeem kuulub andmebaasi kasutajale `<rakendus>` (roll `db owner`, skeemid ja seal paiknevad objektid kuuluvad sellele kasutajale).<br>`<rakendus>` nimelises andmebaasi skeemis on defineeritud `<rakendus>_app` nimeline kasutaja, kes omab ligipääsu (`SELECT`, `INSERT`, `UPDATE`, `DELETE`) ainult rakenduse käitamiseks vajalikele tabelitele, protseduuridele või funktsioonidele."
+    - nr: 1
+      son: "Andmebaasi kasutaval rakendusel on vähemalt kaks andmebaasikasutajat:<br>`<rakendus>` nimeline andmebaasi skeem kuulub andmebaasi kasutajale `<rakendus>` (roll `db owner`, skeemid ja seal paiknevad objektid kuuluvad sellele kasutajale).<br>`<rakendus>` nimelises andmebaasi skeemis on defineeritud `<rakendus>_app` nimeline kasutaja, kes omab ligipääsu (`SELECT`, `INSERT`, `UPDATE`, `DELETE`) ainult rakenduse käitamiseks vajalikele tabelitele, protseduuridele või funktsioonidele."
       sel: ""
-    - son: "Ühest andmetabelist teise viitamisel tuleb kasutada välisvõtmeid (_foreign key_). Kõik välisvõtmed (_foreign key_) peavad olema indekseeritud mitteunikaalse indeksiga ja välisvõtmetena kirjeldatud."
+    - nr: 2
+      son: "Ühest andmetabelist teise viitamisel tuleb kasutada välisvõtmeid (_foreign key_). Kõik välisvõtmed (_foreign key_) peavad olema indekseeritud mitteunikaalse indeksiga ja välisvõtmetena kirjeldatud."
       sel: ""
-    - son: "Kõigis andmebaasi tabelites peab olema defineeritud `integer`-tüüpi primaarvõti, mis on surrogaatvõti. Primaarvõtmena ei tohi kasutada reaalse eluga seotud andmevälju."
+    - nr: 3
+      son: "Kõigis andmebaasi tabelites peab olema defineeritud `integer`-tüüpi primaarvõti, mis on surrogaatvõti. Primaarvõtmena ei tohi kasutada reaalse eluga seotud andmevälju."
       sel: ""
-    - son: "Kõik primaarvõtmed (_primary key_) peavad olema indekseeritud unikaalse indeksiga."
+    - nr: 4
+      son: "Kõik primaarvõtmed (_primary key_) peavad olema indekseeritud unikaalse indeksiga."
       sel: ""
-    - son: "Kui andmebaasis olevate andmete ISKE tervikluse klass on 2 või kõrgem, siis tuleb kõik klass 2 infot sisaldavad andmebaasi kirjed versioneerida."
+    - nr: 5
+      son: "Kui andmebaasis olevate andmete ISKE tervikluse klass on 2 või kõrgem, siis tuleb kõik klass 2 infot sisaldavad andmebaasi kirjed versioneerida."
       sel: ""
-    - son: "Andmebaasi väljade pikkused tuleb andmekirjelduskeeles (DDL-is) kirjeldada sümbolites, mitte baitides."
+    - nr: 6
+      son: "Andmebaasi väljade pikkused tuleb andmekirjelduskeeles (DDL-is) kirjeldada sümbolites, mitte baitides."
       sel: ""
-    - son: "Päringulaused ei tohi sisaldada konstantidena sisse kirjutatud  päringutingimuse võrdlusväärtusi."
+    - nr: 7
+      son: "Päringulaused ei tohi sisaldada konstantidena sisse kirjutatud  päringutingimuse võrdlusväärtusi."
       sel: "Kasutada päringumuutujaid (_variable binding_)."
-    - son: "Andmebaasi objektide nimetused peavad olema inglisekeelsed. Nimetused tohivad sisaldada ainult Latin1 (ISO8859-1) kodeeringu tähti `a-z; A-Z`, numbreid `0-9`, ning alakriipsu `_`. Objektide nimetused ei tohi alata numbritega. Andmebaasiobjektide nimed peavad olema semantilised st. objekti tähendust avavad."
+    - nr: 8
+      son: "Andmebaasi objektide nimetused peavad olema inglisekeelsed. Nimetused tohivad sisaldada ainult Latin1 (ISO8859-1) kodeeringu tähti `a-z; A-Z`, numbreid `0-9`, ning alakriipsu `_`. Objektide nimetused ei tohi alata numbritega. Andmebaasiobjektide nimed peavad olema semantilised st. objekti tähendust avavad."
       sel: ""
-    - son: "Rakendus peab olema tabelite [partitsioneerimise](http://en.wikipedia.org/wiki/Partition_%28database%29) suhtes agnostiline st. tabelite partitsioneerimisstruktuuride muutmine ei tohi mõjutada rakenduse tööd."
+    - nr: 9
+      son: "Rakendus peab olema tabelite [partitsioneerimise](http://en.wikipedia.org/wiki/Partition_%28database%29) suhtes agnostiline st. tabelite partitsioneerimisstruktuuride muutmine ei tohi mõjutada rakenduse tööd."
       sel: ""
 - kategooria:
   nimetus: "logi"
   nouded:
-    - son: "Rakenduse logimine peab olema organiseeritud kasutades selleks ettenähtud standardseid vahendeid viisil, mis võimaldab rakenduse administraatoril määratleda ja muuta logide väljundit (vähemalt fail, andmebaas, syslogd), logimise taset ja logimise formaati. Igasugune logimine muul viisil on keelatud."
+    - nr: 1
+      son: "Rakenduse logimine peab olema organiseeritud kasutades selleks ettenähtud standardseid vahendeid viisil, mis võimaldab rakenduse administraatoril määratleda ja muuta logide väljundit (vähemalt fail, andmebaas, syslogd), logimise taset ja logimise formaati. Igasugune logimine muul viisil on keelatud."
       sel: ""
-    - son: "Java rakenduste korral logitakse [SLF4J](vt http://www.slf4j.org) raamistiku abil."
+    - nr: 2
+      son: "Java rakenduste korral logitakse [SLF4J](vt http://www.slf4j.org) raamistiku abil."
       sel: ""
-    - son: "Süsteemi iga eraldi paigaldatav osa peab logimisel (näiteks aadressil heartbeat.json) väljastama masinloetaval kujul oma nime ja versiooninumbri, oluliste väliste süsteemide oleku, viimase käivitamise aja, pakendamise aja ning serveriaja."
+    - nr: 3
+      son: "Süsteemi iga eraldi paigaldatav osa peab logimisel (näiteks aadressil heartbeat.json) väljastama masinloetaval kujul oma nime ja versiooninumbri, oluliste väliste süsteemide oleku, viimase käivitamise aja, pakendamise aja ning serveriaja."
       sel: ""
-    - son: "Logid kirjutatakse inglise keeles (välja arvatud kasutajale näidatud teated)."
+    - nr: 4
+      son: "Logid kirjutatakse inglise keeles (välja arvatud kasutajale näidatud teated)."
       sel: ""
-    - son: "Turvalisuse seisukohalt kriitilised sündmused (sisenemine, väljumine, rolli muut(u)mine) ning tegevused, mis toovad kaasa rahalisi või juriidilisi tagajärgi, logitakse eraldi konfigureeritavasse turvalogisse."
+    - nr: 5
+      son: "Turvalisuse seisukohalt kriitilised sündmused (sisenemine, väljumine, rolli muut(u)mine) ning tegevused, mis toovad kaasa rahalisi või juriidilisi tagajärgi, logitakse eraldi konfigureeritavasse turvalogisse."
       sel: ""
 - kategooria:
   nimetus: "paigaldus"
   nouded:
-    - son: "Rakendus tohib e-kirja saata ainult välise postiagendi (näiteks Postfix) kaudu."
+    - nr: 1
+      son: "Rakendus tohib e-kirja saata ainult välise postiagendi (näiteks Postfix) kaudu."
       sel: ""
-    - son: "Rakenduse funktsionaalsuses tuleb selgelt eraldada avaliku teenuse liides muudest mitteavalikest, sisemistest, konfigureerimis jms. liidestest."
+    - nr: 2
+      son: "Rakenduse funktsionaalsuses tuleb selgelt eraldada avaliku teenuse liides muudest mitteavalikest, sisemistest, konfigureerimis jms. liidestest."
       sel: ""
-    - son: "Rakendus peab olema loodud sõltumatuna rakendusserveri tarkvarast."
+    - nr: 3
+      son: "Rakendus peab olema loodud sõltumatuna rakendusserveri tarkvarast."
       sel: "Rakendust peab olema võimalik konfiguratsioonimuudatuste abil paigaldada teisele samatüübilisele rakendusserverile. Kui see ei ole võimalik tuleb rakendusele luua sobituspaketid põhiliselt kasutatavate rakendusserverite jaoks."
-    - son: "Kõik rakenduse versiooniuuendused (sealhulgas muudatused andmebaasi struktuuris ja koodis) peavad kuni järgmise versiooniuuenduseni olema täielikult tagasi pööratavad st. koos versiooni uuendusega peavad olema loodud vahendid ja kirjeldatud protseduurid versiooniuuenduse tagasi võtmiseks."
+    - nr: 4
+      son: "Kõik rakenduse versiooniuuendused (sealhulgas muudatused andmebaasi struktuuris ja koodis) peavad kuni järgmise versiooniuuenduseni olema täielikult tagasi pööratavad st. koos versiooni uuendusega peavad olema loodud vahendid ja kirjeldatud protseduurid versiooniuuenduse tagasi võtmiseks."
       sel: ""
-    - son: "Rakendus ei tohi eeldada paigalduskeskkonna turvalisust. Kõik liidesed rakenduse eri osade vahel peavad olema vajadusel kaitstavad kahepoolset tuvastamist ja krüpteerimist võimaldava protokolliga."
+    - nr: 5
+      son: "Rakendus ei tohi eeldada paigalduskeskkonna turvalisust. Kõik liidesed rakenduse eri osade vahel peavad olema vajadusel kaitstavad kahepoolset tuvastamist ja krüpteerimist võimaldava protokolliga."
       sel: ""
-    - son: "Rakendusservereid peab olema võimalik lisada teenust pakkuvasse klastrisse ja sealt eemaldada vastavalt vajadusele."
+    - nr: 6
+      son: "Rakendusservereid peab olema võimalik lisada teenust pakkuvasse klastrisse ja sealt eemaldada vastavalt vajadusele."
       sel: ""
-    - son: "Rakendus ei tohi kasutada konfigureerimata viiteid failidele või välistele süsteemidele st. kõik viited peavad olema programmikoodi välised."
+    - nr: 7
+      son: "Rakendus ei tohi kasutada konfigureerimata viiteid failidele või välistele süsteemidele st. kõik viited peavad olema programmikoodi välised."
       sel: ""
-    - son: "Kõik andmebaasiühendused tuleb kirjeldada täispika URI abil. Java rakendustes kasutatakse JNDI ühendusi."
+    - nr: 8
+      son: "Kõik andmebaasiühendused tuleb kirjeldada täispika URI abil. Java rakendustes kasutatakse JNDI ühendusi."
       sel: ""
-    - son: " Andmebaasi JNDI objekti Datasource'i nimetamisel tuleb kasutada prefiksit `jdbc` ning ühesõnaliste lühendite korral väiketähti. Nt: `jdbc/system1`, `jdbc/system2` jne."
+    - nr: 9
+      son: " Andmebaasi JNDI objekti Datasource'i nimetamisel tuleb kasutada prefiksit `jdbc` ning ühesõnaliste lühendite korral väiketähti. Nt: `jdbc/system1`, `jdbc/system2` jne."
       sel: ""
-    - son: "Rakenduse (RIA poolt hallatavasse serverisse) pakendamine, paigaldamine, uuendamine, muudatuse taastamine ja testide käivitamine peavad olema automatiseeritud standardse üldkasutatava vahendi abil (Maven vms)."
+    - nr: 10
+      son: "Rakenduse (RIA poolt hallatavasse serverisse) pakendamine, paigaldamine, uuendamine, muudatuse taastamine ja testide käivitamine peavad olema automatiseeritud standardse üldkasutatava vahendi abil (Maven vms)."
       sel: ""
-    - son: "Ehitatud pakke nimi peab sisaldama projekti nime, keskkonna nime ja versiooni ning tohib sisaldada ainult tähemärke `[a-z;0-9]` ja `-` (miinus) ja `_` (alakriips) (nt `projektinimi-keskkond—1_0_23`)."
+    - nr: 11
+      son: "Ehitatud pakke nimi peab sisaldama projekti nime, keskkonna nime ja versiooni ning tohib sisaldada ainult tähemärke `[a-z;0-9]` ja `-` (miinus) ja `_` (alakriips) (nt `projektinimi-keskkond—1_0_23`)."
       sel: ""
-    - son: "Rakenduse andmebaasi või andmeskeemi paigaldamine ei tohi nõuda punktis erilisi kasutajaõigusi."
+    - nr: 12
+      son: "Rakenduse andmebaasi või andmeskeemi paigaldamine ei tohi nõuda punktis erilisi kasutajaõigusi."
       sel: ""
-    - son: "Rakendused paigaldatakse ainult lähtekoodihoidlast, selle üheselt viidatud harust."
+    - nr: 13
+      son: "Rakendused paigaldatakse ainult lähtekoodihoidlast, selle üheselt viidatud harust."
       sel: ""
 - kategooria:
   nimetus: "turve"
   nouded:
-    - son: "Kui ei ole määratud teisiti, peab rakendus olema kasutatav ISKE klassile `K2T2S2` vastavate süsteemide loomisel."
+    - nr: 1
+      son: "Kui ei ole määratud teisiti, peab rakendus olema kasutatav ISKE klassile `K2T2S2` vastavate süsteemide loomisel."
       sel: ""
-    - son: "Süsteem ei tohi võimaldada kasutajale ligipääsu süsteemi toimimise informatsioonile, nagu failide täisnimed, kutsepinud (_stack trace_) jms."
+    - nr: 2
+      son: "Süsteem ei tohi võimaldada kasutajale ligipääsu süsteemi toimimise informatsioonile, nagu failide täisnimed, kutsepinud (_stack trace_) jms."
       sel: ""
-    - son: "Kaitsmata avalik võrguliiklus ei ole lubatud. Igasugune avalik võrguliiklus on krüpteeritud. TLS keskkonna parameetrid on administraatori, mitte arendaja kontrolli all. Erandjuhul, kui edastatav informatsioon ei sisalda konfidentsiaalseid andmeid, on lubatud andmete edastamine krüpteerimata kujul, kuid viisil, mis võimaldab andmete vastu võtjal veenduda saadetise tervikluses st. allkirjastatult või ajatembeldatult (X-tee turvaserveri seadistuse edastamise näide)."
+    - nr: 3
+      son: "Kaitsmata avalik võrguliiklus ei ole lubatud. Igasugune avalik võrguliiklus on krüpteeritud. TLS keskkonna parameetrid on administraatori, mitte arendaja kontrolli all. Erandjuhul, kui edastatav informatsioon ei sisalda konfidentsiaalseid andmeid, on lubatud andmete edastamine krüpteerimata kujul, kuid viisil, mis võimaldab andmete vastu võtjal veenduda saadetise tervikluses st. allkirjastatult või ajatembeldatult (X-tee turvaserveri seadistuse edastamise näide)."
       sel: ""
-    - son: "Krüptograafiliste algoritmide ja meetodite valmisel lähtuda kehtivast RIA tellitud [krüptograafiliste algoritmide elutsükli uuringust](https://www.ria.ee/ee/kruptograafiliste-algoritmide-elutsukli-uuringud.html)."
+    - nr: 4
+      son: "Krüptograafiliste algoritmide ja meetodite valmisel lähtuda kehtivast RIA tellitud [krüptograafiliste algoritmide elutsükli uuringust](https://www.ria.ee/ee/kruptograafiliste-algoritmide-elutsukli-uuringud.html)."
       sel: ""
 - kategooria:
   nimetus: "õigusaktid"
   nouded:
-    - son: "Aadressiandmete süsteemi nõuete järgimine"
+    - nr: 1
+      son: "Aadressiandmete süsteemi nõuete järgimine"
       sel: ""
-    - son: "Eesti aadressiandmete sisestamisel, kuvamisel ja hoidmisel lähtuda Vabariigi Valitsuse 8. oktoobri 2015. a määrusest nr 103 „Aadressiandmete süsteem“."
+    - nr: 2
+      son: "Eesti aadressiandmete sisestamisel, kuvamisel ja hoidmisel lähtuda Vabariigi Valitsuse 8. oktoobri 2015. a määrusest nr 103 „Aadressiandmete süsteem“."
       sel: ""
-    - son: "Klassifikaatorite süsteemi nõuete järgmine"
+    - nr: 3
+      son: "Klassifikaatorite süsteemi nõuete järgmine"
       sel: "Eesti tegevusalade andmete sisestamisel, kuvamisel ja hoidmisel lähtuda Vabariigi Valitsuse 10. jaanuari 2008. a määrusest nr 11 „Klassifikaatorite süsteem“ ja kasutada EMTAK infosüsteemis kehtivat klassifikaatorit."
