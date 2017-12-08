@@ -10,19 +10,12 @@ permalink: /
 v 4.0 (tööversioon) &nbsp;&nbsp; 04.12.2017
 
 Märkus. Käesolev dokument on tööversioon. Ametlik, kinnitatud versioon avaldatakse RIA veebilehel.
-{:.note}
 
 Nõuetekogum on mõeldud kasutamiseks:<br>
 - ___RIA arhitektidele, toote- ja projektijuhtidele___ -  tarkvara kavandamisel ja arendustööde tellimisel ning kontrollimisel<br>
 - ___arendajatele___ - arenduslepingute täitmisel.
 
 _Nõuded suunavad tellijat ja seejärel ka arendajat, pakkudes olulisemate nõuete valmissõnastusi ja toimides meelespeana. Lõppeesmärk on kasutajatele väärtust pakkuv ja turvaline tarkvara, mille arendus- ja käitluskulud on madalad; tarkvara, mida on võimalik agiilselt arendada ja mis on jätkusuutlik ka pikemas perspektiivis._
-
-_Dokumendi varasema versiooniga võrreldes on mõned raskesti kohaldatavad või ebaselged nõuded kõrvaldatud. Mitmeid nõudeid on üritatud selgemalt sõnastada. Nõuete sõnastamisel on lähtutud rakendatavuse ja konkreetsuse printsiibist. Nõuded on liigitatud. Kus vaja, on nõuet lahti selgitatud. Järgides partnerasutuste (RIK, RMIT) head praktikat, on nõuded esitatud tabelina._
-
-_Dokument loomulikult sa saa katta kõiki võimalikke mittefunktsionaalseid nõudeid. Meeles tasub pidada ka, et nõuded üksinda ei ole  imerohi, mis asendaks tarkvaraarenduses vajalikke kogemusi, teadmisi, talenti ja tööd._
-
-_Võimalikest vigadest palume teada anda ja ettepanekuid dokumendi täiendamiseks teha arutelude algatamisega dokumendi [GitHub-repos](https://github.com/e-gov/MFN/issues)._ 
 
 ## Lühendid ja mõisted
 
