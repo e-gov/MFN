@@ -13,5 +13,5 @@ permalink: Muutelugu
 - numeratsioon nõudeliigi kaupa
 - iga nõue tehtud otselingitavaks
 - uusversiooni nr 4.0
-- lisatud 5. "Rakenduse välissõltuvused peavad olema ilmutatult, selgelt välja toodud"
+- lisatud [5.0](https://e-gov.github.io/MFN/#5.0) "Rakenduse välissõltuvused peavad olema ilmutatult, selgelt välja toodud"
 
