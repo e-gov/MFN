@@ -10,7 +10,7 @@
     <tr>
       <td> {{ kategooria.nimetus }}</td>
       <td> {{ abikn }}.{{ noue.nr }} </td>
-      <td> <a id='{{ abikn }}.{{ noue.nr }}'></a>{{ noue.son }} </td>
+      <td> <a id='{{ abikn }}.{{ noue.nr }}'></a>{{ noue.son | markdownify }} </td>
       <td> {{ noue.sel | markdownify }} </td>
     </tr>
     {% endfor %}
