@@ -50,7 +50,7 @@ p { margin: 0 0 1em 0; }
 
 /* ==== Loetelud ==== */
 #Tekst > ul {
-  list-style-type: '-';
+  list-style-type: '-  ';
   margin: 0 0 1em 0;
   padding-left: 1em;
 }

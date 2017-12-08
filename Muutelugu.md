@@ -4,9 +4,7 @@ permalink: Muutelugu
 
 # Muutelugu
 
-8\.12.2017
-
-(läbivaatusarutelu tulemusena)
+___8\.12.2017___ (läbivaatusarutelu tulemusena)
 
 - lisatud muutelugu
 - täpsustatud sihtrühma
@@ -25,8 +23,6 @@ permalink: Muutelugu
 - [MFN 17.5](https://e-gov.github.io/MFN/#17.5) - lisatud erilise tähtsuse märge
 - lisatud [MFN 19.2](https://e-gov.github.io/MFN/#19.2) - krüptoalgoritmide väljavahetatavus
 
-
-
-5\.12.2017
+___5\.12.2017___
 
 - Dokumendi varasema versiooniga võrreldes on mõned raskesti kohaldatavad või ebaselged nõuded kõrvaldatud. Mitmeid nõudeid on üritatud selgemalt sõnastada. Nõuete sõnastamisel on lähtutud rakendatavuse ja konkreetsuse printsiibist. Nõuded on liigitatud. Kus vaja, on nõuet lahti selgitatud. Järgides partnerasutuste (RIK, RMIT) head praktikat, on nõuded esitatud tabelina.
