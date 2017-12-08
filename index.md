@@ -7,7 +7,10 @@ permalink: /
 # Mittefunktsionaalsed nõuded
 {: .no_toc}
 
-v 3.2 &nbsp;&nbsp; 04.12.2017
+v 4.0 &nbsp;&nbsp; 04.12.2017
+
+Märkus. Käesolev dokument on tööversioon. Ametlik, kinnitatud versioon avaldatakse RIA veebilehel.
+{:.note}
 
 Nõuetekogum on mõeldud kasutamiseks:<br>
 - RIA arhitektidele, toote- ja projektijuhtidele -  tarkvara kavandamisel ja arendustööde tellimisel ning kontrollimisel<br>
@@ -30,7 +33,7 @@ ___tarkvara___ - hõlmab ka dokumentatsiooni, sh kavandeid.
 
 | Liik       | Nr                      | Nõude sõnastus   | Nõude selgitus |
 |------------|:-----------------------:|------------------|----------------|
-| meta       | 1.{% increment meta %} | Nõuete rakendamisel arvestada konkreetse tarkvara eripära. | Rakenduvad ainult need nõuded, mida konkreetse tarkvara iseloomu, ülesehituse ja kasutatavate komponentide kontekstis on mõistlik rakendada. |
+| meta       | 1.{% increment meta %}<a id='#1.{{ meta }}'></a> | Nõuete rakendamisel arvestada konkreetse tarkvara eripära. | Rakenduvad ainult need nõuded, mida konkreetse tarkvara iseloomu, ülesehituse ja kasutatavate komponentide kontekstis on mõistlik rakendada. |
 | meta       | 1.{% increment meta %} | Nõudeid rakendada hierarhia põhimõttel. | RIA MFN-i nõudeid tuleb rakendada kõigis RIA infosüsteemides. Valdkonna MFN määratleb valdkonna tarkvara spetsiifilised nõuded. Hanke MFN-i nõuded täpsustavad ja täiendavad asutuse või valdkonna nõudeid.<br>- ___X-tee___ tuumtarkvara arendatakse ühiselt Soome riigiga. Vastavalt on ka MFN inglise keeles ja avaldatud Soome partnerasutuse GitHub-repos: [X-Road Non-Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md)<br>- ___RIHA___ nõuded asuvad [arhitektuuriteatmikus](https://arhitektuur.riha.ee/)<br>- teabevärava ___eesti.ee___ [MFN](https://confluence.ria.ee/pages/viewpage.action?pageId=6619157) &#128274;<br> |
 | vorming | 2.{% increment vor %} | Andmebaasides ja rakendustes kasutada UTF-8 kodeeringut. |                |
 | vorming | 2.{% increment vor %} | Ühe faili piires kasutada alati sama reavahetuse kodeeringut - kas Windowsi (`CR+LF; 0x0D0A; U+000D U+000A`) või Linux/Unix standardile vastavat (`LF; 0x0A; U+000A`). |                |
