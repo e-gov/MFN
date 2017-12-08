@@ -41,7 +41,7 @@
   nimetus: "keel"
   nouded:
     - nr: 1
-      son: "Lähtekoodi dokumentatsioon, lähtekood ise ning logiteated peavad olema läbivalt inglisekeelsed."
+      son: "Lähtekoodi dokumentatsioon, lähtekood ise ning logiteated peavad olema inglisekeelsed."
       sel: ""
     - nr: 2
       son: "Rakendustes kasutatud eestikeelsetele tekstidele kehtivad infotehnoloogia reeglid Eesti keele ja kultuuri keskkonnas EVS 8:2008."
@@ -66,7 +66,7 @@
   nouded:
     - nr: 1
       son: "Stiiliteave asetada CSS-failidesse."
-      sel: "Stiile ei tohiks sisse kirjutada HTML-teksti, ei style-taagide vahelise tekstina ega style-atribuutidena."
+      sel: "Stiile ei tohiks sisse kirjutada HTML-teksti, ei `style`-taagide vahelise tekstina ega `style`-atribuutidena."
     - nr: 2
       son: "Mahukate laadilehtede puhul kaaluda [Sass](http://sass-lang.com/)-i kasutamist."
       sel: "Sass võib suurendada laadilehtede loetavust ja hallatavust."
@@ -74,7 +74,7 @@
       son: "Järgida ajakohaseid veebistandardeid."
       sel: "HTML5, CSS3 jms."
     - nr: 4
-      son: "Rakendus peab töötama veebisirvijaga, mida toetavad eID baastarkvara kaks viimast versiooni."
+      son: "Rakendus peab töötama veebisirvijates, mis toetavad eID baastarkvara kaht viimast versiooni."
       sel: ""
     - nr: 5
       son: "Veebisirvija toe puudumisel andku rakendus veateade."
@@ -100,6 +100,9 @@
     - nr: 1
       son: "Vea- jm teated peavad oleva arusaadavad."
       sel: "Muuhulgas peab rakendus asendama vaikimisi veateate (`404` vms) lehekülje, kuid säilitama algse HTTP vastuskoodi."
+    - nr: 2
+      son: "Veasituatsioonid tuleb varustada veakoodidega. Kasutajale tuleb esitada koos veateatega ka veakood."
+      sel: "" 
 - kategooria:
   nimetus: "koodid"
   nouded:
@@ -164,13 +167,13 @@
   nimetus: "logi"
   nouded:
     - nr: 1
-      son: "Rakenduse logimine peab olema organiseeritud kasutades selleks ettenähtud standardseid vahendeid viisil, mis võimaldab rakenduse administraatoril määratleda ja muuta logide väljundit (vähemalt fail, andmebaas, syslogd), logimise taset ja logimise formaati. Igasugune logimine muul viisil on keelatud."
+      son: "Rakenduse logimine peab olema organiseeritud kasutades selleks ettenähtud standardseid vahendeid viisil, mis võimaldab rakenduse administraatoril määratleda ja muuta logide väljundit (vähemalt fail, andmebaas, `syslogd`), logimise taset ja logimise formaati."
       sel: ""
     - nr: 2
       son: "Java rakenduste korral logitakse [SLF4J](vt http://www.slf4j.org) raamistiku abil."
-      sel: ""
+      sel: "Ühtlustatud selleks, et rakendusi saaks seadistada ühtemoodi."
     - nr: 3
-      son: "Süsteemi iga eraldi paigaldatav osa peab logimisel (näiteks aadressil heartbeat.json) väljastama masinloetaval kujul oma nime ja versiooninumbri, oluliste väliste süsteemide oleku, viimase käivitamise aja, pakendamise aja ning serveriaja."
+      son: "Süsteemi iga eraldi paigaldatav osa peab logimisel (näiteks aadressilt `heartbeat.json`) väljastama masinloetaval kujul oma nime ja versiooninumbri, oluliste väliste süsteemide oleku, viimase käivitamise aja, pakendamise aja ning serveriaja."
       sel: ""
     - nr: 4
       son: "Logid kirjutatakse inglise keeles (välja arvatud kasutajale näidatud teated)."
@@ -194,30 +197,33 @@
       son: "Kõik rakenduse versiooniuuendused (sealhulgas muudatused andmebaasi struktuuris ja koodis) peavad kuni järgmise versiooniuuenduseni olema täielikult tagasi pööratavad st. koos versiooni uuendusega peavad olema loodud vahendid ja kirjeldatud protseduurid versiooniuuenduse tagasi võtmiseks."
       sel: ""
     - nr: 5
-      son: "Rakendus ei tohi eeldada paigalduskeskkonna turvalisust. Kõik liidesed rakenduse eri osade vahel peavad olema vajadusel kaitstavad kahepoolset tuvastamist ja krüpteerimist võimaldava protokolliga."
-      sel: ""
+      son: "Rakendus ei tohi eeldada paigalduskeskkonna turvalisust."
+      sel: "<span class='silt'>ERITI TÄHTIS</span>"
     - nr: 6
-      son: "Rakendusservereid peab olema võimalik lisada teenust pakkuvasse klastrisse ja sealt eemaldada vastavalt vajadusele."
+      son: "Kõik liidesed rakenduse eri osade vahel peavad olema vajadusel kaitstavad kahepoolset tuvastamist ja krüpteerimist võimaldava protokolliga."
       sel: ""
     - nr: 7
-      son: "Rakendus ei tohi kasutada konfigureerimata viiteid failidele või välistele süsteemidele st. kõik viited peavad olema programmikoodi välised."
+      son: "Rakendusservereid peab olema võimalik lisada teenust pakkuvasse klastrisse ja sealt eemaldada vastavalt vajadusele."
       sel: ""
     - nr: 8
-      son: "Kõik andmebaasiühendused tuleb kirjeldada täispika URI abil. Java rakendustes kasutatakse JNDI ühendusi."
+      son: "Rakendus ei tohi kasutada konfigureerimata viiteid failidele või välistele süsteemidele st. kõik viited peavad olema programmikoodi välised."
       sel: ""
     - nr: 9
-      son: " Andmebaasi JNDI objekti Datasource'i nimetamisel tuleb kasutada prefiksit `jdbc` ning ühesõnaliste lühendite korral väiketähti. Nt: `jdbc/system1`, `jdbc/system2` jne."
+      son: "Kõik andmebaasiühendused tuleb kirjeldada täispika URI abil. Java rakendustes kasutatakse JNDI ühendusi."
       sel: ""
     - nr: 10
-      son: "Rakenduse (RIA poolt hallatavasse serverisse) pakendamine, paigaldamine, uuendamine, muudatuse taastamine ja testide käivitamine peavad olema automatiseeritud standardse üldkasutatava vahendi abil (Maven vms)."
+      son: " Andmebaasi JNDI objekti Datasource'i nimetamisel tuleb kasutada prefiksit `jdbc` ning ühesõnaliste lühendite korral väiketähti. Nt: `jdbc/system1`, `jdbc/system2` jne."
       sel: ""
     - nr: 11
-      son: "Ehitatud pakke nimi peab sisaldama projekti nime, keskkonna nime ja versiooni ning tohib sisaldada ainult tähemärke `[a-z;0-9]` ja `-` (miinus) ja `_` (alakriips) (nt `projektinimi-keskkond—1_0_23`)."
+      son: "Rakenduse (RIA poolt hallatavasse serverisse) pakendamine, paigaldamine, uuendamine, muudatuse taastamine ja testide käivitamine peavad olema automatiseeritud standardse üldkasutatava vahendi abil (Maven vms)."
       sel: ""
     - nr: 12
-      son: "Rakenduse andmebaasi või andmeskeemi paigaldamine ei tohi nõuda punktis erilisi kasutajaõigusi."
+      son: "Ehitatud pakke nimi peab sisaldama projekti nime, keskkonna nime ja versiooni ning tohib sisaldada ainult tähemärke `[a-z;0-9]` ja `-` (miinus) ja `_` (alakriips) (nt `projektinimi-keskkond—1_0_23`)."
       sel: ""
     - nr: 13
+      son: "Rakenduse andmebaasi või andmeskeemi paigaldamine ei tohi nõuda punktis erilisi kasutajaõigusi."
+      sel: ""
+    - nr: 14
       son: "Rakendused paigaldatakse ainult lähtekoodihoidlast, selle üheselt viidatud harust."
       sel: ""
 - kategooria:
@@ -232,18 +238,21 @@
     - nr: 3
       son: "Kaitsmata avalik võrguliiklus ei ole lubatud. Igasugune avalik võrguliiklus on krüpteeritud. TLS keskkonna parameetrid on administraatori, mitte arendaja kontrolli all. Erandjuhul, kui edastatav informatsioon ei sisalda konfidentsiaalseid andmeid, on lubatud andmete edastamine krüpteerimata kujul, kuid viisil, mis võimaldab andmete vastu võtjal veenduda saadetise tervikluses st. allkirjastatult või ajatembeldatult (X-tee turvaserveri seadistuse edastamise näide)."
       sel: ""
-    - nr: 4
+- kategooria:
+  nimetus: "õigusaktid"
+  nouded:
+    - nr: 1
       son: "Krüptograafiliste algoritmide ja meetodite valmisel lähtuda kehtivast RIA tellitud [krüptograafiliste algoritmide elutsükli uuringust](https://www.ria.ee/ee/kruptograafiliste-algoritmide-elutsukli-uuringud.html)."
+      sel: ""
+    - nr: 2
+      son: "Krüptoalgoritme peab olema võimalik väikeste muudatustega vahetada"
       sel: ""
 - kategooria:
   nimetus: "õigusaktid"
   nouded:
     - nr: 1
       son: "Aadressiandmete süsteemi nõuete järgimine"
-      sel: ""
+      sel: "Eesti aadressiandmete sisestamisel, kuvamisel ja hoidmisel lähtuda Vabariigi Valitsuse 8. oktoobri 2015. a määrusest nr 103 „Aadressiandmete süsteem“."
     - nr: 2
-      son: "Eesti aadressiandmete sisestamisel, kuvamisel ja hoidmisel lähtuda Vabariigi Valitsuse 8. oktoobri 2015. a määrusest nr 103 „Aadressiandmete süsteem“."
-      sel: ""
-    - nr: 3
       son: "Klassifikaatorite süsteemi nõuete järgmine"
       sel: "Eesti tegevusalade andmete sisestamisel, kuvamisel ja hoidmisel lähtuda Vabariigi Valitsuse 10. jaanuari 2008. a määrusest nr 11 „Klassifikaatorite süsteem“ ja kasutada EMTAK infosüsteemis kehtivat klassifikaatorit."
