@@ -5,9 +5,10 @@
   <tr>
   {% for kategooria in site.data.Nouded %}
     {% capture abikn %}{% increment kn %}{% endcapture %}
+    {% assign nn = 0 %}
     {% for noue in kategooria.nouded %}
     <tr>
-      <td> {{ kategooria.nimetus }}{% assign nn = 0 %} </td>
+      <td> {{ kategooria.nimetus }}</td>
       <td> {{ abikn }}.{% increment nn %} </td>
       <td> <a id='{{ kn }}.{{ nn }}'></a>{{ noue.son }} </td>
       <td> {{ noue.sel }} </td>
