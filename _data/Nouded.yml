@@ -1,10 +1,12 @@
-- kategooria: "meta"
+- kategooria:
+  nimetus: "meta"
   nouded:
     - son: "Nõuete rakendamisel arvestada konkreetse tarkvara eripära."
       sel: "Rakenduvad ainult need nõuded, mida konkreetse tarkvara iseloomu, ülesehituse ja kasutatavate komponentide kontekstis on mõistlik rakendada."
     - son: "Nõudeid rakendada hierarhia põhimõttel."
       sel: "RIA MFN-i nõudeid tuleb rakendada kõigis RIA infosüsteemides. Valdkonna MFN määratleb valdkonna tarkvara spetsiifilised nõuded. Hanke MFN-i nõuded täpsustavad ja täiendavad asutuse või valdkonna nõudeid.<br>- ___X-tee___ tuumtarkvara arendatakse ühiselt Soome riigiga. Vastavalt on ka MFN inglise keeles ja avaldatud Soome partnerasutuse GitHub-repos: [X-Road Non-Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md)<br>- ___RIHA___ nõuded asuvad [arhitektuuriteatmikus](https://arhitektuur.riha.ee/)<br>- teabevärava ___eesti.ee___ [MFN](https://confluence.ria.ee/pages/viewpage.action?pageId=6619157) &#128274;<br>"
-- kategooria: "vorming"
+- kategooria:
+  nimetus: "vorming"
   nouded:
     - son: "Andmebaasides ja rakendustes kasutada UTF-8 kodeeringut."
       sel: ""
@@ -12,11 +14,13 @@
       sel: ""
     - son: "Kuupäeva, kuupäeva ja kellaaja, kellaaja, kestvuse ning ajaintervalli (perioodi) talletamisel tekstikujul lähtuda rahvusvahelisest standardist ISO 8601."
       sel: "___Kuupäevad___ kirjutatakse kujul `AAAA-KK-PP`. Näide: `2. juuni 2012` kirjutada kujul `2012-06-02`. ___Kellaajad___ kirjutatakse kujul `hh:mm:ss`, kus `hh` järgib 24-tunnist kellaajaformaati. Millisekundi täpsusega kellaaja teksti kujul esitamisel kasutatakse formaati `hh:mm:ss,nnnn`, kus `nnnn` on millisekundite arv. ___Kuupäev ja kellaaeg samas andmeväljas___ esitatakse kujul, kus kuupäevavormingu ja kellaajavorming vahele lisatakse täht `T`. ___Kestvus___ esitatakse kujul `P[ [<n>Y][<n>M][<n>D]][T[<n>H][<n>M][<n>S] ]` või `P<n>W`, kus `[…]` tähistab kombinatsiooni puudumise võimalikkust, `P` tähistab kestvuse määrangu algust, `<n>` tähendab kestvuse pikkust ja `Y`, `M`, `D`, `H`, `M` (pärast `T`-d, mis tähistab kellaajavorningu algust), `S` ja `W` tähistavad vastavalt kestust aastates, kuudes, päevades, tundides, minutites (`M` pärast `T`-d, mis tähistab kellaajavormingu algust), sekundites ja nädalates. ___Ajaintervallide___ kirjeldamiseks kasutatakse kahte sama täpsusega (kuupäev, kellaaeg või kuupäev ja kellaaeg) ajavormingut (algus ja lõpp), mis eraldatakse sümboliga `/`." 
-- kategooria: "litsents"
+- kategooria:
+  nimetus: "litsents"
   nouded:
     - son: "Tarkvara markeerida litsentsiga."
       sel: "Teose autoriõigused tuleb selgelt välja tuua. Standardseks vahendiks selleks on litsents. Litsents esitatakse ühel või mõlemal alljärgnevatest viisidest: 1) LICENCE-fail repos; 2) litsentsi tekst iga faili päises. RIA põhimõte on arendada tarkvara avatult ja avaldada tarkvara vaba litsentsiga. Erandid turva- jm õigusega pandud piirangute korral. Soovitatav on kasutada [MIT litsentsi](https://en.wikipedia.org/wiki/MIT_License) - nii tagatakse paremini tarkvarade litsentsiline ühtesobivus."
-- kategooria: "moodulstruktuur"
+- kategooria:
+  nimetus: "moodulstruktuur"
   nouded:
     - son: "Rakenduse välissõltuvused peavad olema ilmutatult, selgelt välja toodud."
       sel: ""
@@ -24,23 +28,27 @@
       sel: "Välise süsteemi tõrge tohib mõjutada ainult sellest otseselt sõltuvate kasutuslugude toimimist."
     - son: "Rakendus peab olema tehniliselt tükeldatud vastavalt loogilisele jaotusele. Saadud osised peavad olema eraldi versioneeritavad ja paigaldatavad."
       sel: "Näiteks, kui rakendusel on eraldi turvakontekstidega liidesed ametnikule ja kodanikule, peab rakendus olema jaotatud kaheks eraldi liidesekomponendiks ning nende mõlema poolt kasutatavaks andmebaasiks."
-- kategooria: "keel"
+- kategooria:
+  nimetus: "keel"
   nouded:
     - son: "Lähtekoodi dokumentatsioon, lähtekood ise ning logiteated peavad olema läbivalt inglisekeelsed."
       sel: ""
     - son: "Rakendustes kasutatud eestikeelsetele tekstidele kehtivad infotehnoloogia reeglid Eesti keele ja kultuuri keskkonnas EVS 8:2008."
       sel: ""
-- kategooria: "testimine"
+- kategooria:
+  nimetus: "testimine"
   nouded:
     - son: "Lähtekood peab olema varustatud ühiktestidega."
       sel: ""
     - son: "Tarkvara peab olema enne toodangusse paigaldamist läbinud turvatestimise."
       sel: ""
-- kategooria: "koodi kvaliteet"
+- kategooria:
+  nimetus: "koodi kvaliteet"
   nouded:
     - son: "Lõplik kood peab olema läbinud staatilise koodianalüüsi."
       sel: "Kasutada otstarbekat tööriista: Java puhul [Checkstyle](https://github.com/checkstyle/checkstyle), [PMD](https://pmd.github.io/), [SonaQube](https://www.sonarqube.org/) vms; Javascripti puhul [ESLint](https://eslint.org/). Samuti kasutada arendusredaktoritesse sisseehitatud kontrollijaid."
-- kategooria: "frontend"
+- kategooria:
+  nimetus: "frontend"
   nouded:
     - son: "Stiiliteave asetada CSS-failidesse."
       sel: "Stiile ei tohiks sisse kirjutada HTML-teksti, ei `<style>` taagide vahelise tekstina ega `style`-atribuutidena."
@@ -52,7 +60,8 @@
       sel: ""
     - son: "Veebisirvija toe puudumisel andku rakendus veateade."
       sel: "Kui kasutajaliides, mille poole kasutaja pöördub, ei ole ühilduv kasutatava veebisirvijaga, peab rakendus arusaadaval ja juhendaval viisil sellest kasutajat teavitama."
-- kategooria: "URL-id"
+- kategooria:
+  nimetus: "URL-id"
   nouded:
     - son: "Kasutada selge, ühtse mustriga, inimloetavaid veebiaadresse (URL-e)."
       sel: ""
@@ -62,31 +71,37 @@
       sel: ""
     - son: "URL ei tohi sisaldada sessioonivõtit."
       sel: ""
-- kategooria: "teated"
+- kategooria:
+  nimetus: "teated"
   nouded:
     - son: "Vea- jm teated peavad oleva arusaadavad."
       sel: "Muuhulgas peab rakendus asendama vaikimisi veateate (`404` vms) lehekülje, kuid säilitama algse HTTP vastuskoodi."
-- kategooria: "koodid"
+- kategooria:
+  nimetus: "koodid"
   nouded:
     - son: "Objektid identifitseerida registrikoodide abil."
       sel: "Riiklikesse registritesse kantavad objektid (isikud, katastriüksused jne) kantakse andmebaasi nende registrikoodiga, mida täiendab riigiprefiks vastavalt ISO3166-1 Alpha 2 standardile. Näiteks isikute sidumiseks süsteemi kasutajakontoga peab kasutama isikukoodi rahvastikuregistrist.<br>Eesti Vabariigi kodanik identifitseeritakse Eesti Vabariigi poolt väljastatud eIDga. Igasuguse muu identifitseerimisevahendi kasutamine peab olema selgelt põhjendatud.<br>Mittekodanike isikuidentifikaator saadakse järgmisel viisil: `riigikood + sookood + sünniaeg + [ dok_nr | id_riigis ]`, kus<br>`riigikood` - kolmekohaline ISO 3166-1 Alpha-3 standardile vastav riigi kood<br>`sookood` - soo identifikaator nii nagu Eesti Vabariigi isikukoodis<br>`sünniaeg` - sünniaeg formaadis `YYYYMMDD`<br>`id_riigis` - kui see on olemas, tuleb kasutada isiku koduriigi isikuidentifikaatorit. 16 kohta, 0-polsterdatud vasakult<br>`dok_nr` - kui isiku koduriigis isikuidentifikaatorit ei ole, siis kasutatakse isiku dokumendi numbrit. Dokumendi number, 16 kohta, 0-polsterdatud vasakult."
     - son: "Rakendus ei tohi luua uut identiteedisüsteemi. Tuleb tugineda olemasolevatele riiklikele (ID-kaart) või põhiliste op-süsteemide süsteemidele (Kerberos jms)."
       sel: ""
-- kategooria: "autentimine"
+- kategooria:
+  nimetus: "autentimine"
   nouded:
     - son: "Väliste kasutajate, so. Eesti Vabariigi residentide ja EL teiste liikmesriikide residentide autentimislahenduse loomisel lähtuda dokumendist [Autentimislahendustele kehtivad nõuded](https://www.ria.ee/public/Arhitektuur/Autentimislahendustele-kehtivad-nouded-kavand.pdf)."
       sel: ""
-- kategooria: "rollihaldus"
+- kategooria:
+  nimetus: "rollihaldus"
   nouded:
     - son: "Rakenduse mitteavalike osade kasutajate rollid asuvad rakendusevälises LDAPs serveris või muus autentimislahenduses. Süsteem ei tohi realiseerida omaenda rollide haldamist."
       sel: ""
-- kategooria: "väljumine"
+- kategooria:
+  nimetus: "väljumine"
   nouded:
     - son: "Süsteemist väljumine peab toimuma sõnaselgelt, kasutajale arusaadaval ja turvalisel viisil."
       sel: "Kasutaja saab süsteemist väljuda kahel viisil: tema sessioon on pikem, kui sessiooni pikkuse seadistatav piirväärtus (eraldi määratletavad piirangud kogu sessioonile ning tegevuseta perioodile sessioonis) või kasutaja lõpetab sessiooni enda algatusel."
     - son: "Juhul kui rakenduse turvanõuded näevad seda ette, peab olema võimalus koheselt lõpetada kasutaja sessiooni nii, et kasutaja saaks arusaadava ja põhjendatud teate sessiooni lõpetamise kohta."
       sel: ""
-- kategooria: "andmebaas"
+- kategooria:
+  nimetus: "andmebaas"
   nouded:
     - son: "Andmebaasi kasutaval rakendusel on vähemalt kaks andmebaasikasutajat:<br>`<rakendus>` nimeline andmebaasi skeem kuulub andmebaasi kasutajale `<rakendus>` (roll `db owner`, skeemid ja seal paiknevad objektid kuuluvad sellele kasutajale).<br>`<rakendus>` nimelises andmebaasi skeemis on defineeritud `<rakendus>_app` nimeline kasutaja, kes omab ligipääsu (`SELECT`, `INSERT`, `UPDATE`, `DELETE`) ainult rakenduse käitamiseks vajalikele tabelitele, protseduuridele või funktsioonidele."
       sel: ""
@@ -106,7 +121,8 @@
       sel: ""
     - son: "Rakendus peab olema tabelite [partitsioneerimise](http://en.wikipedia.org/wiki/Partition_%28database%29) suhtes agnostiline st. tabelite partitsioneerimisstruktuuride muutmine ei tohi mõjutada rakenduse tööd."
       sel: ""
-- kategooria: "logi"
+- kategooria:
+  nimetus: "logi"
   nouded:
     - son: "Rakenduse logimine peab olema organiseeritud kasutades selleks ettenähtud standardseid vahendeid viisil, mis võimaldab rakenduse administraatoril määratleda ja muuta logide väljundit (vähemalt fail, andmebaas, syslogd), logimise taset ja logimise formaati. Igasugune logimine muul viisil on keelatud."
       sel: ""
@@ -118,7 +134,8 @@
       sel: ""
     - son: "Turvalisuse seisukohalt kriitilised sündmused (sisenemine, väljumine, rolli muut(u)mine) ning tegevused, mis toovad kaasa rahalisi või juriidilisi tagajärgi, logitakse eraldi konfigureeritavasse turvalogisse."
       sel: ""
-- kategooria: "paigaldus"
+- kategooria:
+  nimetus: "paigaldus"
   nouded:
     - son: "Rakendus tohib e-kirja saata ainult välise postiagendi (näiteks Postfix) kaudu."
       sel: ""
@@ -146,7 +163,8 @@
       sel: ""
     - son: "Rakendused paigaldatakse ainult lähtekoodihoidlast, selle üheselt viidatud harust."
       sel: ""
-- kategooria: "turve"
+- kategooria:
+  nimetus: "turve"
   nouded:
     - son: "Kui ei ole määratud teisiti, peab rakendus olema kasutatav ISKE klassile `K2T2S2` vastavate süsteemide loomisel."
       sel: ""
@@ -156,7 +174,8 @@
       sel: ""
     - son: "Krüptograafiliste algoritmide ja meetodite valmisel lähtuda kehtivast RIA tellitud [krüptograafiliste algoritmide elutsükli uuringust](https://www.ria.ee/ee/kruptograafiliste-algoritmide-elutsukli-uuringud.html)."
       sel: ""
-- kategooria: "õigusaktid"
+- kategooria:
+  nimetus: "õigusaktid"
   nouded:
     - son: "Aadressiandmete süsteemi nõuete järgimine"
       sel: ""

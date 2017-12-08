@@ -32,8 +32,10 @@
   <div id='Tekst'>      
     {{ content }}
 
-    {% include Tabel.html %}
-
+    {% if page.nouded %}
+      {% include Tabel.html %}
+    {% endif %}
+    
   </div>
   
   {% include Jalus.html %}

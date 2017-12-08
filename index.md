@@ -1,5 +1,6 @@
 ---
 permalink: /
+nouded: true
 ---
 
 <img src='img/LOVID.png' style='width: 80px;'>
