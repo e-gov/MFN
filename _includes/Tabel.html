@@ -1,8 +1,9 @@
+{% assign kn = 0 %}
 | kategooria | nr  | nõude sõnastus   | nõude selgitus |
 |------------|:---:|------------------|----------------| 
 {% for kategooria in site.data.Nouded %}
   {% for noue in kategooria.nouded %}
-    | {{ kategooria }} |  | {{ noue.son}} | {{ noue.sel }} |
+    | {% increment kn %} {{ kategooria }}{% assign nn = 0 %} | {{ kn}}.{% increment nn %} | {{ noue.son}} | {{ noue.sel }} |
   {% endfor %}
 {% endfor %}
 |------|-------|
