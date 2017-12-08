@@ -51,7 +51,7 @@
   nimetus: "frontend"
   nouded:
     - son: "Stiiliteave asetada CSS-failidesse."
-      sel: "Stiile ei tohiks sisse kirjutada HTML-teksti, ei `<style>` taagide vahelise tekstina ega `style`-atribuutidena."
+      sel: "Stiile ei tohiks sisse kirjutada HTML-teksti, ei <style> taagide vahelise tekstina ega style-atribuutidena."
     - son: "Mahukate laadilehtede puhul kaaluda [Sass](http://sass-lang.com/)-i kasutamist."
       sel: "Sass võib suurendada laadilehtede loetavust ja hallatavust."
     - son: "Järgida ajakohaseid veebistandardeid."
