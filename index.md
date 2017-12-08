@@ -16,7 +16,7 @@ Nõuetekogum on mõeldud kasutamiseks:<br>
 - ___RIA arhitektidele, toote- ja projektijuhtidele___ &mdash; tarkvara kavandamisel ja arendustööde tellimisel ning kontrollimisel<br>
 - ___arendajatele___ &mdash; arenduslepingute täitmisel.
 
-___Nõuetele viitamine___. Üksikule nõudele saab viidata kohaleviiva URL-ga: [https://e-gov.github.io/MFN/#6.1](https://e-gov.github.io/MFN/#6.1). Lühiviitena on soovitatav kuju [MFN 6.1](https://e-gov.github.io/MFN/#6.1).
+Üksikule nõudele saab viidata kohaleviiva URL-ga: [https://e-gov.github.io/MFN/#6.1](https://e-gov.github.io/MFN/#6.1). Lühiviitena on soovitatav kuju [MFN 6.1](https://e-gov.github.io/MFN/#6.1).
 
 Keskkonnanõuded (op-süsteem, süsteemitarkvara) antakse RIA IT profiilis.
 
