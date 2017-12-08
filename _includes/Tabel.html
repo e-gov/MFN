@@ -1,4 +1,4 @@
-{% increment kn %}
+<!-- {% increment kn %} -->
 <table>
   <tr>
       <td> kategooria </td><td> nr  </td><td> nõude sõnastus </td><td> nõude selgitus </td>
@@ -7,7 +7,7 @@
     {% capture abikn %}{% increment kn %}{% endcapture %}
     {% for noue in kategooria.nouded %}
     <tr>
-      <td> {{ abikn }} {{ kategooria.nimetus }}{% assign nn = 0 %} </td>
+      <td> {{ kategooria.nimetus }}{% assign nn = 0 %} </td>
       <td> {{ abikn }}.{% increment nn %} </td>
       <td> <a id='{{ kn }}.{{ nn }}'></a>{{ noue.son }} </td>
       <td> {{ noue.sel }} </td>
