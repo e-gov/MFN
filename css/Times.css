@@ -108,6 +108,15 @@ a, a:hover, a:active, a:visited {
   text-decoration-color: DarkBlue;
 }
 
+/* Silt */
+.silt {
+  text-transform: uppercase;
+  color: teal;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 8pt;
+  letter-spacing: 2px;
+}
+
 /* ======== Paneelid ======== */
 .note, .teade { border-radius: 8px; padding: 1rem; }
 
@@ -123,3 +132,6 @@ a, a:hover, a:active, a:visited {
   background-color: Azure;
 }
 
+.uus {
+  color: brown;
+}
