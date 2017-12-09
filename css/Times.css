@@ -135,7 +135,8 @@ a, a:hover, a:active, a:visited {
 }
 
 .loosung {
-  color: darkgrey
+  color: darkgrey;
   background-color: coral;
   font-style: italic;
+  padding-left: 2rem;
 }
