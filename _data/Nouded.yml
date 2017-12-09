@@ -79,7 +79,7 @@
       son: "Rakendus peab töötama veebisirvijates, mis toetavad eID baastarkvara kaht viimast versiooni."
       sel: ""
     - nr: 5
-      son: "Veebisirvija toe puudumisel andku rakendus veateade."
+      son: "Veebisirvija toe puudumisel andku rakendus veateate."
       sel: "Kui kasutajaliides, mille poole kasutaja pöördub, ei ole ühilduv kasutatava veebisirvijaga, peab rakendus arusaadaval ja juhendaval viisil sellest kasutajat teavitama."
 - kategooria:
   nimetus: "URL-id"
