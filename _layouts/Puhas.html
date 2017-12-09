@@ -21,13 +21,13 @@
       <p>
         Riigi Infosüsteemi Amet. Mittefunktsionaalsed nõuded. v 4.0
       </p>
-      {% for kategooria in site.data.Nouded %} {% capture abikn %}{% increment kn %}{% endcapture %} {% assign
-      nn = 0 %}
-      <p class='kategooria'>{{ kategooria.nimetus }}</p>
-      {% for noue in kategooria.nouded %}
-      <div class='rida'>
-        {{ abikn }}.{{ noue.nr }}. {{ noue.son | markdownify }}{{ noue.sel | markdownify }}
-      </div>
+      {% for kategooria in site.data.Nouded %}
+        {% capture abikn2 %}{% increment kn2 %}{% endcapture %}
+        <p class='kategooria'>{{ kategooria.nimetus }}</p>
+        {% for noue in kategooria.nouded %}
+          <div class='rida'>
+            {{ abikn2 }}.{{ noue.nr }}. {{ noue.son | markdownify }}{{ noue.sel | markdownify }}
+          </div>
       {% endfor %} {% endfor %}
     </div>
   </body>
