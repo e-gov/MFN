@@ -102,10 +102,10 @@ pre { margin-top: 1em; margin-bottom: 1em; }
 
 /* Määra üle Bootstrapi lingivärv */
 a, a:hover, a:active, a:visited {
-  color: darkblue !important;
+  color: black !important;
   text-decoration: underline;
   text-decoration-style: dashed;
-  text-decoration-color: DarkBlue;
+  text-decoration-color: black;
 }
 
 /* Silt */
@@ -129,8 +129,8 @@ a, a:hover, a:active, a:visited {
 }
 
 .loosung {
-  color: IndianRed;
-  background-color: lightcyan;
+  color: white;
+  background-color: darkblue;
   font-style: italic;
   padding-left: 2rem;
 }
