@@ -7,13 +7,14 @@
 
   <body>
     <div>
-      <p>Riigi Infosüsteemi Amet</p>
-      <p>Mittefunktsionaalsed nõuded</p>
+      <p>
+        Riigi Infosüsteemi Amet. Mittefunktsionaalsed nõuded. v 4.0
+      </p>
       {% for kategooria in site.data.Nouded %} {% capture abikn %}{% increment kn %}{% endcapture %} {% assign
       nn = 0 %}
       <p>{{ kategooria.nimetus }}</p>
       {% for noue in kategooria.nouded %}
-      <p> {{ abikn }}.{{ noue.nr }} {{ noue.son | markdownify }} {{ noue.sel | markdownify }}
+      <p>{{ abikn }}.{{ noue.nr }}{{ noue.son }}{{ noue.sel }}
       </p>
       {% endfor %} {% endfor %}
     </div>
