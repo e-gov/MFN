@@ -11,7 +11,7 @@ body {
 
 /* Päis */
 .pais { font-family: 'Anonymous Pro', sans-serif;
-  font-size: 13pt; margin-bottom: 3rem; }
+  font-size: 13pt; margin-bottom: 3.5rem; }
 
 #Tekst { width: 56rem; }
 
@@ -133,4 +133,8 @@ a, a:hover, a:active, a:visited {
   background-color: darkblue;
   font-style: italic;
   padding-left: 2rem;
+}
+
+.btn {
+  text-decoration: none !important;
 }
