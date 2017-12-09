@@ -9,9 +9,9 @@ body {
   line-height: 1.25 !important;
   }
 
-/* Kursuse päis */
+/* Päis */
 .pais { font-family: 'Anonymous Pro', sans-serif;
-  font-size: 13pt; margin-bottom: 8px; }
+  font-size: 13pt; margin-bottom: 1.5rem; }
 
 #Tekst { width: 56rem; }
 
@@ -135,8 +135,8 @@ a, a:hover, a:active, a:visited {
 }
 
 .loosung {
-  color: darkgrey;
-  background-color: coral;
+  color: white;
+  background-color: tomato;
   font-style: italic;
   padding-left: 2rem;
 }
