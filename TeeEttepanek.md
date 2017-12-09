@@ -4,16 +4,15 @@ permalink: TeeEttepanek
 
 # Tee ettepanek
 
+- uue nõude lisamiseks
+- aegunud nõude eemaldamiseks
+- nõude sõnastuse parandamiseks
+- või nõuete refaktoorimiseks (ühendamiseks, lahkulöömiseks).
+
 Tee ettepanek:
 - <a href='https://github.com/e-gov/MFN/issues' target='_new'>avades issue</a> MFN-i repos
 - esitades _pull request_-i [MFN-i repos](https://github.com/e-gov/MFN/)
 - saates e-kirja RIA arhitektide siselisti.
-
-Ettepanek:
-- uue nõude lisamiseks
-- aegunud nõude eemaldamiseks
-- nõude sõnastuse parandamiseks
-- nõuete refaktoorimiseks (ühendamiseks, lahkulöömiseks).
 
 Igaühel on õigus teha ettepanekuid nõuete lisamiseks, ümbersõnastamiseks ja ka eemaldamiseks. Ettepanekud arutatakse läbi. 
 
