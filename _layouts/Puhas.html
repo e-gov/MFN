@@ -7,11 +7,11 @@
 
 <body>
   <p>Riigi Infosüsteemi Amet</p>
-  <h1>Mittefunktsionaalsed nõuded</h1>
+  <p>Mittefunktsionaalsed nõuded</p>
   {% for kategooria in site.data.Nouded %}
     {% capture abikn %}{% increment kn %}{% endcapture %}
     {% assign nn = 0 %}
-    <h2>{{ kategooria.nimetus }}</h2>>
+    <p>{{ kategooria.nimetus }}</p>
     {% for noue in kategooria.nouded %}
       <p> {{ abikn }}.{{ noue.nr }} 
         {{ noue.son | markdownify }} 
