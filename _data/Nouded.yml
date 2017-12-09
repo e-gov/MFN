@@ -30,7 +30,8 @@
   nouded:
     - nr: 1
       son: "Rakenduse välissõltuvused peavad olema ilmutatult, selgelt välja toodud."
-      sel: "<span class='silt'>UUS</span>"
+      sel: ""
+      sta: "UUS"
     - nr: 2
       son: "Rakendus peab olema väliste süsteemide tõrgete suhtes vastupanuvõimeline (_resilient_)."
       sel: "Välise süsteemi tõrge tohib mõjutada ainult sellest otseselt sõltuvate kasutuslugude toimimist."
@@ -54,7 +55,8 @@
       sel: ""
     - nr: 2
       son: "Tarkvara peab olema enne toodangusse paigaldamist läbinud turvatestimise."
-      sel: "<span class='silt'>UUS</span>"
+      sel: ""
+      sta: "UUS"
 - kategooria:
   nimetus: "koodi kvaliteet"
   nouded:
@@ -102,7 +104,8 @@
       sel: "Muuhulgas peab rakendus asendama vaikimisi veateate (`404` vms) lehekülje, kuid säilitama algse HTTP vastuskoodi."
     - nr: 2
       son: "Veasituatsioonid tuleb varustada veakoodidega. Kasutajale tuleb esitada koos veateatega ka veakood."
-      sel: "<span class='silt'>UUS</span>" 
+      sel: ""
+      sta: "UUS" 
 - kategooria:
   nimetus: "koodid"
   nouded:
@@ -198,7 +201,8 @@
       sel: ""
     - nr: 5
       son: "Rakendus ei tohi eeldada paigalduskeskkonna turvalisust."
-      sel: "<span class='silt tahtis'>ERITI TÄHTIS</span>"
+      sel: ""
+      sta: "NB!"
     - nr: 6
       son: "Kõik liidesed rakenduse eri osade vahel peavad olema vajadusel kaitstavad kahepoolset tuvastamist ja krüpteerimist võimaldava protokolliga."
       sel: ""
@@ -246,7 +250,8 @@
       sel: ""
     - nr: 2
       son: "Krüptoalgoritme peab olema võimalik väikeste muudatustega vahetada"
-      sel: "<span class='silt'>UUS</span>"
+      sel: ""
+      sta: "UUS"
 - kategooria:
   nimetus: "õigusaktid"
   nouded:

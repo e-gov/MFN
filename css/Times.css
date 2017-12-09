@@ -13,7 +13,7 @@ body {
 .pais { font-family: 'Anonymous Pro', sans-serif;
   font-size: 13pt; margin-bottom: 8px; }
 
-#Tekst { width: 40rem; }
+#Tekst { width: 56rem; }
 
 /* ---- Avalehe paigutus ---- */  
 #Container { display: flex; max-width: 60em; }
