@@ -8,6 +8,7 @@ ___9\.12.2017___
 
 - lisatud nõude staatus
 - täiendatud teavet nõuete täiendamise kohta
+- puhasteksti võimalus
 
 ___8\.12.2017___ (läbivaatusarutelu tulemusena)
 

@@ -19,8 +19,9 @@
       nn = 0 %}
       <p>{{ kategooria.nimetus }}</p>
       {% for noue in kategooria.nouded %}
-      <p class='rida'>{{ abikn }}.{{ noue.nr }}. {{ noue.son | markdownify }}{{ noue.sel | markdownify }}
-      </p>
+      <div class='rida'>
+        {{ abikn }}.{{ noue.nr }}. {{ noue.son | markdownify }}{{ noue.sel | markdownify }}
+      </div>
       {% endfor %} {% endfor %}
     </div>
   </body>
