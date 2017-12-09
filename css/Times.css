@@ -11,7 +11,7 @@ body {
 
 /* Päis */
 .pais { font-family: 'Anonymous Pro', sans-serif;
-  font-size: 13pt; margin-bottom: 1.5rem; }
+  font-size: 13pt; margin-bottom: 3rem; }
 
 #Tekst { width: 56rem; }
 
@@ -126,12 +126,6 @@ a, a:hover, a:active, a:visited {
 .tahtis {
   color: tomato !important;
   border-color: tomato !important;
-}
-
-.kiireltLeitav {
-  border-radius: 8px; padding: 0.5rem;
-  border: 1px solid black;
-  background-color: Azure;
 }
 
 .loosung {
