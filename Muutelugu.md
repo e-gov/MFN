@@ -7,7 +7,7 @@ permalink: Muutelugu
 ___9\.12.2017___
 
 - lisatud nõude staatus
-- täiendatud teavet nõudete täiendamise kohta
+- täiendatud teavet nõuete täiendamise kohta
 
 ___8\.12.2017___ (läbivaatusarutelu tulemusena)
 
