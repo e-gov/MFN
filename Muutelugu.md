@@ -30,4 +30,8 @@ ___8\.12.2017___ (läbivaatusarutelu tulemusena)
 
 ___5\.12.2017___
 
-- Dokumendi varasema versiooniga võrreldes on mõned raskesti kohaldatavad või ebaselged nõuded kõrvaldatud. Mitmeid nõudeid on üritatud selgemalt sõnastada. Nõuete sõnastamisel on lähtutud rakendatavuse ja konkreetsuse printsiibist. Nõuded on liigitatud. Kus vaja, on nõuet lahti selgitatud. Järgides partnerasutuste (RIK, RMIT) head praktikat, on nõuded esitatud tabelina.
+- dokumendi varasema versiooniga võrreldes on mõned raskesti kohaldatavad või ebaselged nõuded kõrvaldatud.
+- mitmeid nõudeid on üritatud selgemalt sõnastada. Nõuete sõnastamisel on lähtutud rakendatavuse ja konkreetsuse printsiibist.
+- nõuded on liigitatud.
+- kus vaja, on nõuet lahti selgitatud.
+- järgides partnerasutuste (RIK, RMIT) head praktikat, on nõuded esitatud tabelina.

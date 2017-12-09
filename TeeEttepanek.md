@@ -16,10 +16,10 @@ Tee ettepanek:
 
 Igaühel on õigus teha ettepanekuid nõuete lisamiseks, ümbersõnastamiseks ja ka eemaldamiseks. Ettepanekud arutatakse läbi. 
 
-Mittefunktsionaalne nõue:
-- peaks suunama tellijat ja seejärel ka arendajat
-- peaks lähtuma mitte üksikust kogemusest, vaid pakkuma standardset lahendusteed sageliesinevale, tüüpilisele vajadusele või probleemile
-- peaks toimima meelespeana (et olulist asja ära ei unustataks).
+Hea nõue:
+- suunab tellijat ja seejärel ka arendajat
+- ei piirdu üksiku kogemusega, vaid pakkub standardset lahendusteed sageliesinevale, tüüpilisele vajadusele või probleemile
+- toimima ka meelespeana (et olulist asja ära ei unustataks).
 
 Nõuete lõppeesmärk on, et tekiks kasutajatele väärtust pakkuv ja turvaline tarkvara, mille arendus- ja käitluskulud on madalad; tarkvara, mida on võimalik agiilselt arendada ja mis on jätkusuutlik ka pikemas perspektiivis.
 
