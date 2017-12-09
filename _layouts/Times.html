@@ -30,11 +30,16 @@
   {% include Pais.html %}
   
   <div id='Tekst'>      
+    {% if page.nouded %}
+      <div class='kiireltLeitav silditekst'>
+        <span>Kiirelt leitav:</span> 
+        {% include Kiirelt.html %}
+      </div>
+    {% endif %}
+
     {{ content }}
 
     {% if page.nouded %}
-      <h2>Kiirelt leitav</h2>
-      {% include Kiirelt.html %}
       <h2>Nõuded</h2>
       {% include Tabel.html %}
     {% endif %}

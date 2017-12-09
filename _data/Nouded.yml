@@ -125,7 +125,7 @@
   nimetus: "rollihaldus"
   nouded:
     - nr: 1
-      son: "Rakenduse mitteavalike osade kasutajate rollid asuvad rakendusevälises LDAPs serveris või muus autentimislahenduses. Süsteem ei tohi realiseerida omaenda rollide haldamist."
+      son: "Rakenduse mitteavalike osade kasutajate rollid asuvad rakendusevälises LDAP serveris või muus autentimislahenduses. Süsteem ei tohi realiseerida omaenda rollide haldamist."
       sel: ""
 - kategooria:
   nimetus: "väljumine"
