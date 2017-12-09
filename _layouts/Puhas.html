@@ -4,6 +4,9 @@
   <head>
     <link rel="stylesheet" href="{{ site.baseurl }}/css/Times.css">
     <style>
+      .kategooria {
+        margin-top: 1rem;
+      }
       .rida {
         margin-top: 1rem;
       }
@@ -20,7 +23,7 @@
       </p>
       {% for kategooria in site.data.Nouded %} {% capture abikn %}{% increment kn %}{% endcapture %} {% assign
       nn = 0 %}
-      <p>{{ kategooria.nimetus }}</p>
+      <p class='kategooria'>{{ kategooria.nimetus }}</p>
       {% for noue in kategooria.nouded %}
       <div class='rida'>
         {{ abikn }}.{{ noue.nr }}. {{ noue.son | markdownify }}{{ noue.sel | markdownify }}
