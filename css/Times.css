@@ -133,3 +133,9 @@ a, a:hover, a:active, a:visited {
   border: 1px solid black;
   background-color: Azure;
 }
+
+.loosung {
+  color: darkgrey
+  background-color: coral;
+  font-style: italic;
+}
