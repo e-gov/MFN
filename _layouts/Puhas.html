@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/Times.css">
-</head>
+  <head>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/Times.css">
+  </head>
 
-<body>
-  <p>Riigi Infosüsteemi Amet</p>
-  <p>Mittefunktsionaalsed nõuded</p>
-  {% for kategooria in site.data.Nouded %}
-    {% capture abikn %}{% increment kn %}{% endcapture %}
-    {% assign nn = 0 %}
-    <p>{{ kategooria.nimetus }}</p>
-    {% for noue in kategooria.nouded %}
-      <p> {{ abikn }}.{{ noue.nr }} 
-        {{ noue.son | markdownify }} 
-        {{ noue.sel | markdownify }}
+  <body>
+    <div>
+      <p>Riigi Infosüsteemi Amet</p>
+      <p>Mittefunktsionaalsed nõuded</p>
+      {% for kategooria in site.data.Nouded %} {% capture abikn %}{% increment kn %}{% endcapture %} {% assign
+      nn = 0 %}
+      <p>{{ kategooria.nimetus }}</p>
+      {% for noue in kategooria.nouded %}
+      <p> {{ abikn }}.{{ noue.nr }} {{ noue.son | markdownify }} {{ noue.sel | markdownify }}
       </p>
-    {% endfor %}
-  {% endfor %}
-</body>
+      {% endfor %} {% endfor %}
+    </div>
+  </body>
 
 </html>
