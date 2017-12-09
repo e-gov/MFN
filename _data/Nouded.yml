@@ -51,10 +51,10 @@
   nimetus: "testimine"
   nouded:
     - nr: 1
-      son: "Lähtekood peab olema varustatud ühiktestidega."
+      son: "Lähtekood peab olema varustatud ___ühiktestidega___."
       sel: ""
     - nr: 2
-      son: "Tarkvara peab olema enne toodangusse paigaldamist läbinud turvatestimise."
+      son: "Tarkvara peab olema enne toodangusse paigaldamist läbinud ___turvatestimise___."
       sel: ""
       sta: "UUS"
 - kategooria:
@@ -103,7 +103,7 @@
       son: "Vea- jm teated peavad oleva arusaadavad."
       sel: "Muuhulgas peab rakendus asendama vaikimisi veateate (`404` vms) lehekülje, kuid säilitama algse HTTP vastuskoodi."
     - nr: 2
-      son: "Veasituatsioonid tuleb varustada veakoodidega. Kasutajale tuleb esitada koos veateatega ka veakood."
+      son: "Veasituatsioonid tuleb varustada ___veakoodidega___. Kasutajale tuleb esitada koos veateatega ka veakood."
       sel: ""
       sta: "UUS" 
 - kategooria:
@@ -143,7 +143,7 @@
       son: "Andmebaasi kasutaval rakendusel on vähemalt kaks andmebaasikasutajat:<br>`<rakendus>` nimeline andmebaasi skeem kuulub andmebaasi kasutajale `<rakendus>` (roll `db owner`, skeemid ja seal paiknevad objektid kuuluvad sellele kasutajale).<br>`<rakendus>` nimelises andmebaasi skeemis on defineeritud `<rakendus>_app` nimeline kasutaja, kes omab ligipääsu (`SELECT`, `INSERT`, `UPDATE`, `DELETE`) ainult rakenduse käitamiseks vajalikele tabelitele, protseduuridele või funktsioonidele."
       sel: ""
     - nr: 2
-      son: "Ühest andmetabelist teise viitamisel tuleb kasutada välisvõtmeid (_foreign key_). Kõik välisvõtmed (_foreign key_) peavad olema indekseeritud mitteunikaalse indeksiga ja välisvõtmetena kirjeldatud."
+      son: "Ühest andmetabelist teise viitamisel tuleb kasutada välisvõtmeid (_foreign key_). Kõik välisvõtmed peavad olema indekseeritud mitteunikaalse indeksiga ja välisvõtmetena kirjeldatud."
       sel: ""
     - nr: 3
       son: "Kõigis andmebaasi tabelites peab olema defineeritud `integer`-tüüpi primaarvõti, mis on surrogaatvõti. Primaarvõtmena ei tohi kasutada reaalse eluga seotud andmevälju."
