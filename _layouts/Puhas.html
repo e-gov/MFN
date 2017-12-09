@@ -3,6 +3,11 @@
 
   <head>
     <link rel="stylesheet" href="{{ site.baseurl }}/css/Times.css">
+    <style>
+      .rida p {
+        display: inline;
+      }
+    </style>
   </head>
 
   <body>
@@ -14,7 +19,7 @@
       nn = 0 %}
       <p>{{ kategooria.nimetus }}</p>
       {% for noue in kategooria.nouded %}
-      <p>{{ abikn }}.{{ noue.nr }}{{ noue.son }}{{ noue.sel }}
+      <p class='rida'>{{ abikn }}.{{ noue.nr }}. {{ noue.son | markdownify }}{{ noue.sel | markdownify }}
       </p>
       {% endfor %} {% endfor %}
     </div>
