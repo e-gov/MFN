@@ -2,7 +2,7 @@
 permalink: Taiendamine
 ---
 
-# Täiendamisettepanekud
+# Täiendusettepanekud
 
 ## Tee ettepanek
 
