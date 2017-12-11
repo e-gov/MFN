@@ -38,11 +38,10 @@ ___8\.12.2017___ (läbivaatusarutelu tulemusena)
 - keelekorrektuur - eemaldatud ballastsõnu jms
 - lisatud [MFN 6.2](https://e-gov.github.io/MFN/#6.2) - turvatestimine enne toodangusse paigaldamist
 - kohendatud [MFN 8.4](https://e-gov.github.io/MFN/#8.4) sõnastust - töötamine veebisirvijates, mis toetavad eID baastarkvara
-- lisatud [MFN 10.2](https://e-gov.github.io/MFN/#10.2) - veakoodide kasutamise kohustus
-- [MFN 16.2](https://e-gov.github.io/MFN/#16.2) - lisatud selgitus
-- [MFN 17.5](https://e-gov.github.io/MFN/#17.5) löödud kaheks - [MFN 17.6](https://e-gov.github.io/MFN/#17.6)
-- [MFN 17.5](https://e-gov.github.io/MFN/#17.5) - lisatud erilise tähtsuse märge
-- lisatud [MFN 19.2](https://e-gov.github.io/MFN/#19.2) - krüptoalgoritmide väljavahetatavus
+- lisatud [MFN 11.2](https://e-gov.github.io/MFN/#10.2) - veakoodide kasutamise kohustus
+- [MFN 17.2](https://e-gov.github.io/MFN/#16.2) - lisatud selgitus
+- [MFN 19.4](https://e-gov.github.io/MFN/#17.5) - lisatud erilise tähtsuse märge
+- lisatud [MFN 21.2](https://e-gov.github.io/MFN/#19.2) - krüptoalgoritmide väljavahetatavus
 
 ___5\.12.2017___
 

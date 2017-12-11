@@ -213,7 +213,7 @@
       son: 'Logid kirjutatakse inglise keeles (välja arvatud kasutajale näidatud teated).'
       sel: ''
     - nr: 5
-      son: 'Turvalisuse seisukohalt kriitilised sündmused (sisenemine, väljumine, rolli muut(u)mine) ning tegevused, mis toovad kaasa rahalisi või juriidilisi tagajärgi, logitakse eraldi konfigureeritavasse turvalogisse.'
+      son: 'Turvalisuse seisukohalt kriitilised sündmused (sisenemine, väljumine, rolli muut(u)mine) ning tegevused, mis toovad kaasa rahalisi või juriidilisi tagajärgi, logitakse eraldi konfigureeritavasse ___turvalogisse___.'
       sel: ''
 - kategooria:
   nimetus: 'ehitamine'
