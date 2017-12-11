@@ -91,6 +91,13 @@
       son: 'Veebisirvija toe puudumisel andku rakendus veateate.'
       sel: 'Kui kasutajaliides, mille poole kasutaja pöördub, ei ole ühilduv kasutatava veebisirvijaga, peab rakendus arusaadaval ja juhendaval viisil sellest kasutajat teavitama.'
 - kategooria:
+  nimetus: 'kasutatavus'
+  nouded:
+    - nr: 1
+      son: 'Veebirakenduse kasutajaliides peab olema juurdepääsetav. Tuleb täita WCAG 2.0 taseme AA nõuded.'
+      sel: 'Vt [Veebi sisu juurdepääsetavussuunised (WCAG) 2.0](https://www.w3.org/Translations/WCAG20-et/)'
+      sta: 'UUS'
+- kategooria:
   nimetus: 'URL-id'
   nouded:
     - nr: 1

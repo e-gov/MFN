@@ -6,6 +6,7 @@ permalink: Muutelugu
 
 ___11\.12.2017___
 
+- lisatud MFN - WCAG
 - lisatud MFN - sisuturbepoliitika (CSP)
 - lisatud MFN - spetsiifiline autentimise nõue
 - lisatud MFN - veateadete logimise kohta
@@ -13,7 +14,7 @@ ___11\.12.2017___
 - lisatud ehitamise nõudeid - MFN  
 - lisatud MFN - avatuse ja vaba lähtekoodi põhimõte
 - lisatud MFN - rakenduse sirvikusse laadimise optimeerimise nõue
-- lisatud kategooriad "andmekaitse" ja "ehitamine"
+- lisatud kategooriad "andmekaitse", "ehitamine", "kasutatavus"
 - täpsustatud kategooriate nimetusi ("infoturve", "koodisüsteemid" jt)
 - lisatud isikuandmete kaitse ühtsest määruse ja IKS-i kõige tähtsamad nõuded 
 
