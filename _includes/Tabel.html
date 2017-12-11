@@ -7,6 +7,7 @@
       <td>nõude sõnastus</td>
       <td>nõude selgitus</td>
   <tr>
+  {% capture noudeloendur %}{% increment nl %}{% endcapture %}
   {% for kategooria in site.data.Nouded %}
     {% capture abikn %}{% increment kn %}{% endcapture %}
     {% assign nn = 0 %}
