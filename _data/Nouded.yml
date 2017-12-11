@@ -67,12 +67,24 @@
       son: 'Tarkvara peab olema enne toodangusse paigaldamist läbinud ___turvatestimise___.'
       sel: ''
       sta: 'UUS'
+    - nr: 3
+      son: 'Alates integratsioonitasemest peavad automaattestid olema parameteriseeritud.'
+      sel: ''
+      sta: 'UUS'
+    - nr: 4
+      son: 'Automaattestid peavad raporteerima tulemusi inim- ja masinloetaval kujul (näiteks JUnit XML ja HTML).'
+      sel: ''
+      sta: 'UUS'
+    - nr: 5
+      son: 'Automaatteste käivitatakse RIA CI vahendi Jenkins vahendusel.'
+      sel: ''
+      sta: 'UUS'
 - kategooria:
   nimetus: 'koodi kvaliteet'
   nouded:
     - nr: 1
       son: 'Lõplik kood peab olema läbinud staatilise koodianalüüsi.'
-      sel: 'Kasutada otstarbekat tööriista: Java puhul [Checkstyle](https://github.com/checkstyle/checkstyle), [PMD](https://pmd.github.io/), [SonaQube](https://www.sonarqube.org/) vms; Javascripti puhul [ESLint](https://eslint.org/). Samuti kasutada arendusredaktoritesse sisseehitatud kontrollijaid.'
+      sel: 'Kasutada otstarbekat tööriista: Java puhul [Checkstyle](https://github.com/checkstyle/checkstyle), [PMD](https://pmd.github.io/), [SonarQube](https://www.sonarqube.org/) vms; Javascripti puhul [ESLint](https://eslint.org/). Samuti kasutada arendusredaktoritesse sisseehitatud kontrollijaid.'
 - kategooria:
   nimetus: 'frontend'
   nouded:
@@ -283,7 +295,7 @@
       sel: ''
     - nr: 4
       son: 'Vastavalt rakenduse olemusele ja riskianalüüsile rakendada meetmed OWASP ohuedetabelites (Top 10) jm tekstides antud soovituste järgimiseks.'
-      sel: 'vt [OWASP](https://www.owasp.org).'
+      sel: 'vt [OWASP](https://www.owasp.org) ja [OWASP Application Security Verification Standard (ASVS)](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project).'
       sta: 'UUS'
     - nr: 5  
       son: 'Kaitsta seansiküpsiseid (`secure` ja `http only` parameetrid).'

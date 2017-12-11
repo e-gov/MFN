@@ -6,6 +6,8 @@ permalink: Muutelugu
 
 ___11\.12.2017___
 
+- lisatud viide OWASP ASVS-le
+- lisatud automaattestimise nõuded - [MFN 6.3](https://e-gov.github.io/MFN/#6.3), [MFN 6.4](https://e-gov.github.io/MFN/#6.4), [MFN 6.5](https://e-gov.github.io/MFN/#6.5)
 - lisatud mitmesuguseid infoturbenõudeid - [MFN 20.5](https://e-gov.github.io/MFN/#20.5), [MFN 20.6](https://e-gov.github.io/MFN/#20.6), [MFN 20.7](https://e-gov.github.io/MFN/#20.7)
 - lisatud [MFN 9.1](https://e-gov.github.io/MFN/#9.1) - WCAG
 - lisatud [MFN 20.8](https://e-gov.github.io/MFN/#20.8) - sisuturbepoliitika (CSP)
