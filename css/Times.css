@@ -138,3 +138,7 @@ a, a:hover, a:active, a:visited {
 .btn {
   text-decoration: none !important;
 }
+
+.kategooria {
+  text-decoration: underline;
+}
