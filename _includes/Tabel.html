@@ -11,7 +11,8 @@
     {% capture abikn %}{% increment kn %}{% endcapture %}
     {% assign nn = 0 %}
     {% for noue in kategooria.nouded %}
-    <tr>
+      {% capture noudeloendur %}{% increment nl %}{% endcapture %}
+      <tr>
       {% if noue.sta == 'UUS' %} 
         <td><span class='silt'>{{ noue.sta }}</span></td>
       {% elsif noue.sta == 'NB!' %}
@@ -27,3 +28,5 @@
     {% endfor %}
   {% endfor %}
 </table>
+
+<p>{{ noudeloendur }} nõuet.</p>
