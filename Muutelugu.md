@@ -6,17 +6,18 @@ permalink: Muutelugu
 
 ___11\.12.2017___
 
-- lisatud MFN - WCAG
-- lisatud MFN - sisuturbepoliitika (CSP)
-- lisatud MFN - spetsiifiline autentimise nõue
-- lisatud MFN - veateadete logimise kohta
-- lisatud MFN - OWASP soovituste järgimine
-- lisatud ehitamise nõudeid - MFN  
-- lisatud MFN - avatuse ja vaba lähtekoodi põhimõte
-- lisatud MFN - rakenduse sirvikusse laadimise optimeerimise nõue
-- lisatud kategooriad "andmekaitse", "ehitamine", "kasutatavus"
+- lisatud mitmesuguseid infoturbenõudeid - [MFN 20.5](https://e-gov.github.io/MFN/#20.5), [MFN 20.6](https://e-gov.github.io/MFN/#20.6), [MFN 20.7](https://e-gov.github.io/MFN/#20.7)
+- lisatud [MFN 9.1](https://e-gov.github.io/MFN/#9.1) - WCAG
+- lisatud [MFN 20.8](https://e-gov.github.io/MFN/#20.8) - sisuturbepoliitika (CSP)
+- lisatud [MFN 13.2](https://e-gov.github.io/MFN/#13.2) - spetsiifiline autentimise nõue
+- lisatud [MFN 11.3](https://e-gov.github.io/MFN/#11.3) - veateadete logimise kohta
+- lisatud [MFN 20.4](https://e-gov.github.io/MFN/#20.4) - OWASP soovituste järgimine
+- lisatud ehitamise nõudeid - [MFN 18.4](https://e-gov.github.io/MFN/#18.4), [MFN 18.5](https://e-gov.github.io/MFN/#18.5), [MFN 18.6](https://e-gov.github.io/MFN/#18.6) 
+- lisatud [MFN 3.2](https://e-gov.github.io/MFN/#3.2) - avatuse ja vaba lähtekoodi põhimõte
+- lisatud [MFN 23.1](https://e-gov.github.io/MFN/#23.1) - rakenduse sirvikusse laadimise optimeerimise nõue
+- lisatud kategooriad "andmekaitse", "ehitamine", "kasutatavus", "käideldavus"
 - täpsustatud kategooriate nimetusi ("infoturve", "koodisüsteemid" jt)
-- lisatud isikuandmete kaitse ühtsest määruse ja IKS-i kõige tähtsamad nõuded 
+- lisatud isikuandmete kaitse ühtsest määruse ja IKS-i kõige tähtsamad nõuded - [MFN 22.1](https://e-gov.github.io/MFN/#22.1) 
 
 ___9\.12.2017___
 

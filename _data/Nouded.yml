@@ -27,7 +27,8 @@
       sel: 'Teose autoriõigused tuleb selgelt välja tuua. Standardseks vahendiks selleks on litsents. Litsents esitatakse ühel või mõlemal alljärgnevatest viisidest: 1) LICENCE-fail repos; 2) litsentsi tekst iga faili päises. RIA põhimõte on arendada tarkvara avatult ja avaldada tarkvara vaba litsentsiga. Erandid turva- jm õigusega pandud piirangute korral. Soovitatav on kasutada [MIT litsentsi](https://en.wikipedia.org/wiki/MIT_License) - nii tagatakse paremini tarkvarade litsentsiline ühtesobivus. Alternatiiv on [EUPL](https://en.wikipedia.org/wiki/European_Union_Public_Licence).'
     - nr: 2
       son: 'Tarkvara arendamisel lähtutakse avatuse ja vaba lähtekoodi põhimõttest.'
-      sel: 'Välja arvatud õigusest tulenevad piirangud (turvameetmed, andmekaitse, ärisaladuses).'  
+      sel: 'Välja arvatud õigusest tulenevad piirangud (turvameetmed, andmekaitse, ärisaladuses).'
+      sta: 'UUS'
 - kategooria:
   nimetus: 'moodulstruktuur'
   nouded:
@@ -125,6 +126,7 @@
     - nr: 3  
       son: 'Veateated tuleb logida.'
       sel: ''
+      sta: 'UUS'
 - kategooria:
   nimetus: 'koodisüsteemid'
   nouded:
@@ -228,12 +230,14 @@
     - nr: 4
       son: 'Fat jar-id ei sobi (Java rakendustes).'
       sel: ''
+      sta: 'UUS'
     - nr: 5
       son: 'Java rakenduse tööks vajalikud teegid peavad olema rakenduse osa.'
       sel: 'Nt PostgreSQL JDBC ohjur.'
     - nr: 6
       son: 'Fondid, laadilehed ja Javascripti failid serveerida rakendusest endast.'
       sel: ''
+      sta: 'UUS'
 - kategooria:
   nimetus: 'paigaldamine'
   nouded:
@@ -280,18 +284,23 @@
     - nr: 4
       son: 'Vastavalt rakenduse olemusele ja riskianalüüsile rakendada meetmed OWASP ohuedetabelites (Top 10) jm tekstides antud soovituste järgimiseks.'
       sel: 'vt [OWASP](https://www.owasp.org).'
+      sta: 'UUS'
     - nr: 5  
       son: 'Kaitsta seansiküpsiseid (`secure` ja `http only` parameetrid).'
       sel: ''
+      sta: 'UUS'
     - nr: 6  
       son: 'Rakendada päringuvõltsimise (CSRF) vastast kaitset.'
       sel: ''
+      sta: 'UUS'
     - nr: 7  
       son: 'Sisendite kontroll nii front- kui ka backend-is.'
       sel: 'Olulised sisendid tuleb kontrollida (puhastada) (ka) serveri poolel.'
+      sta: 'UUS'
     - nr: 8
       son: 'Veebirakendustes määratleda ja rakendada sisuturbepoliitika.'
       sel: 'Vt [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).'
+      sta: 'UUS'
 - kategooria:
   nimetus: 'krüpto'
   nouded:
@@ -308,9 +317,11 @@
     - nr: 1
       son: 'Rakendustes tuleb tagada isikuandmete kaitse nõuded.'
       sel: 'Eriti isiku õigus olla unustatud ja meie kohustus seejärel kustutada kõik isikuandmed, mida me ei vaja tööks või mida me ei pea seaduse alusel töötlema. Vt [isikuandmete kaitse üldmäärus](http://eur-lex.europa.eu/legal-content/ET/TXT/?uri=CELEX%3A32016R0679). Samuti peame alati olema valmis vastama isiku nõudmisele välja anda [IKS](https://www.riigiteataja.ee/akt/130122010011?leiaKehtiv) § 19 sätestatud teave.'
+      sta: 'UUS'
 - kategooria:
   nimetus: 'käideldavus'
   nouded:
     - nr: 1
       son: 'Rakendus peab sirvikusse laaduma kiiresti.'
       sel: 'Sirvikuühendusi tuleb efektiivselt kasutada. Vajadusel kasutada laadimisaja optimeerimistehnikaid (pakkimine, minimeerimine, profileerimine jm).'
+      sta: 'UUS'
