@@ -317,7 +317,7 @@
   nimetus: 'krüpto'
   nouded:
     - nr: 1
-      son: 'Krüptograafiliste algoritmide ja meetodite valmisel lähtuda kehtivast RIA tellitud [krüptograafiliste algoritmide elutsükli uuringust](https://www.ria.ee/ee/kruptograafiliste-algoritmide-elutsukli-uuringud.html).'
+      son: 'Krüptograafiliste algoritmide ja meetodite valimisel lähtuda kehtivast RIA tellitud [krüptograafiliste algoritmide elutsükli uuringust](https://www.ria.ee/ee/kruptograafiliste-algoritmide-elutsukli-uuringud.html).'
       sel: ''
     - nr: 2
       son: 'Krüptoalgoritme peab olema võimalik väikeste muudatustega vahetada'
