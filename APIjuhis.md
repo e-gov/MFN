@@ -80,7 +80,7 @@ API-de arendamise, dokumenteerimise, testimise ja turvamise keerukus on tinginud
 
 **Ressursi nimi** moodustub ressursi ID-st, vanemressursside ID-dest ja API teenuse nimest (Google käsitlus).
 
-{% Igal ressursil peab olema unikaalne nimi.
+Igal ressursil peab olema unikaalne nimi.
 {: .noue}
 
 Nt: `systems` (RIHA-s kirjeldatud infosüsteemide kogum) ja `systems/ETIS` (RIHAs kirjeldatud infosüsteem ETIS). 
