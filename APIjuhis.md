@@ -23,7 +23,7 @@ Juhis esitab terminoloogia, nõuded ja soovitused REST API-de projekteerimiseks,
 
 ***API*** (_application programming interface_) e ***masinliides*** on eraldi käitatavate ja/või arendatavate süsteemide või komponentide sidumise viis. API-del põhineb süsteemide lõimimine (_systems integration_), hajusarhitektuursed lahendused, sh mikroteenused ja üldse suur osa tänapäevasest infotöötlusest.
 
-***API-põhine arhitektuur***, nn ***API first*** strateegia [API First Government, Kütt 2016](https://www.slideshare.net/AndresKtt/api-first-government), toob kaasa API-de arvu ja keerukuse kasvu. Süsteemid, ka taristud, arenevad selles suunas, et kõik andmed ja kogu funktsionaalsus on kasutatavad API-de kaudu. Masinloetav API ja inimkasutaja liides toetavad ja täiendavad teineteist. Vt ka Kütt, A (2016) [Reference Architecture for Cloud-Ready Government Systems](https://github.com/e-gov/fox), nn "Rebaseregister".
+***API-põhine arhitektuur***, nn ***API first strateegia*** [API First Government, Kütt 2016](https://www.slideshare.net/AndresKtt/api-first-government), toob kaasa API-de arvu ja keerukuse kasvu. Süsteemid, ka taristud, arenevad selles suunas, et kõik andmed ja kogu funktsionaalsus on kasutatavad API-de kaudu. Masinloetav API ja inimkasutaja liides toetavad ja täiendavad teineteist. Vt ka Kütt, A (2016) [Reference Architecture for Cloud-Ready Government Systems](https://github.com/e-gov/fox), nn "Rebaseregister".
 
 {% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. Süsteem peaks kogu oma andmestikku pakkuma masinloetaval kujul s.t API kaudu.
@@ -55,24 +55,24 @@ API kavandamisel saab eeskuju võtta muuhulgas järgmistest juhistest jm materja
 - [White House Web API Standards](https://github.com/WhiteHouse/api-standards) on kompaktne, hea juhis REST API-de kujundamiseks.
 - [Todo-backend](http://todobackend.com/) näitab kuidas lihtsat API-t (TO DO märkmed) teostada erinevate tehnoloogiatega.
 
-## 3 API kavandamise lähteparameetrid
+## 3 API kavandamise lähtekohad
 
-Kavandamist mõjutavad liidese kavandatavad kasutusparameetrid: 1) kas liides on avalik, kõigile vabalt kasutamiseks või on vaja ligipääsu piirata? 2) kas liides on mõeldud kasutamiseks turvatud sisevõrgus või avalikus internetis? 3) kas kasutatakse REST, SOAP või mõnda muud stiili? Käesolev juhis keskendub [REST API](https://spring.io/understanding/REST)-dele.
+Kavandamist mõjutavad muuhulgas: 1) kas API on avalik, kõigile vabalt kasutamiseks või on vaja ligipääsu piirata? 2) kas API on mõeldud kasutamiseks turvatud sisevõrgus või avalikus internetis? 3) kas kasutatakse REST, SOAP või mõnda muud stiili? Käesolev juhis keskendub [REST API](https://spring.io/understanding/REST)-dele.
 
 ## 4 API tööriistad
 
-API-de arendamise, dokumenteerimise, testimise ja turvamise keerukus on tinginud mitmesuguste ***API tööriistade*** (redaktorite, avaldamisvahendite, validaatorite) teket. Näiteks: 
+API-de arendamise, dokumenteerimise, testimise ja turvamise keerukus on tinginud mitmesuguste API tööriistade (redaktorite, avaldamisvahendite, validaatorite) teket. Näiteks: 
 
-- [Open API Initiative](https://www.openapis.org/), endine ***Swagger*** on REST API-de formaalse kirjeldamise keel (omataoliste seas hetkel levinuim)
+- [Open API Initiative](https://www.openapis.org/), endise nimega Swagger, on REST API-de formaalse kirjeldamise keel (omataoliste seas hetkel levinuim)
 - [Postman](https://www.getpostman.com/) on populaarne API-de testimise vahend
 - [curl](https://curl.haxx.se/) (Windows-i keskkonnas saadav Git Bash-i koosseisus) on populaarne REST API-de testimise vahend
 - [SoapUI](https://www.soapui.org/) on raamistik nii SOAP kui ka REST API-de testimiseks, sh testimise automatiseerimiseks. 
 
-***API-de arendamise ja haldamise platvormid*** üritavad pakkuda tööriistade kogumeid ja API elutsükli täistoetust. Tähtsamad API-platvormid on [Apiary](https://apiary.io/) ja [Agigee](https://apigee.com). API-platvormide arengut näitab Apiary ostmine Oracle poolt (Jan 2017) ja Apigee ostmine Google poolt (Nov 2016). API-platvormi kasutamine väikese API-de arvu korral tõenäoliselt ei ole õigustatud. Kuid tuleb tajuda, et API arendamine pole ühekordne ettevõtmine, vaid pikemaajaline protsess. 
+API-de arendamise ja haldamise platvormid üritavad pakkuda tööriistade kogumeid ja API elutsükli täistoetust. Tähtsamad API-platvormid on [Apiary](https://apiary.io/) ja [Agigee](https://apigee.com). API-platvormide arengut näitab Apiary ostmine Oracle poolt (Jan 2017) ja Apigee ostmine Google poolt (Nov 2016). API-platvormi kasutamine väikese API-de arvu korral tõenäoliselt ei ole õigustatud. Kuid tuleb tajuda, et API arendamine pole ühekordne ettevõtmine, vaid pikemaajaline protsess. 
 
 ## 5 API teenusenimi
 
-***API teenuse nimi*** peab olema [RFC1035](https://www.ietf.org/rfc/rfc1035.txt) kohane domeeninimi, mis lahendub üheks või mitmeks võrguaadressiks. Nt `riha.eesti.ee`. Kui API kujundatakse mitmest teenusest koosnevana, siis peab teenusenimede valik toetama teenuste ülesleitavust. Mitut teenust saab ka pakkuda sama teenusenime all, esitades need pöördumistees teenuse versiooninumbri järel. Nt `riha.eesti.ee/v1/Producer` ja `riha.eesti.ee/v1/Publisher` (Google käsitlus). Vt Google disainijuhis, jaotis [Naming Conventions](https://cloud.google.com/apis/design/naming_convention#ListFilterField).
+***API teenusenimi*** peab olema [RFC1035](https://www.ietf.org/rfc/rfc1035.txt) kohane domeeninimi, mis lahendub üheks või mitmeks võrguaadressiks. Nt `riha.eesti.ee`. Kui API kujundatakse mitmest teenusest koosnevana, siis peab teenusenimede valik toetama teenuste ülesleitavust. Mitut teenust saab ka pakkuda sama teenusenime all, esitades need pöördumistees teenuse versiooninumbri järel. Nt `riha.eesti.ee/v1/Producer` ja `riha.eesti.ee/v1/Publisher` (Google käsitlus). Vt Google disainijuhis, jaotis [Naming Conventions](https://cloud.google.com/apis/design/naming_convention#ListFilterField).
 
 {% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. API-l peab olema selge teenusenimi.
@@ -162,7 +162,7 @@ Väga soovitav on teha päringud samajõuliseks (idempotentseteks). See tähenda
 Nõue {{ abi }}. Reeglina tuleb API-d kaitsta TLS-ga, ka sisevõrgus. (See tähendab, et pöördumine toimub HTTPS-ga). 
 {: .noue}
 
-Juurdepääs väliseks kasutuseks mõeldud API-le võib olla kas piiramata või piiratud ***autentimistokeni*** abil, mis tuleb päringule kaasa panna kas ühe parameetri või HTTP päises oleva väärtusena. Eelistatud on JWT ([JSON Web Token](https://jwt.io/)) autentimine. Vt Stankovic (2016), [JWT Authentication Tutorial: An example using Spring Boot](http://www.svlada.com/jwt-token-authentication-with-spring-boot/). Siiski tuleb igal konkreetselt juhul selgitada, kas JWT kasutamine on arendajale jõukohane ja äriliselt ning tehniliselt põhjendatud.
+Juurdepääs väliseks kasutuseks mõeldud API-le võib olla kas piiramata või piiratud ***autentimistokeni*** abil, mis tuleb päringule kaasa panna kas ühe parameetri või HTTP päises oleva väärtusena. Eelistatud on JWT ([JSON Web Token](https://jwt.io/)) autentimine. Vt Stankovic (2016), [JWT Authentication Tutorial: An example using Spring Boot](http://www.svlada.com/jwt-token-authentication-with-spring-boot/). 
 
 ## 15 API versioneerimine
 
@@ -174,19 +174,21 @@ Nõue {{ abi }}. Kui on ette näha API muutumisvõimalust, siis tuleb API versio
 
 Versioneerimisel on otstarbekas kasutada [semantilist versioneerimist](http://semver.org/). Vt Google disainijuhis, jaotised [Compatibility](https://cloud.google.com/apis/design/compatibility) ja [Versioning](https://cloud.google.com/apis/design/versioning).
 
+Näide. `https://www.riha.ee/api/v1` (RIHA API, versioon 1).
+
 ## 16 API disainimine
 
 [Google API Design Guide](https://cloud.google.com/apis/design/resources) soovitab järgmist tööde järjekorda (_design flow_): 1) määrata API-s pakutavad ressursitüübid (_resource types_); 2) määrata ressurssidevahelised seosed; 3)  määrata nimemustrid e -skeemid (_resource name schemes_); 4) määrata ressursiskeemid; 5) siduda minimaalne hulk meetodeid ressurssidega.
 
 ## 17 API spetsifitseerimine
 
-***Kirjelduse täielikkus***.
+Kirjelduse täielikkus.
 
 {% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. API tuleb täpselt ja täielikult dokumenteerida. "_Discovery-based documentation_" (API käitumise väljaselgitamine katse-eksituse teel) ei ole aktsepteeritav.
 {: .noue}
 
-***Formalismi kasutamine***.
+Formalismi kasutamine.
 
 {% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. Vajalik on formaalne kirjeldus, mis ühtlasi peab olema ka inimloetav. "Vabas vormis" dokumenteerimine on vastuvõetav ainult triviaalsete liideste puhul.
@@ -198,18 +200,23 @@ Formaalne kirjeldamine ei ole eesmärk omaette, vaid vahend kirjelduse täielikk
 Nõue {{ abi }}. API tuleb kirjeldada OpenAPI (Swaggeri) spetsifikatsiooni kohaselt.
 {: .noue}
 
-***Näited***. Näite või näidete lisamine on tingimata vajalik. Seejuures kirjeldamine ainuüksi näite abil ei ole piisav.
+Näide. RIHA API [tutvustustekst](https://abi.riha.ee/APIabi); [formaalne kirjeldus](https://raw.githubusercontent.com/e-gov/RIHA-Browser/master/backend/src/main/resources/static/swagger.yaml).
+
+Näited. 
+
+{% capture abi %}{% increment nn %}{% endcapture %}
+Nõue {{ abi }}. Näite või näidete lisamine on tingimata vajalik. Seejuures kirjeldamine ainuüksi näite abil ei ole piisav.
 {: .noue}
 
-***Navigeeritavus***. API kirjeldus peaks olema navigeeritav.
+Navigeeritavus. API kirjeldus peaks olema navigeeritav.
 
-***Avalikkus***.
+Avalikkus.
 
 {% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. API kirjeldus tuleb selgelt, tavaliselt avalikult, publitseerida. 
 {: .noue}
 
-***Ajakohasus***.
+Ajakohasus.
 
 {% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. API kirjeldust tuleb hoida ajakohasena. See tähendab, et API käitumine peab vastama kirjeldusele.
@@ -221,13 +228,13 @@ REST API-de tegemise vahendeid pakutakse paljudel platvormidel ja raamistikes. M
 
 ## 19 API testimine
 
-***Testide katvus***. 
+Testide katvus.
 
 {% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. API testid peavad hõlmama kõiki ressursitüüpe ja kõiki meetodeid.
 {: .noue}
 
-***Automatiseerimine***. 
+Automatiseerimine.
 
 {% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. API testid tuleb automatiseerida vähemalt testikogumit käitava skripti tasemel.
