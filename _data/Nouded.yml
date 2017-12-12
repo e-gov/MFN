@@ -17,8 +17,8 @@
       son: 'Ühe faili piires kasutada alati sama reavahetuse kodeeringut - kas Windowsi (`CR+LF; 0x0D0A; U+000D U+000A`) või Linux/Unix standardile vastavat (`LF; 0x0A; U+000A`).'
       sel: ''
     - nr: 3
-      son: 'Kuupäeva, kuupäeva ja kellaaja, kellaaja, kestvuse ning ajaintervalli (perioodi) talletamisel tekstikujul lähtuda rahvusvahelisest standardist ISO 8601.'
-      sel: '___Kuupäevad___ kirjutatakse kujul `AAAA-KK-PP`. Näide: `2. juuni 2012` kirjutada kujul `2012-06-02`. ___Kellaajad___ kirjutatakse kujul `hh:mm:ss`, kus `hh` järgib 24-tunnist kellaajaformaati. Millisekundi täpsusega kellaaja teksti kujul esitamisel kasutatakse formaati `hh:mm:ss,nnnn`, kus `nnnn` on millisekundite arv. Kuupäev ja kellaaeg samas andmeväljas esitatakse kujul, kus kuupäevavormingu ja kellaajavorming vahele lisatakse täht `T`. ___Kestvus___ esitatakse kujul `P[ [<n>Y][<n>M][<n>D]][T[<n>H][<n>M][<n>S] ]` või `P<n>W`, kus `[…]` tähistab kombinatsiooni puudumise võimalikkust, `P` tähistab kestvuse määrangu algust, `<n>` tähendab kestvuse pikkust ja `Y`, `M`, `D`, `H`, `M` (pärast `T`-d, mis tähistab kellaajavorningu algust), `S` ja `W` tähistavad vastavalt kestust aastates, kuudes, päevades, tundides, minutites (`M` pärast `T`-d, mis tähistab kellaajavormingu algust), sekundites ja nädalates. ___Ajaintervallide___ kirjeldamiseks kasutatakse kahte sama täpsusega (kuupäev, kellaaeg või kuupäev ja kellaaeg) ajavormingut (algus ja lõpp), mis eraldatakse sümboliga `/`.' 
+      son: 'Aja esitamisel tekstikujul lähtuda standardist ISO 8601.'
+      sel: '___Kuupäevad___ kirjutatakse kujul `AAAA-KK-PP`. Näide: `2. juuni 2012` kirjutada kujul `2012-06-02`.<br>___Kellaajad___ kirjutatakse kujul `hh:mm:ss`, kus `hh` järgib 24-tunnist kellaajaformaati.<br>Millisekundi täpsusega kellaaja teksti kujul esitamisel kasutatakse formaati `hh:mm:ss,nnnn`, kus `nnnn` on millisekundite arv.<br>Kuupäev ja kellaaeg samas andmeväljas esitatakse kujul, kus kuupäevavormingu ja kellaajavorming vahele lisatakse täht `T`.<br> <br>___Ajaintervallide___ kirjeldamiseks kasutatakse kahte sama täpsusega (kuupäev, kellaaeg või kuupäev ja kellaaeg) ajavormingut (algus ja lõpp), mis eraldatakse sümboliga `/`.<br>Vt ka [RFC 3339 Date and Time on the Internet: Timestamps](https://tools.ietf.org/html/rfc3339), kus määratletakse internetiprotokollidele sobiv ISO 8601 profiil. Märkus. Mõned standardid, nt OpenID Connect nõuavad aja esitamist [Unix epoch](https://en.wikipedia.org/wiki/Unix_time) vormingus.' 
 - kategooria:
   nimetus: 'litsents'
   nouded:
@@ -161,7 +161,7 @@
       son: 'Väliste kasutajate, so. Eesti Vabariigi residentide ja EL teiste liikmesriikide residentide autentimislahenduse loomisel lähtuda dokumendist [Autentimislahendustele kehtivad nõuded](https://www.ria.ee/public/Arhitektuur/Autentimislahendustele-kehtivad-nouded-kavand.pdf).'
       sel: ''
     - nr: 2  
-      son: 'IID-kaardiga autentimisel ei kasutata serdi edastamise päises side- (`-`) ega alakriipse (`_`).'
+      son: 'ID-kaardiga autentimisel ei kasutata serdi edastamise päises side- (`-`) ega alakriipse (`_`).'
       sel: 'Erinevad rakendusserverid võivad tõlgendada neid sümboleid erinevalt.'
       sta: 'UUS'
 - kategooria:
