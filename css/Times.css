@@ -142,3 +142,8 @@ a, a:hover, a:active, a:visited {
 .kategooria {
   text-decoration: underline;
 }
+
+.noue {
+  border: 1px solid black;
+  padding: 1rem;
+}
