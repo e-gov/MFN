@@ -13,7 +13,7 @@ v0.4, 12.12.2017
 
 Juhis esitab terminoloogia, nõuded ja soovitused REST API-de projekteerimiseks, testimiseks ja dokumenteerimiseks.
 
-**Sisukord**
+***Sisukord***
 {: .no_toc}
 
 - TOC
@@ -21,15 +21,15 @@ Juhis esitab terminoloogia, nõuded ja soovitused REST API-de projekteerimiseks,
 
 ## 1 API elutsükkel
 
-**API** (_application programming interface_) e **masinliides** on eraldi käitatavate ja/või arendatavate süsteemide või komponentide sidumise viis. API-del põhineb süsteemide lõimimine (_systems integration_), hajusarhitektuursed lahendused, sh mikroteenused ja üldse suur osa tänapäevasest infotöötlusest.
+***API*** (_application programming interface_) e ***masinliides*** on eraldi käitatavate ja/või arendatavate süsteemide või komponentide sidumise viis. API-del põhineb süsteemide lõimimine (_systems integration_), hajusarhitektuursed lahendused, sh mikroteenused ja üldse suur osa tänapäevasest infotöötlusest.
 
-**API-põhine arhitektuur**, nn **API first** strateegia [API First Government, Kütt 2016](https://www.slideshare.net/AndresKtt/api-first-government), toob kaasa API-de arvu ja keerukuse kasvu. Süsteemid, ka taristud, arenevad selles suunas, et kõik andmed ja kogu funktsionaalsus on kasutatavad API-de kaudu. Masinloetav API ja inimkasutaja liides toetavad ja täiendavad teineteist. Vt ka Kütt, A (2016) [Reference Architecture for Cloud-Ready Government Systems](https://github.com/e-gov/fox), nn "Rebaseregister".
+***API-põhine arhitektuur***, nn ***API first*** strateegia [API First Government, Kütt 2016](https://www.slideshare.net/AndresKtt/api-first-government), toob kaasa API-de arvu ja keerukuse kasvu. Süsteemid, ka taristud, arenevad selles suunas, et kõik andmed ja kogu funktsionaalsus on kasutatavad API-de kaudu. Masinloetav API ja inimkasutaja liides toetavad ja täiendavad teineteist. Vt ka Kütt, A (2016) [Reference Architecture for Cloud-Ready Government Systems](https://github.com/e-gov/fox), nn "Rebaseregister".
 
-{% capture abi %}{% increment kn1 %}{% endcapture %}
+{% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. Süsteem peaks kogu oma andmestikku pakkuma masinloetaval kujul s.t API kaudu.
 {: .noue}
 
-**API elutsükli** moodustavad hulk  tegevusi: 
+***API elutsükli*** moodustavad hulk  tegevusi: 
 
 - API kavandamine
 - API projekteerimine
@@ -61,52 +61,52 @@ Kavandamist mõjutavad liidese kavandatavad kasutusparameetrid: 1) kas liides on
 
 ## 4 API tööriistad
 
-API-de arendamise, dokumenteerimise, testimise ja turvamise keerukus on tinginud mitmesuguste **API tööriistade** (redaktorite, avaldamisvahendite, validaatorite) teket. Näiteks: 
+API-de arendamise, dokumenteerimise, testimise ja turvamise keerukus on tinginud mitmesuguste ***API tööriistade*** (redaktorite, avaldamisvahendite, validaatorite) teket. Näiteks: 
 
-- [Open API Initiative](https://www.openapis.org/), endine **Swagger** on REST API-de formaalse kirjeldamise keel (omataoliste seas hetkel levinuim)
+- [Open API Initiative](https://www.openapis.org/), endine ***Swagger*** on REST API-de formaalse kirjeldamise keel (omataoliste seas hetkel levinuim)
 - [Postman](https://www.getpostman.com/) on populaarne API-de testimise vahend
 - [curl](https://curl.haxx.se/) (Windows-i keskkonnas saadav Git Bash-i koosseisus) on populaarne REST API-de testimise vahend
 - [SoapUI](https://www.soapui.org/) on raamistik nii SOAP kui ka REST API-de testimiseks, sh testimise automatiseerimiseks. 
 
-**API-de arendamise ja haldamise platvormid** üritavad pakkuda tööriistade kogumeid ja API elutsükli täistoetust. Tähtsamad API-platvormid on [Apiary](https://apiary.io/) ja [Agigee](https://apigee.com). API-platvormide arengut näitab Apiary ostmine Oracle poolt (Jan 2017) ja Apigee ostmine Google poolt (Nov 2016). API-platvormi kasutamine väikese API-de arvu korral tõenäoliselt ei ole õigustatud. Kuid tuleb tajuda, et API arendamine pole ühekordne ettevõtmine, vaid pikemaajaline protsess. 
+***API-de arendamise ja haldamise platvormid*** üritavad pakkuda tööriistade kogumeid ja API elutsükli täistoetust. Tähtsamad API-platvormid on [Apiary](https://apiary.io/) ja [Agigee](https://apigee.com). API-platvormide arengut näitab Apiary ostmine Oracle poolt (Jan 2017) ja Apigee ostmine Google poolt (Nov 2016). API-platvormi kasutamine väikese API-de arvu korral tõenäoliselt ei ole õigustatud. Kuid tuleb tajuda, et API arendamine pole ühekordne ettevõtmine, vaid pikemaajaline protsess. 
 
 ## 5 API teenusenimi
 
-**API teenuse nimi** peab olema [RFC1035](https://www.ietf.org/rfc/rfc1035.txt) kohane domeeninimi, mis lahendub üheks või mitmeks võrguaadressiks. Nt `riha.eesti.ee`. Kui API kujundatakse mitmest teenusest koosnevana, siis peab teenusenimede valik toetama teenuste ülesleitavust. Mitut teenust saab ka pakkuda sama teenusenime all, esitades need pöördumistees teenuse versiooninumbri järel. Nt `riha.eesti.ee/v1/Producer` ja `riha.eesti.ee/v1/Publisher` (Google käsitlus). Vt Google disainijuhis, jaotis [Naming Conventions](https://cloud.google.com/apis/design/naming_convention#ListFilterField).
+***API teenuse nimi*** peab olema [RFC1035](https://www.ietf.org/rfc/rfc1035.txt) kohane domeeninimi, mis lahendub üheks või mitmeks võrguaadressiks. Nt `riha.eesti.ee`. Kui API kujundatakse mitmest teenusest koosnevana, siis peab teenusenimede valik toetama teenuste ülesleitavust. Mitut teenust saab ka pakkuda sama teenusenime all, esitades need pöördumistees teenuse versiooninumbri järel. Nt `riha.eesti.ee/v1/Producer` ja `riha.eesti.ee/v1/Publisher` (Google käsitlus). Vt Google disainijuhis, jaotis [Naming Conventions](https://cloud.google.com/apis/design/naming_convention#ListFilterField).
 
-{% capture abi %}{% increment kn1 %}{% endcapture %}
+{% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. API-l peab olema selge teenusenimi.
 {: .noue}
 
 ## 6 Ressursid
 
-**Ressursid** jagunevad **lihtressurssideks** (_simple resource_) ja **kogumressurssideks** (_collection resource_). Ressursil on **olek** (_state_) ja võivad olla **alamressursid** (_sub-resources_).
+***Ressursid*** jagunevad ***lihtressurssideks*** (_simple resource_) ja ***kogumressurssideks*** (_collection resource_). Ressursil on ***olek*** (_state_) ja võivad olla ***alamressursid*** (_sub-resources_).
 
-**Ressursi nimi** moodustub ressursi ID-st, vanemressursside ID-dest ja API teenuse nimest (Google käsitlus).
+***Ressursi nimi*** moodustub ressursi ID-st, vanemressursside ID-dest ja API teenuse nimest (Google käsitlus).
 
-{% capture abi %}{% increment kn1 %}{% endcapture %}
+{% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. Igal ressursil peab olema unikaalne nimi.
 {: .noue}
 
 Nt: `systems` (RIHA-s kirjeldatud infosüsteemide kogum) ja `systems/ETIS` (RIHAs kirjeldatud infosüsteem ETIS). 
 
-**Ressursi täisnimi** sarnaneb URL-le, kuid ei ole viimasega samaväärne, sest sama ressurss võib olla eksponeeritud mitme erineva protokolli ja API versiooni kaudu (Google käsitlus). Ressursi täisnimi moodustatakse järgmiselt: 1) lisada teenuse nime ette HTTPS skeem; 2) lisada ressursitee ette API major versioon; 3) kasutada URL-escape-i (%-encoding).
+***Ressursi täisnimi*** sarnaneb URL-le, kuid ei ole viimasega samaväärne, sest sama ressurss võib olla eksponeeritud mitme erineva protokolli ja API versiooni kaudu (Google käsitlus). Ressursi täisnimi moodustatakse järgmiselt: 1) lisada teenuse nime ette HTTPS skeem; 2) lisada ressursitee ette API major versioon; 3) kasutada URL-escape-i (%-encoding).
 
-**Ressursi suhteline nimi** identifitseerib ressurssi API teenuse kontekstis.
+***Ressursi suhteline nimi*** identifitseerib ressurssi API teenuse kontekstis.
 
-**Ressursi ID** on ressurssi oma vanemressursi kontekstis identifitseeriv URI segment. Nt: `ETIS` (RIHAs kirjeldatud infosüsteem ETIS).
+***Ressursi ID*** on ressurssi oma vanemressursi kontekstis identifitseeriv URI segment. Nt: `ETIS` (RIHAs kirjeldatud infosüsteem ETIS).
 
 Peab selgelt dokumenteerima, kas ressursi ID moodustatakse kliendi (kasutaja) või serveri poolt (Google disainijuhend).
 
-{% capture abi %}{% increment kn1 %}{% endcapture %}
+{% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. Nimemustri kujundamisel arvestada ka seda, et kasutajad mustrist aru saaksid ja nime oleks kerge kasutada.
 {: .noue}
 
-**Kogumressursi ID** (_collection ID_) peab olema mitmuses. Nt: `systems` (RIHA-s kirjeldatud infosüsteemide kogum). Vt Google disainijuhis, jaotis [Resource Names](https://cloud.google.com/apis/design/resource_names). 
+***Kogumressursi ID*** (_collection ID_) peab olema mitmuses. Nt: `systems` (RIHA-s kirjeldatud infosüsteemide kogum). Vt Google disainijuhis, jaotis [Resource Names](https://cloud.google.com/apis/design/resource_names). 
 
 ## 7 Meetodid
 
-**Meetodid** rakenduvad ressurssidele ja jagunevad standardmeetoditeks ja erimeetoditeks. **Standardmeetodid** Google käsitluses on `List`, `Get`, `Create`, `Update` ja `Delete`. Need esitatakse HTTP meetodite abil järgmiselt:
+***Meetodid*** rakenduvad ressurssidele ja jagunevad standardmeetoditeks ja erimeetoditeks. ***Standardmeetodid*** Google käsitluses on `List`, `Get`, `Create`, `Update` ja `Delete`. Need esitatakse HTTP meetodite abil järgmiselt:
 
 |  Meetod   |  Vastav HTTP meetodimuster         |  HTTP päringu keha |  HTTP vastuse keha | 
 |:---------:|:----------------------------------:|:------------------:|:------------------:| 
@@ -118,9 +118,9 @@ Nõue {{ abi }}. Nimemustri kujundamisel arvestada ka seda, et kasutajad mustris
 
 Nendest reeglitest on erisusi, vt Google disainijuhis, jaotis [Standard Methods](https://cloud.google.com/apis/design/standard_methods).
 
-**Erimeetod** on selline, mis kaldub kõrvale standardsest REST semantikast. Nt infosüsteemi omaniku vahetus.
+***Erimeetod*** on selline, mis kaldub kõrvale standardsest REST semantikast. Nt infosüsteemi omaniku vahetus.
 
-{% capture abi %}{% increment kn1 %}{% endcapture %}
+{% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. Kus vähegi võimalik, tuleks kasutada REST standardmeetodeid.
 {: .noue}
 
@@ -154,21 +154,21 @@ Andmete väljastamine leheküljeti tuleks teostada ka väikesemahuliste, kuid ka
 
 ## 13 Päringu samajõulisus
 
-Väga soovitav on teha päringud samajõuliseks (idempotentseteks). See tähendab, et sama päringut saab võrgutõrke korral ilma kahjulike kõrvalmõjudeta uuesti saata. Kui päringut ei saa teha idempotentseks, siis peaks iga päringsõnum sisaldama unikaalset **idempotentsus-ID-d**. Vt: Leach (2017) [Designing robust and predictable APIs with idempotency](https://stripe.com/blog/idempotency); Google disainijuhis, jaotis [Request Duplication](https://cloud.google.com/apis/design/design_patterns#sorting_order).
+Väga soovitav on teha päringud samajõuliseks (idempotentseteks). See tähendab, et sama päringut saab võrgutõrke korral ilma kahjulike kõrvalmõjudeta uuesti saata. Kui päringut ei saa teha idempotentseks, siis peaks iga päringsõnum sisaldama unikaalset ***idempotentsus-ID-d***. Vt: Leach (2017) [Designing robust and predictable APIs with idempotency](https://stripe.com/blog/idempotency); Google disainijuhis, jaotis [Request Duplication](https://cloud.google.com/apis/design/design_patterns#sorting_order).
 
 ## 14 API turvamine
 
-{% capture abi %}{% increment kn1 %}{% endcapture %}
+{% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. Reeglina tuleb API-d kaitsta TLS-ga, ka sisevõrgus. (See tähendab, et pöördumine toimub HTTPS-ga). 
 {: .noue}
 
-Juurdepääs väliseks kasutuseks mõeldud API-le võib olla kas piiramata või piiratud **autentimistokeni** abil, mis tuleb päringule kaasa panna kas ühe parameetri või HTTP päises oleva väärtusena. Eelistatud on JWT ([JSON Web Token](https://jwt.io/)) autentimine. Vt Stankovic (2016), [JWT Authentication Tutorial: An example using Spring Boot](http://www.svlada.com/jwt-token-authentication-with-spring-boot/). Siiski tuleb igal konkreetselt juhul selgitada, kas JWT kasutamine on arendajale jõukohane ja äriliselt ning tehniliselt põhjendatud.
+Juurdepääs väliseks kasutuseks mõeldud API-le võib olla kas piiramata või piiratud ***autentimistokeni*** abil, mis tuleb päringule kaasa panna kas ühe parameetri või HTTP päises oleva väärtusena. Eelistatud on JWT ([JSON Web Token](https://jwt.io/)) autentimine. Vt Stankovic (2016), [JWT Authentication Tutorial: An example using Spring Boot](http://www.svlada.com/jwt-token-authentication-with-spring-boot/). Siiski tuleb igal konkreetselt juhul selgitada, kas JWT kasutamine on arendajale jõukohane ja äriliselt ning tehniliselt põhjendatud.
 
 ## 15 API versioneerimine
 
 API struktuuris tuleb taodelda stabiilsust.
 
-{% capture abi %}{% increment kn1 %}{% endcapture %}
+{% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. Kui on ette näha API muutumisvõimalust, siis tuleb API versioneerida.
 {: .noue}
 
@@ -180,31 +180,38 @@ Versioneerimisel on otstarbekas kasutada [semantilist versioneerimist](http://se
 
 ## 17 API spetsifitseerimine
 
-**Kirjelduse täielikkus**. Masinliides tuleb täielikult dokumenteerida. "_Discovery-based documentation_" (API käitumise väljaselgitamine katse-eksituse teel) ei ole aktsepteeritav.
+***Kirjelduse täielikkus***.
+
+{% capture abi %}{% increment nn %}{% endcapture %}
+Nõue {{ abi }}. API tuleb täpselt ja täielikult dokumenteerida. "_Discovery-based documentation_" (API käitumise väljaselgitamine katse-eksituse teel) ei ole aktsepteeritav.
 {: .noue}
 
-**Formalismi kasutamine**. Vajalik on formaalne kirjeldus, mis ühtlasi peab olema ka inimloetav.
+***Formalismi kasutamine***.
 
-{% capture abi %}{% increment kn1 %}{% endcapture %}
-Nõue {{ abi }}. "Vabas vormis" dokumenteerimine on vastuvõetav ainult triviaalsete liideste puhul.
+{% capture abi %}{% increment nn %}{% endcapture %}
+Nõue {{ abi }}. Vajalik on formaalne kirjeldus, mis ühtlasi peab olema ka inimloetav. "Vabas vormis" dokumenteerimine on vastuvõetav ainult triviaalsete liideste puhul.
 {: .noue}
 
-Formaalne kirjeldamine ei ole eesmärk omaette, vaid vahend kirjelduse täielikkuse ja üheseltmõistetavuse saavutamiseks. REST API-de dokumenteerimise kohta on kaks laialtlevinud standardit: 1) [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification), endise nimega **Swagger**, kasutab aluskeelena YAML-i või JSON-it; 2) [API Blueprint](https://apiblueprint.org/) kasutab aluskeelena Markdown-i ("_a powerful high-level API description language_"). Eelistatud on OpenAPI kirjelduskeele kasutamine. [Extended Backus-Naur Form (EBNF)](https://cloud.google.com/apis/design/design_patterns#grammar_syntax) on samuti hea formalism.
+Formaalne kirjeldamine ei ole eesmärk omaette, vaid vahend kirjelduse täielikkuse ja üheseltmõistetavuse saavutamiseks. REST API-de dokumenteerimise kohta on kaks laialtlevinud standardit: 1) [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification), endise nimega ***Swagger***, kasutab aluskeelena YAML-i või JSON-it; 2) [API Blueprint](https://apiblueprint.org/) kasutab aluskeelena Markdown-i ("_a powerful high-level API description language_"). Eelistatud on OpenAPI kirjelduskeele kasutamine. [Extended Backus-Naur Form (EBNF)](https://cloud.google.com/apis/design/design_patterns#grammar_syntax) on samuti hea formalism.
 
-**Näited**. Näite või näidete lisamine on tingimata vajalik. Seejuures kirjeldamine ainuüksi näite abil ei ole piisav.
+{% capture abi %}{% increment nn %}{% endcapture %}
+Nõue {{ abi }}. API tuleb kirjeldada OpenAPI (Swaggeri) spetsifikatsiooni kohaselt.
 {: .noue}
 
-**Navigeeritavus**. API kirjeldus peaks olema navigeeritav.
+***Näited***. Näite või näidete lisamine on tingimata vajalik. Seejuures kirjeldamine ainuüksi näite abil ei ole piisav.
+{: .noue}
 
-**Avalikkus**.
+***Navigeeritavus***. API kirjeldus peaks olema navigeeritav.
 
-{% capture abi %}{% increment kn1 %}{% endcapture %}
+***Avalikkus***.
+
+{% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. API kirjeldus tuleb selgelt, tavaliselt avalikult, publitseerida. 
 {: .noue}
 
-**Ajakohasus**.
+***Ajakohasus***.
 
-{% capture abi %}{% increment kn1 %}{% endcapture %}
+{% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. API kirjeldust tuleb hoida ajakohasena. See tähendab, et API käitumine peab vastama kirjeldusele.
 {: .noue}
 
@@ -214,15 +221,15 @@ REST API-de tegemise vahendeid pakutakse paljudel platvormidel ja raamistikes. M
 
 ## 19 API testimine
 
-**Testide katvus**. 
+***Testide katvus***. 
 
-{% capture abi %}{% increment kn1 %}{% endcapture %}
+{% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. API testid peavad hõlmama kõiki ressursitüüpe ja kõiki meetodeid.
 {: .noue}
 
-**Automatiseerimine**. 
+***Automatiseerimine***. 
 
-{% capture abi %}{% increment kn1 %}{% endcapture %}
+{% capture abi %}{% increment nn %}{% endcapture %}
 Nõue {{ abi }}. API testid tuleb automatiseerida vähemalt testikogumit käitava skripti tasemel.
 {: .noue}
 
