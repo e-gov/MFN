@@ -20,20 +20,6 @@
         <td>
           <a id='{{ abikn }}.{{ noue.nr }}'></a>{{ noue.son | markdownify }}
         </td>
-        <td>
-          {{ noue.sel | markdownify }}
-          {% if noue.issues %}
-          * Millist probleemi see lahendab? 
-            {% for issue in noue.issues %}
-              <a href='{{ issue.url }}' target='_new'>{{ issue.nimetus }}</a> 
-            {% endfor %}
-          {% endif %}
-          {% if noue.sta == 'UUS' %} 
-            <span class='silt'>{{ noue.sta }}</span>
-          {% elsif noue.sta == 'NB!' %}
-            <span class='silt tahtis'>{{ noue.sta }}</span>
-          {% endif %}
-        </td>
       </tr>
     {% endfor %}
   {% endfor %}
