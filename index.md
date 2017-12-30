@@ -20,6 +20,3 @@ Nõuetekogum on mõeldud kasutamiseks:<br>
 Üksikule nõudele saab viidata kohaleviiva URL-ga: [https://e-gov.github.io/MFN/#6.1](https://e-gov.github.io/MFN/#6.1). Lühiviitena on soovitatav kuju [MFN 6.1](https://e-gov.github.io/MFN/#6.1).
 
 Keskkonnanõuded (op-süsteem, süsteemitarkvara) antakse RIA IT profiilis.
-
-<h2>Nõuded</h2>
-{% include Tabel.html %}

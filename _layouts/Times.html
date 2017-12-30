@@ -16,11 +16,14 @@
 </head>
 
 <body>
-  {% if page.pais %}
-    {% include Pais.html %}
-  {% endif %}
-
+  {% include Pais.html %}
+  
   {{ content }}
+  
+  {% if page.nouded %}
+    <h2>Nõuded</h2>
+    {% include Tabel.html %}
+  {% endif %}
 
   {% include Jalus.html %}
 </body>
