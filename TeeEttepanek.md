@@ -31,4 +31,6 @@ Nõude `staatus` on kasutusel nõude elukäigu järgu esitamiseks, nt hiljuti li
 
 Loetavuse huvides on nõued organiseeritud ___kategooriatesse___. Nõudel peaks olema selge, lühike, üldjuhul kindlas kõneviisis ___sõnastus___, mida kommenteerib, vajadusel ka pehmendab ___selgitus___. Nõuded nummerdatakse.
 
-Tehniliselt kirjeldatakse nõue [MFN repo](https://github.com/e-gov/MFN/) kasutas `_data` asuvas YAML-failis `Nouded.yml`.
+Nõudel on mõtet, kui see aitab lahendada üht või mitut probleemi. Lahendatav probleem vajab vahel selgitamist. Probleemide esitamiseks kasutame GitHub repo _issue_-sid. 
+
+Tehniliselt kirjeldatakse nõue [MFN repo](https://github.com/e-gov/MFN/) kasutas `_data` asuvas YAML-failis `Nouded.yml`. 
