@@ -28,14 +28,12 @@
     - nr: 2
       son: 'Tarkvara arendamisel lähtutakse avatuse ja vaba lähtekoodi põhimõttest.'
       sel: 'Välja arvatud õigusest tulenevad piirangud (turvameetmed, andmekaitse, ärisaladuses).'
-      sta: 'UUS'
 - kategooria:
   nimetus: 'moodulstruktuur'
   nouded:
     - nr: 1
       son: 'Rakenduse välissõltuvused peavad olema ilmutatult, selgelt välja toodud.'
       sel: ''
-      sta: 'UUS'
     - nr: 2
       son: 'Rakendus peab olema väliste süsteemide tõrgete suhtes vastupanuvõimeline (_resilient_).'
       sel: 'Välise süsteemi tõrge tohib mõjutada ainult sellest otseselt sõltuvate kasutuslugude toimimist.'
@@ -66,19 +64,18 @@
     - nr: 2
       son: 'Tarkvara peab olema enne toodangusse paigaldamist läbinud ___turvatestimise___.'
       sel: ''
-      sta: 'UUS'
     - nr: 3
       son: 'Alates integratsioonitasemest peavad automaattestid olema parameteriseeritud.'
       sel: ''
-      sta: 'UUS'
+      - issue:
+        nimetus: 'Testides on vahel koodikordusi; samuti testandmed ja testiloogika on läbisegi'
+        url: 'https://github.com/e-gov/MFN/issues/2'
     - nr: 4
       son: 'Automaattestid peavad raporteerima tulemusi inim- ja masinloetaval kujul (näiteks JUnit XML ja HTML).'
       sel: ''
-      sta: 'UUS'
     - nr: 5
       son: 'Automaatteste käivitatakse RIA CI vahendi Jenkins vahendusel.'
       sel: ''
-      sta: 'UUS'
 - kategooria:
   nimetus: 'koodi kvaliteet'
   nouded:
@@ -109,7 +106,6 @@
     - nr: 1
       son: 'Veebirakenduse kasutajaliides peab olema juurdepääsetav. Tuleb täita WCAG 2.0 taseme AA nõuded.'
       sel: 'Vt [Veebi sisu juurdepääsetavussuunised (WCAG) 2.0](https://www.w3.org/Translations/WCAG20-et/)'
-      sta: 'UUS'
 - kategooria:
   nimetus: 'URL-id'
   nouded:
@@ -134,11 +130,9 @@
     - nr: 2
       son: 'Veasituatsioonid tuleb varustada ___veakoodidega___. Kasutajale tuleb esitada koos veateatega ka veakood.'
       sel: ''
-      sta: 'UUS' 
     - nr: 3  
       son: 'Veateated tuleb logida.'
       sel: ''
-      sta: 'UUS'
 - kategooria:
   nimetus: 'koodisüsteemid'
   nouded:
@@ -163,7 +157,6 @@
     - nr: 2  
       son: 'ID-kaardiga autentimisel ei kasutata serdi edastamise päises side- (`-`) ega alakriipse (`_`).'
       sel: 'Erinevad rakendusserverid võivad tõlgendada neid sümboleid erinevalt.'
-      sta: 'UUS'
 - kategooria:
   nimetus: 'rollihaldus'
   nouded:
@@ -242,14 +235,12 @@
     - nr: 4
       son: 'Fat jar-id ei sobi (Java rakendustes).'
       sel: ''
-      sta: 'UUS'
     - nr: 5
       son: 'Java rakenduse tööks vajalikud teegid peavad olema rakenduse osa.'
       sel: 'Nt PostgreSQL JDBC ohjur.'
     - nr: 6
       son: 'Fondid, laadilehed ja Javascripti failid serveerida rakendusest endast.'
       sel: ''
-      sta: 'UUS'
 - kategooria:
   nimetus: 'paigaldamine'
   nouded:
@@ -265,7 +256,6 @@
     - nr: 4
       son: 'Rakendus ei tohi eeldada paigalduskeskkonna turvalisust.'
       sel: ''
-      sta: 'NB!'
     - nr: 5
       son: 'Rakendusservereid peab olema võimalik lisada teenust pakkuvasse klastrisse ja sealt eemaldada vastavalt vajadusele.'
       sel: ''
@@ -296,23 +286,18 @@
     - nr: 4
       son: 'Vastavalt rakenduse olemusele ja riskianalüüsile rakendada meetmed OWASP ohuedetabelites (Top 10) jm tekstides antud soovituste järgimiseks.'
       sel: 'vt [OWASP](https://www.owasp.org) ja [OWASP Application Security Verification Standard (ASVS)](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project).'
-      sta: 'UUS'
     - nr: 5  
       son: 'Kaitsta seansiküpsiseid (`secure` ja `http only` parameetrid).'
       sel: ''
-      sta: 'UUS'
     - nr: 6  
       son: 'Rakendada päringuvõltsimise (CSRF) vastast kaitset.'
       sel: ''
-      sta: 'UUS'
     - nr: 7  
       son: 'Sisendite kontroll nii front- kui ka backend-is.'
       sel: 'Olulised sisendid tuleb kontrollida (puhastada) (ka) serveri poolel.'
-      sta: 'UUS'
     - nr: 8
       son: 'Veebirakendustes määratleda ja rakendada sisuturbepoliitika.'
       sel: 'Vt [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).'
-      sta: 'UUS'
 - kategooria:
   nimetus: 'krüpto'
   nouded:
@@ -322,21 +307,18 @@
     - nr: 2
       son: 'Krüptoalgoritme peab olema võimalik väikeste muudatustega vahetada'
       sel: ''
-      sta: 'UUS'
 - kategooria:
   nimetus: 'andmekaitse'
   nouded:
     - nr: 1
       son: 'Rakendustes tuleb tagada isikuandmete kaitse nõuded.'
       sel: 'Eriti isiku õigus olla unustatud ja meie kohustus seejärel kustutada kõik isikuandmed, mida me ei vaja tööks või mida me ei pea seaduse alusel töötlema. Vt [isikuandmete kaitse üldmäärus](http://eur-lex.europa.eu/legal-content/ET/TXT/?uri=CELEX%3A32016R0679). Samuti peame alati olema valmis vastama isiku nõudmisele välja anda [IKS](https://www.riigiteataja.ee/akt/130122010011?leiaKehtiv) § 19 sätestatud teave.'
-      sta: 'UUS'
 - kategooria:
   nimetus: 'käideldavus'
   nouded:
     - nr: 1
       son: 'Rakendus peab sirvikusse laaduma kiiresti.'
       sel: 'Sirvikuühendusi tuleb efektiivselt kasutada. Vajadusel kasutada laadimisaja optimeerimistehnikaid (pakkimine, minimeerimine, profileerimine jm).'
-      sta: 'UUS'
       issues:
       - issue:
         nimetus: 'Rakenduse laadimine sirvikusse võib olla liiga aeglane'

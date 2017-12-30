@@ -28,11 +28,6 @@
               <a href='{{ issue.url }}' target='_new'>{{ issue.nimetus }}</a> 
             {% endfor %}
           {% endif %}
-          {% if noue.sta == 'UUS' %} 
-            <span class='silt'>{{ noue.sta }}</span>
-          {% elsif noue.sta == 'NB!' %}
-            <span class='silt tahtis'>{{ noue.sta }}</span>
-          {% endif %}
         </td>
       </tr>
     {% endfor %}
