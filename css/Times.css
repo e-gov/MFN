@@ -10,17 +10,12 @@ body {
   }
 
 /* Päis */
-.pais { font-family: 'Anonymous Pro', sans-serif;
-  font-size: 13pt; margin-bottom: 3.5rem; }
+.pais { 
+  font-family: 'Anonymous Pro', sans-serif;
+  font-size: 13pt;
+  margin-bottom: 3.5rem;
+}
 
-#Tekst { max-width: 56rem; }
-
-/* Avalehe paigutus */  
-#Container { display: flex; max-width: 60em; }
-#Avatekst {
-  flex-grow: 1; margin-left: 2rem;
-  max-width: 63rem; /* Teksti loetavuse huvides */
-}  
 /*#endregion */
 
 /*#region Pealkirjad */
@@ -47,9 +42,7 @@ h3 {
 
 /*#region Tekst */
 p { margin: 0 0 1em 0; }
-
 .vaike { font-size: 9pt; }
-
 /* Allkriipsutus */
 .u { text-decoration: underline; }
 
@@ -135,28 +128,21 @@ a[href]:hover {
   border: 1px solid black;
   padding: 4px;
 }
-
 .silt, .silditekst {
   text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 10pt;
   letter-spacing: 2px;
 }
-
 .tahtis {
   color: tomato !important;
   border-color: tomato !important;
 }
-
 .loosung {
   color: black;
   background-color: lavender;
   font-style: italic;
   padding-left: 2rem;
-}
-
-.btn {
-  text-decoration: none !important;
 }
 
 .kategooria {

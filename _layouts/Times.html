@@ -2,23 +2,14 @@
 <html>
 
 <head>
-  <!-- Material Design icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <title>MFN</title>
+  <meta name="viewport" content="width=device-width" initial-scale="1">
+  
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
-
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery.min.js"></script>
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-    crossorigin="anonymous">
-  <!-- Tether on vaja tooltip-de jaoks -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="{{ site.baseurl }}/css/Times.css">
 
@@ -28,24 +19,21 @@
   {% if page.pais %}
     {% include Pais.html %}
   {% endif %}
-  <div id='Tekst'>      
-    {% if page.nouded %}
-      <div>
-        <span>Kiirelt leitav:</span> 
-        {% include Kiirelt.html %}
-      </div>
-    {% endif %}
-    <p>&nbsp;</p>
-    
-    {{ content }}
 
-    {% if page.nouded %}
-      <h2>Nõuded</h2>
-      {% include Tabel.html %}
-    {% endif %}
-    
-  </div>
+  {% if page.nouded %}
+    <div style='margin-bottom: 1rem;'>
+      <span>Kiirelt leitav:</span> 
+      {% include Kiirelt.html %}
+    </div>
+  {% endif %}
   
+  {{ content }}
+
+  {% if page.nouded %}
+    <h2>Nõuded</h2>
+    {% include Tabel.html %}
+  {% endif %}
+    
   {% include Jalus.html %}
 </body>
 

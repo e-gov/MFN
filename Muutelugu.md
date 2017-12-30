@@ -4,6 +4,10 @@ permalink: Muutelugu
 
 # Muutelugu
 
+___30\.12.2017___
+
+- täiendatud nõude struktuuri: viide issue-le
+
 ___11\.12.2017___
 
 - lisatud viide OWASP ASVS-le

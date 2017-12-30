@@ -1,14 +1,16 @@
 <p class='loosung silditekst'>MFN 4.0 - rituaalsest pdf-st arenduse cheat sheet-ks, elavaks dokumendiks, mille poole tihti pöördutakse</p>
-<div class='pais'>
-  <div class='float-left'>
+<div class='pais'
+  style='display: flex; justify-content: space-between;'>
+  <div>
     <a href='https://www.ria.ee/ee/index.html' target='_new'>Riigi Infosüsteemi Amet</a>
   </div>
-  <div class='float-right'>
+  <div>
     {% unless page.nouded %}
       <a href='{{ site.baseurl }}/'>Nõuded</a> · 
     {% endunless %}
     <a href='{{ site.baseurl }}/Puhas' target='_new'>Puhastekst</a> · 
     <a href='{{ site.baseurl }}/Muutelugu' target='_new'>Muutelugu</a> · 
-    <a href='{{ site.baseurl }}/TeeEttepanek' target='_new' class="btn btn-secondary">Tee ettepanek</a> 
+    <a href='{{ site.baseurl }}/TeeEttepanek' target='_new'>
+      Probleem?</a> 
   </div> 
 </div>
