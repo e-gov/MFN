@@ -1,11 +1,10 @@
 <!-- {% increment kn %} -->
 <table>
   <tr>
-      <td>staatus</td>
-      <td>kategooria</td>
-      <td>nr</td>
-      <td>nõude sõnastus</td>
-      <td>nõude selgitus</td>
+    <td>kategooria</td>
+    <td>nr</td>
+    <td>nõude sõnastus</td>
+    <td>nõude selgitus</td>
   <tr>
   {% capture noudeloendur %}{% increment nl %}{% endcapture %}
   {% for kategooria in site.data.Nouded %}
@@ -14,30 +13,28 @@
     {% for noue in kategooria.nouded %}
       {% capture noudeloendur %}{% increment nl %}{% endcapture %}
       <tr>
-      {% if noue.sta == 'UUS' %} 
-        <td><span class='silt'>{{ noue.sta }}</span></td>
-      {% elsif noue.sta == 'NB!' %}
-        <td><span class='silt tahtis'>{{ noue.sta }}</span></td>
-      {% else %}
-        <td></td>  
-      {% endif %}
-      <td> {{ kategooria.nimetus }}</td>
-      <td>
-         <a href='{{ site.baseurl }}/#{{ abikn }}.{{ noue.nr }}'>{{ abikn }}.{{ noue.nr }}</a>
-      </td>
-      <td>
-        <a id='{{ abikn }}.{{ noue.nr }}'></a>{{ noue.son | markdownify }}
-      </td>
-      <td>
-        {{ noue.sel | markdownify }}
-        {% if noue.issues %}
-         * Millist probleemi see lahendab? 
-          {% for issue in noue.issues %}
-            <a href='{{ issue.url }}' target='_new'>{{ issue.nimetus }}</a> 
-          {% endfor %}
-        {% endif %}
-      </td>
-    </tr>
+        <td> {{ kategooria.nimetus }}</td>
+        <td>
+          <a href='{{ site.baseurl }}/#{{ abikn }}.{{ noue.nr }}'>{{ abikn }}.{{ noue.nr }}</a>
+        </td>
+        <td>
+          <a id='{{ abikn }}.{{ noue.nr }}'></a>{{ noue.son | markdownify }}
+        </td>
+        <td>
+          {{ noue.sel | markdownify }}
+          {% if noue.issues %}
+          * Millist probleemi see lahendab? 
+            {% for issue in noue.issues %}
+              <a href='{{ issue.url }}' target='_new'>{{ issue.nimetus }}</a> 
+            {% endfor %}
+          {% endif %}
+          {% if noue.sta == 'UUS' %} 
+            <span class='silt'>{{ noue.sta }}</span>
+          {% elsif noue.sta == 'NB!' %}
+            <span class='silt tahtis'>{{ noue.sta }}</span>
+          {% endif %}
+        </td>
+      </tr>
     {% endfor %}
   {% endfor %}
 </table>
