@@ -22,7 +22,9 @@
         <td></td>  
       {% endif %}
       <td> {{ kategooria.nimetus }}</td>
-      <td> {{ abikn }}.{{ noue.nr }} </td>
+      <td>
+         <a href='{{ site.baseurl }}/#{{ abikn }}.{{ noue.nr }}'>{{ abikn }}.{{ noue.nr }}</a>
+      </td>
       <td>
         <a id='{{ abikn }}.{{ noue.nr }}'></a>{{ noue.son | markdownify }}
       </td>
