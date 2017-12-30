@@ -4,7 +4,7 @@
     <td>kategooria</td>
     <td>nr</td>
     <td>nõude sõnastus</td>
-    <!-- td>nõude selgitus</td -->
+    <td>nõude selgitus</td>
   <tr>
   {% capture noudeloendur %}{% increment nl %}{% endcapture %}
   {% for kategooria in site.data.Nouded %}
@@ -16,6 +16,9 @@
         <td> {{ kategooria.nimetus }}</td>
         <td>
           <a href='{{ site.baseurl }}/#{{ abikn }}.{{ noue.nr }}'>{{ abikn }}.{{ noue.nr }}</a>
+        </td>
+        <td>
+          <a id='{{ abikn }}.{{ noue.nr }}'></a>{{ noue.son | markdownify }}
         </td>
         <td>
           {{ noue.sel | markdownify }}
