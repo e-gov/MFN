@@ -56,12 +56,12 @@ blockquote {
 /*#endregion */
 
 /*#region Loetelud */
-#Tekst > ul {
+ul {
   list-style-type: '-  ';
   margin: 0 0 1em 0;
   padding-left: 1em;
 }
-#Tekst > ol {
+ol {
   padding-left: 1em;
 }
 /*#endregion */
