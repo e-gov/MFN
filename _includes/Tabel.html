@@ -23,7 +23,15 @@
       {% endif %}
       <td> {{ kategooria.nimetus }}</td>
       <td> {{ abikn }}.{{ noue.nr }} </td>
-      <td> <a id='{{ abikn }}.{{ noue.nr }}'></a>{{ noue.son | markdownify }} </td>
+      <td>
+        <a id='{{ abikn }}.{{ noue.nr }}'></a>{{ noue.son | markdownify }}
+        {% if noue.issues %}
+         * Millist probleemi see lahendab? 
+          {% for issue in noue.issues %}
+            <a href='{{ issue.link }}' target='_new'>{{ issue.nimetus }}</a> 
+          {% endfor %}
+        {% endif %}
+      </td>
       <td> {{ noue.sel | markdownify }} </td>
     </tr>
     {% endfor %}

@@ -337,3 +337,7 @@
       son: 'Rakendus peab sirvikusse laaduma kiiresti.'
       sel: 'Sirvikuühendusi tuleb efektiivselt kasutada. Vajadusel kasutada laadimisaja optimeerimistehnikaid (pakkimine, minimeerimine, profileerimine jm).'
       sta: 'UUS'
+      issues:
+      - issue:
+        nimetus: 'Rakenduse laadimine sirvikusse võib olla liiga aeglane'
+        url: 'https://github.com/e-gov/MFN/issues/1'
