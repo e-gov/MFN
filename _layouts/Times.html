@@ -20,20 +20,8 @@
     {% include Pais.html %}
   {% endif %}
 
-  {% if page.nouded %}
-    <div style='margin-bottom: 1rem;'>
-      <span>Kiirelt leitav:</span> 
-      {% include Kiirelt.html %}
-    </div>
-  {% endif %}
-  
   {{ content }}
 
-  {% if page.nouded %}
-    <h2>Nõuded</h2>
-    {% include Tabel.html %}
-  {% endif %}
-    
   {% include Jalus.html %}
 </body>
 
