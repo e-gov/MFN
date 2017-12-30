@@ -67,6 +67,7 @@
     - nr: 3
       son: 'Alates integratsioonitasemest peavad automaattestid olema parameteriseeritud.'
       sel: ''
+      issues:
       - issue:
         nimetus: 'Testides on vahel koodikordusi; samuti testandmed ja testiloogika on läbisegi'
         url: 'https://github.com/e-gov/MFN/issues/2'

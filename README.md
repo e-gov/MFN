@@ -8,8 +8,11 @@
   - `nr` - nõude järjenumber kategoorias; kategooriad nummerdatakse automaatselt
   - `son` - sõnastus
   - `sel` - seletus
-  - `sta` - staatus
-- Muudatuste tegemisel täiendada ka muutelugu:
+  - `issues` - viited GitHub issue-dele
+    - `issue`
+      - `nimetus` - probleem, mida nõue aitab lahendada
+      - `url` - GitHub issue URL
+  - Muudatuste tegemisel täiendada ka muutelugu:
   - muudatuse kuupäev
   - muudatuse lühikirjeldus, soovitavalt viitega vastavale nõudele.
 
