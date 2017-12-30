@@ -9,7 +9,7 @@ nouded: true
 v 4.0
 
 <div style='margin-bottom: 1rem;'>
-  <span>Kiirelt leitav:</span> 
+  <span>Kiirelt leitav </span> 
   {% include Kiirelt.html %}
 </div>
 
