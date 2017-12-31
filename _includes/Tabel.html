@@ -23,7 +23,7 @@
         <td>
           {{ noue.sel | markdownify }}
           {% if noue.issues %}
-          * Millist probleemi see lahendab? 
+          &#128293; Millist probleemi see lahendab? 
             {% for issue in noue.issues %}
               <a href='{{ issue.url }}' target='_new'>{{ issue.nimetus }}</a> 
             {% endfor %}
