@@ -8,7 +8,7 @@ ___Tee ettepanek___ uue nõude lisamiseks, aegunud nõude eemaldamiseks, nõude 
 
 ___Hea nõue___: 1) suunab tellijat ja seejärel ka arendajat; 2) ei piirdu üksiku kogemusega, vaid pakkub standardset lahendusteed sageliesinevale, tüüpilisele vajadusele või probleemile; 3) toimib ka meelespeana (et olulist asja ära ei unustataks). Nõuete lõppeesmärk on, et tekiks kasutajatele väärtust pakkuv ja turvaline tarkvara, mille arendus- ja käitluskulud on madalad; tarkvara, mida on võimalik agiilselt arendada ja mis on jätkusuutlik ka pikemas perspektiivis.
 
-Loetavuse huvides on nõued organiseeritud ___kategooriatesse___. Nõudel peaks olema selge, lühike, üldjuhul kindlas kõneviisis ___sõnastus___, mida kommenteerib, vajadusel ka pehmendab ___selgitus___. Nõuded nummerdatakse.
+Loetavuse huvides on nõuded organiseeritud ___kategooriatesse___. Nõudel peaks olema selge, lühike, üldjuhul kindlas kõneviisis ___sõnastus___, mida kommenteerib, vajadusel ka pehmendab ___selgitus___. Nõuded nummerdatakse.
 
 Nõudel on mõtet, kui see aitab lahendada mingit ___probleemi___ või rahuldada mingit ___vajadust___.
 
@@ -27,7 +27,7 @@ Probleemide arutamiseks on hea kasutada GitHub repo _issue_-sid. Tehniliselt kir
   - `issues` - probleemid, mida nõue aitab lahendada
     - `issue`
       - `nimetus` - probleem, mida nõue aitab lahendada
-      - `url` - GitHub issue URL
+      - `url` - GitHub issue URL.
 - Muudatuste tegemisel tuleks täiendada ka muutelugu (failis `Muutelugu.md`):
   - muudatuse kuupäev
   - muudatuse lühikirjeldus, soovitavalt viitega vastavale nõudele.
