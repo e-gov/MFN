@@ -10,7 +10,7 @@
   - `sel` - seletus
   - `issues` - probleemid, mida nõue aitab lahendada
     - `issue`
-      - `nimetus` - probleem, mida nõue aitab lahendada KOHUSTUSLIK
+      - `nimetus` - probleem, mida nõue aitab lahendada
       - `url` - GitHub issue URL
 - Muudatuste tegemisel tuleks täiendada ka muutelugu (failis `Muutelugu.md`):
   - muudatuse kuupäev
