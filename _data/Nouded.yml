@@ -157,7 +157,9 @@
       sel: ''
     - nr: 2  
       son: 'ID-kaardiga autentimisel ei kasutata serdi edastamise päises side- (`-`) ega alakriipse (`_`).'
-      sel: 'Erinevad rakendusserverid võivad tõlgendada neid sümboleid erinevalt.'
+      issues:
+      - issue:
+        nimetus: 'Erinevad rakendusserverid võivad tõlgendada neid sümboleid erinevalt.'
 - kategooria:
   nimetus: 'rollihaldus'
   nouded:

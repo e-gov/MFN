@@ -25,7 +25,11 @@
           {% if noue.issues %}
           <img src='img/warning.png' style='width: 20px;'> Millist probleemi see lahendab? 
             {% for issue in noue.issues %}
-              <a href='{{ issue.url }}' target='_new'>{{ issue.nimetus }}</a> 
+              {% if issue.url %}
+                <a href='{{ issue.url }}' target='_new'>{{ issue.nimetus }}</a>
+              {% else %}
+                {{ issue.nimetus }} 
+              {% endif %}
             {% endfor %}
           {% endif %}
         </td>
