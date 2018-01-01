@@ -8,6 +8,28 @@ ___Tee ettepanek___ uue nõude lisamiseks, aegunud nõude eemaldamiseks, nõude 
 
 ___Hea nõue___: 1) suunab tellijat ja seejärel ka arendajat; 2) ei piirdu üksiku kogemusega, vaid pakkub standardset lahendusteed sageliesinevale, tüüpilisele vajadusele või probleemile; 3) toimib ka meelespeana (et olulist asja ära ei unustataks). Nõuete lõppeesmärk on, et tekiks kasutajatele väärtust pakkuv ja turvaline tarkvara, mille arendus- ja käitluskulud on madalad; tarkvara, mida on võimalik agiilselt arendada ja mis on jätkusuutlik ka pikemas perspektiivis.
 
-___Nõude struktuur___. Loetavuse huvides on nõued organiseeritud ___kategooriatesse___. Nõudel peaks olema selge, lühike, üldjuhul kindlas kõneviisis ___sõnastus___, mida kommenteerib, vajadusel ka pehmendab ___selgitus___. Nõuded nummerdatakse. Nõudel on mõtet, kui see aitab lahendada üht või mitut ___probleemi___. Lahendatav probleem vajab vahel selgitamist. Probleemide esitamiseks ja arutamiseks on hea kasutada GitHub repo _issue_-sid. Tehniliselt kirjeldatakse nõue [MFN repo](https://github.com/e-gov/MFN/) kasutas `_data` asuvas YAML-failis `Nouded.yml`. 
+Loetavuse huvides on nõued organiseeritud ___kategooriatesse___. Nõudel peaks olema selge, lühike, üldjuhul kindlas kõneviisis ___sõnastus___, mida kommenteerib, vajadusel ka pehmendab ___selgitus___. Nõuded nummerdatakse.
+
+Nõudel on mõtet, kui see aitab lahendada mingit ___probleemi___ või rahuldada mingit ___vajadust___.
+
+Vältida tuleks olukorda, kus lugeja ei saa aru, mis probleemi nõue aitab lahendada. Seetõttu lahendatav probleem vahel vajab väljaütlemist või selgitamist.
+
+Probleemide arutamiseks on hea kasutada GitHub repo _issue_-sid. Tehniliselt kirjeldatakse nõue [MFN repo](https://github.com/e-gov/MFN/) kasutas `_data` asuvas YAML-failis `Nouded.yml`. 
+
+## Kuidas nõuet lisada?
+
+- Nõuete kirjeldused on failis `_data\Nouded.yml`.
+- Nõue paigutada vastava `kategooria` alla.
+- Nõude elemendid:
+  - `nr` - nõude järjenumber kategoorias; kategooriad nummerdatakse automaatselt KOHUSTUSLIK
+  - `son` - sõnastus KOHUSTUSLIK
+  - `sel` - seletus
+  - `issues` - probleemid, mida nõue aitab lahendada
+    - `issue`
+      - `nimetus` - probleem, mida nõue aitab lahendada KOHUSTUSLIK
+      - `url` - GitHub issue URL
+- Muudatuste tegemisel tuleks täiendada ka muutelugu (failis `Muutelugu.md`):
+  - muudatuse kuupäev
+  - muudatuse lühikirjeldus, soovitavalt viitega vastavale nõudele.
 
 ___Vt ka___: [mittefunktsionaalsed nõuded](https://et.wikipedia.org/wiki/Mittefunktsionaalsed_n%C3%B5uded) (Vikipeedia);  Riigi Infosüsteemide Arenduskeskus (2006) [Mittefunktsionaalsete nõuete kirjeldamise juhend](https://www.ria.ee/public/publikatsioonid/Mittefunk_nouded.doc) v 0.2.

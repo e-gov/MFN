@@ -1,18 +1,18 @@
 # Riigi Infosüsteemi Ameti mittefunktsionaalsed nõuded (MFN)
 
-# Kuidas muuta?
+# Kuidas nõuet lisada?
 
-- Nõuded kirjeldada failis `_data\Nouded.yml`.
+- Nõuete kirjeldused on failis `_data\Nouded.yml`.
 - Nõue paigutada vastava `kategooria` alla.
 - Nõude elemendid:
-  - `nr` - nõude järjenumber kategoorias; kategooriad nummerdatakse automaatselt
-  - `son` - sõnastus
+  - `nr` - nõude järjenumber kategoorias; kategooriad nummerdatakse automaatselt KOHUSTUSLIK
+  - `son` - sõnastus KOHUSTUSLIK
   - `sel` - seletus
-  - `issues` - viited GitHub issue-dele
+  - `issues` - probleemid, mida nõue aitab lahendada
     - `issue`
-      - `nimetus` - probleem, mida nõue aitab lahendada
+      - `nimetus` - probleem, mida nõue aitab lahendada KOHUSTUSLIK
       - `url` - GitHub issue URL
-  - Muudatuste tegemisel täiendada ka muutelugu:
+- Muudatuste tegemisel tuleks täiendada ka muutelugu (failis `Muutelugu.md`):
   - muudatuse kuupäev
   - muudatuse lühikirjeldus, soovitavalt viitega vastavale nõudele.
 
