@@ -5,8 +5,8 @@
 - Nõuete kirjeldused on failis `_data\Nouded.yml`.
 - Nõue paigutada vastava `kategooria` alla.
 - Nõude elemendid:
-  - `nr` - nõude järjenumber kategoorias; kategooriad nummerdatakse automaatselt KOHUSTUSLIK
-  - `son` - sõnastus KOHUSTUSLIK
+  - `nr` - nõude järjenumber kategoorias; (kategooriad nummerdatakse automaatselt)
+  - `son` - sõnastus
   - `sel` - seletus
   - `issues` - probleemid, mida nõue aitab lahendada
     - `issue`
