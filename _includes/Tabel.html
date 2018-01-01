@@ -23,7 +23,7 @@
         <td>
           {{ noue.sel | markdownify }}
           {% if noue.issues %}
-          &#9888; Millist probleemi see lahendab? 
+          <img src='/img/warning.png'> Millist probleemi see lahendab? 
             {% for issue in noue.issues %}
               <a href='{{ issue.url }}' target='_new'>{{ issue.nimetus }}</a> 
             {% endfor %}
