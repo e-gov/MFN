@@ -14,7 +14,7 @@ Nõudel on mõtet, kui see aitab lahendada mingit ___probleemi___ või rahuldada
 
 Vältida tuleks olukorda, kus lugeja ei saa aru, mis probleemi nõue aitab lahendada. Seetõttu lahendatav probleem vahel vajab väljaütlemist või selgitamist.
 
-Probleemide arutamiseks on hea kasutada GitHub repo _issue_-sid. Tehniliselt kirjeldatakse nõue [MFN repo](https://github.com/e-gov/MFN/) kasutas `_data` asuvas YAML-failis `Nouded.yml`. 
+Probleemide arutamiseks on hea kasutada GitHub repo _issue_-sid. Tehniliselt kirjeldatakse nõue [MFN repo](https://github.com/e-gov/MFN/) kaustas `_data` asuvas YAML-failis `Nouded.yml`. 
 
 ## Kuidas nõuet lisada?
 
