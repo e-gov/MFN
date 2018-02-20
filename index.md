@@ -3,12 +3,15 @@ permalink: /
 nouded: true
 ---
 
-<img src='img/LOVID.png' style='width: 80px;'>
-
 # Mittefunktsionaalsed nõuded
 {: .no_toc}
 
-v 4.0 (tööversioon; ametlik versioon avaldatakse RIA veebilehel)
+v 4.0
+
+<div style='margin-bottom: 1rem;'>
+  <span>Kiirelt leitav </span> 
+  {% include Kiirelt.html %}
+</div>
 
 Nõuetekogum on mõeldud kasutamiseks:<br>
 - ___RIA arhitektidele, toote- ja projektijuhtidele___ &mdash; tarkvara kavandamisel ja arendustööde tellimisel ning kontrollimisel<br>

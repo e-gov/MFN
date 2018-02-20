@@ -2,7 +2,12 @@
 permalink: Muutelugu
 ---
 
-# Muutelugu
+## Muutelugu
+
+___30\.12.2017___
+
+- täiendatud nõude struktuuri: viide issue-le
+- eemaldatud nõude "staatus" kui vähe kasutust leidev ja raskesti hallatav
 
 ___20.02.2018___
 

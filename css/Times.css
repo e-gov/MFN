@@ -1,4 +1,4 @@
-/* ---- Keha -------- */
+/*#region Paigutus */
 body {
   max-width: 60em;
   margin: 0 0; 
@@ -10,19 +10,15 @@ body {
   }
 
 /* Päis */
-.pais { font-family: 'Anonymous Pro', sans-serif;
-  font-size: 13pt; margin-bottom: 3.5rem; }
+.pais { 
+  font-family: 'Anonymous Pro', sans-serif;
+  font-size: 13pt;
+  margin-bottom: 1rem;
+}
 
-#Tekst { max-width: 56rem; }
+/*#endregion */
 
-/* ---- Avalehe paigutus ---- */  
-#Container { display: flex; max-width: 60em; }
-#Avatekst {
-  flex-grow: 1; margin-left: 2rem;
-  max-width: 63rem; /* Teksti loetavuse huvides */
-}  
-
-/* ==== Pealkirjad ==== */
+/*#region Pealkirjad */
 h1 {
   font-size: 16pt !important;
   font-weight: bold;
@@ -42,38 +38,11 @@ h3 {
   margin-bottom: 0.5rem;
   margin-bottom: 0.5rem;
 }
+/*#endregion */
 
-.vaike { font-size: 9pt; }
-
-/* Tekstiparagrahv */
+/*#region Tekst */
 p { margin: 0 0 1em 0; }
-
-/* ==== Loetelud ==== */
-#Tekst > ul {
-  list-style-type: '-  ';
-  margin: 0 0 1em 0;
-  padding-left: 1em;
-}
-#Tekst > ol {
-  padding-left: 1em;
-}
-
-/* ==== TOC genereeritud === */
-#markdown-toc { padding-left: 0 !important; }
-#markdown-toc li:before {
-    content: none !important;
-    margin-left: 0 !important;
-}
-#markdown-toc > li {
-  list-style: none;
-}
-
-/* ==== Tabelid ==== */
-table { width: 100%; margin: 0 4em 2em 0; }
-table { border-collapse: collapse; }    
-table, th, td { border: 1px solid black; }
-th, td { padding: 6px; }
-
+.vaike { font-size: 9pt; }
 /* Allkriipsutus */
 .u { text-decoration: underline; }
 
@@ -84,8 +53,38 @@ blockquote {
   font-size: 16px;
   margin-left: 0;
 }
+/*#endregion */
 
-/* Kood; asciiflow joonised */
+/*#region Loetelud */
+ul {
+  list-style-type: '-  ';
+  margin: 0 0 1em 0;
+  padding-left: 1em;
+}
+ol {
+  padding-left: 1em;
+}
+/*#endregion */
+
+/*#region TOC genereeritud */
+#markdown-toc { padding-left: 0 !important; }
+#markdown-toc li:before {
+    content: none !important;
+    margin-left: 0 !important;
+}
+#markdown-toc > li {
+  list-style: none;
+}
+/*#endregion */
+
+/*#region Tabelid */
+table { width: 100%; margin: 0 4em 2em 0; }
+table { border-collapse: collapse; }    
+table, th, td { border: 1px solid black; }
+th, td { padding: 6px; }
+/*#endregion */
+
+/*#region Kood; asciiflow joonised */
 pre, code, samp {
   font-family: 'Anonymous Pro', monospace;
   font-size: 16px; color: black !important;
@@ -99,44 +98,51 @@ code code {
   font-size: 100%;
 }
 pre { margin-top: 1em; margin-bottom: 1em; }
+/*#endregion */
 
-/* Määra üle Bootstrapi lingivärv */
-a, a:hover, a:active, a:visited {
-  color: black !important;
-  text-decoration: underline;
-  text-decoration-style: dashed;
-  text-decoration-color: black;
+/*#region Lingid */
+a[href] {
+  color: #607D8B;
+  text-decoration: none;
+  border-bottom: 1px dotted #607D8B;
+  padding: 0 1px 0;
+  margin: 0 -1px 0;
+}
+a:visited {
+  border-bottom-color: #607D8B;
 }
 
-/* Silt */
+a[href]:focus,
+a[href]:hover {
+  background: #607D8B;
+  background: rgba(75%, 75%, 75%, .25);
+  border-bottom-width: 3px;
+  margin-bottom: -2px;
+}
+/*#endregion */
+
+/*#region Sildid */
 .silt {
   color: black;
   border-radius: 2px;
   border: 1px solid black;
   padding: 4px;
 }
-
 .silt, .silditekst {
   text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 10pt;
   letter-spacing: 2px;
 }
-
 .tahtis {
   color: tomato !important;
   border-color: tomato !important;
 }
-
 .loosung {
   color: black;
   background-color: lavender;
   font-style: italic;
   padding-left: 2rem;
-}
-
-.btn {
-  text-decoration: none !important;
 }
 
 .kategooria {
@@ -147,3 +153,5 @@ a, a:hover, a:active, a:visited {
   border: 1px solid black;
   padding: 1rem;
 }
+
+/*#endregion */
