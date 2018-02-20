@@ -4,6 +4,10 @@ permalink: Muutelugu
 
 # Muutelugu
 
+___20.02.2018___
+
+- lisatud [MFN 21.3](https://e-gov.github.io/MFN/#21.3) (võtmete kaitse)
+
 ___11\.12.2017___
 
 - lisatud viide OWASP ASVS-le

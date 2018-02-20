@@ -27,7 +27,7 @@
       sel: 'Teose autoriõigused tuleb selgelt välja tuua. Standardseks vahendiks selleks on litsents. Litsents esitatakse ühel või mõlemal alljärgnevatest viisidest: 1) LICENCE-fail repos; 2) litsentsi tekst iga faili päises. RIA põhimõte on arendada tarkvara avatult ja avaldada tarkvara vaba litsentsiga. Erandid turva- jm õigusega pandud piirangute korral. Soovitatav on kasutada [MIT litsentsi](https://en.wikipedia.org/wiki/MIT_License) - nii tagatakse paremini tarkvarade litsentsiline ühtesobivus. Alternatiiv on [EUPL](https://en.wikipedia.org/wiki/European_Union_Public_Licence).'
     - nr: 2
       son: 'Tarkvara arendamisel lähtutakse avatuse ja vaba lähtekoodi põhimõttest.'
-      sel: 'Välja arvatud õigusest tulenevad piirangud (turvameetmed, andmekaitse, ärisaladuses).'
+      sel: 'Välja arvatud õigusest tulenevad piirangud (turvameetmed, andmekaitse, ärisaladus).'
       sta: 'UUS'
 - kategooria:
   nimetus: 'moodulstruktuur'
@@ -322,6 +322,9 @@
     - nr: 2
       son: 'Krüptoalgoritme peab olema võimalik väikeste muudatustega vahetada'
       sel: ''
+    - nr: 3
+      son: 'Võtmete kaitsele tähelepanu!'
+      sel: 'Juhtida tähelepanu ja rakendada meetmeid vältimaks võtmete lubamatut avalikukstulekut. Näiteid ohupraktikatest (mitteammendav loetelu): 1) võtme hoidmine versioonihalduse (git) all olevas koodirepos -> oht: push-takse avalikusse reposse -> kaitsemeede: `.gitignore` või võtmete hoidmine üldse eraldi; 2) võtmete seisundi ja omaduste ebaselgus -> võtmete segiminek, sellest tulenev kompromiteerumine või kaitse langus -> kaitsemeede: läbimõeldud võtmehalduse protseduur; 3) näite-seadistusfailides ei markeerita näitevõtmeid -> oht: näitevõtmed jõuavad toodangusse. Võtmeid tuleb reeglina kaitsta juba test- ja arenduskeskkondades. Ligipääs võtmetele korraldada teadmisvajaduse (_need to know_) põhimõttel. Võtmed, mida enam ei vajata, koheselt hävitada. Kirjandus: [NIST SP-800-57 Key Management Guidelines](https://csrc.nist.gov/Projects/Key-Management/Key-Management-Guidelines); European Payments Council (2017) [Guidelines on cryptographic algorithms usage and key management](https://www.europeanpaymentscouncil.eu/document-library/guidance-documents/guidelines-cryptographic-algorithms-usage-and-key-management). 
       sta: 'UUS'
 - kategooria:
   nimetus: 'andmekaitse'
