@@ -313,7 +313,6 @@
     - nr: 3
       son: 'Võtmete kaitsele tähelepanu!'
       sel: 'Juhtida tähelepanu ja rakendada meetmeid vältimaks võtmete lubamatut avalikukstulekut. Näiteid ohupraktikatest (mitteammendav loetelu): 1) võtme hoidmine versioonihalduse (git) all olevas koodirepos -> oht: push-takse avalikusse reposse -> kaitsemeede: `.gitignore` või võtmete hoidmine üldse eraldi; 2) võtmete seisundi ja omaduste ebaselgus -> võtmete segiminek, sellest tulenev kompromiteerumine või kaitse langus -> kaitsemeede: läbimõeldud võtmehalduse protseduur; 3) näite-seadistusfailides ei markeerita näitevõtmeid -> oht: näitevõtmed jõuavad toodangusse. Võtmeid tuleb reeglina kaitsta juba test- ja arenduskeskkondades. Ligipääs võtmetele korraldada teadmisvajaduse (_need to know_) põhimõttel. Võtmed, mida enam ei vajata, koheselt hävitada. Kirjandus: [NIST SP-800-57 Key Management Guidelines](https://csrc.nist.gov/Projects/Key-Management/Key-Management-Guidelines); European Payments Council (2017) [Guidelines on cryptographic algorithms usage and key management](https://www.europeanpaymentscouncil.eu/document-library/guidance-documents/guidelines-cryptographic-algorithms-usage-and-key-management). 
-      sta: 'UUS'
 - kategooria:
   nimetus: 'andmekaitse'
   nouded:
