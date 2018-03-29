@@ -207,7 +207,7 @@
       sel: ''
     - nr: 10
       son: 'Kasutada rakendusserveri (Tomcat) võimalusi andmebaasiühenduste (JDBC) puulimiseks.'
-      sel: 'Rakendus ei puuli ise, vaid küsib JNDI abil rakendusserveri pooli aadressi. Nõude eesmärk on jõudluse parem hallatavus.'
+      sel: 'Rakendus ei puuli ise, vaid küsib JNDI abil rakendusserveri puuli aadressi. Nõude eesmärk on jõudluse parem hallatavus.'
 - kategooria:
   nimetus: 'logimine'
   nouded:
