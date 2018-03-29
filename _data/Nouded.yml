@@ -205,6 +205,9 @@
     - nr: 9
       son: 'Rakendus peab olema tabelite [partitsioneerimise](http://en.wikipedia.org/wiki/Partition_%28database%29) suhtes agnostiline st. tabelite partitsioneerimisstruktuuride muutmine ei tohi mõjutada rakenduse tööd.'
       sel: ''
+    - nr: 10
+      son: 'Kasutada rakendusserveri (Tomcat) võimalusi andmebaasiühenduste (JDBC) puulimiseks.'
+      sel: 'Rakendus ei puuli ise, vaid küsib JNDI abil rakendusserveri pooli aadressi. Nõude eesmärk on jõudluse parem hallatavus.'
 - kategooria:
   nimetus: 'logimine'
   nouded:

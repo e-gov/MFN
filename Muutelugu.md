@@ -4,6 +4,10 @@ permalink: Muutelugu
 
 ## Muutelugu
 
+___29\.03.2018___
+
+- lisatud rakendusserveri andmebaasiühenduste puuli kasutamise nõue [MFN 16.10](https://e-gov.github.io/MFN/#16.10)
+
 ___30\.12.2017___
 
 - täiendatud nõude struktuuri: viide issue-le
