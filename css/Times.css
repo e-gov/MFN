@@ -1,40 +1,52 @@
 /*#region Paigutus */
 body {
-  max-width: 60em;
+  max-width: 55em;
   margin: 0 0; 
-  padding: 0.6em 1.5em 2em 2em; 
-  font-family: 'Times New Roman', serif;
-  font-size: 12pt; 
-  color: black !important;
-  line-height: 1.25 !important;
+  padding: 0 0 2em 0; 
+  /* font-family: 'Segoe UI', Arial, serif; */
+  font-family: Arial, sans-serif;
+  font-size: 17px; 
+  color: #222325 !important;
+  line-height: 1.4 !important;
   }
 
-/* Päis */
+/* Päis ja jalus */
+.pais, .jalus {
+  max-width: 45rem;
+  padding-top: 1em;
+  padding-left: 2em;
+}
 .pais { 
-  font-family: 'Anonymous Pro', sans-serif;
-  font-size: 13pt;
-  margin-bottom: 1rem;
+  background-color: whitesmoke;
+  margin-bottom: 8px;
+  padding-bottom: 0.6em;
+  margin-bottom: 4em;
+}
+.jalus {
+  border-top: 1px solid #607D8B;
+  margin-top: 4em;
+  padding-bottom: 4em;
 }
 
 /*#endregion */
 
 /*#region Pealkirjad */
 h1 {
-  font-size: 16pt !important;
-  font-weight: bold;
+  font-size: 24px !important;
+  font-family: 'Segoe UI Semibold', Arial, Helvetica, sans-serif;
   margin-top: 1em;
   margin-bottom: 1rem;
 }
 h2 {
-  font-size: 14pt !important;
+  /* font-size: 13pt !important; */
+  font-size: 1.17em;
   font-weight: bold;
   margin-bottom: 0.5rem;
   margin-bottom: 0.5rem;
 }
-h3 {
-  font-size: 12pt !important;
-  font-weight: bold;
-  font-style: italic;
+h3, h4 {
+  font-size: 1em !important;
+  font-weight: normal;
   margin-bottom: 0.5rem;
   margin-bottom: 0.5rem;
 }
