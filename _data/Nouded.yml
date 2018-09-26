@@ -218,12 +218,9 @@
       son: 'Java rakenduste korral logitakse [SLF4J](vt http://www.slf4j.org) raamistiku abil.'
       sel: 'Ühtlustatud selleks, et rakendusi saaks seadistada ühtemoodi.'
     - nr: 3
-      son: 'Süsteemi iga eraldi paigaldatav osa peab logimisel (näiteks aadressilt `heartbeat.json`) väljastama masinloetaval kujul oma nime ja versiooninumbri, oluliste väliste süsteemide oleku, viimase käivitamise aja, pakendamise aja ning serveriaja.'
-      sel: ''
-    - nr: 4
       son: 'Logid kirjutatakse inglise keeles (välja arvatud kasutajale näidatud teated).'
       sel: ''
-    - nr: 5
+    - nr: 4
       son: 'Turvalisuse seisukohalt kriitilised sündmused (sisenemine, väljumine, rolli muut(u)mine) ning tegevused, mis toovad kaasa rahalisi või juriidilisi tagajärgi, logitakse eraldi konfigureeritavasse ___turvalogisse___.'
       sel: ''
 - kategooria:
@@ -346,4 +343,10 @@
       sel: ''
     - nr: 3
       son: 'Kõrgkäideldavate rakenduste puhul tuleb sessioonihalduse lahendus kokku leppida kohe arenduse projekti algul. Sessiooni hoidmine jagatud failisüsteemis (nt. NFS) ei ole lubatud.'
+      sel: ''
+- kategooria:
+  nimetus: 'monitooring'
+  nouded:
+    - nr: 1
+      son: 'Süsteemi iga eraldi paigaldatav osa peab logimisel (näiteks aadressilt `heartbeat.json`) väljastama masinloetaval kujul oma nime ja versiooninumbri, oluliste väliste süsteemide oleku, viimase käivitamise aja, pakendamise aja ning serveriaja.'
       sel: ''

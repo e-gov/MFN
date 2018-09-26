@@ -11,6 +11,7 @@ ___26\.09.2018___
 - lisatud kõrgkäideldavuse võimekuse nõue [MFN 23.2](https://e-gov.github.io/MFN/#23.2)
 - lisatud sisemiste komponendirepode kasutamise nõue [MFN 23.3](https://e-gov.github.io/MFN/#23.3)
 - lisatud komponentide liideste TLS võimekuse nõue [MFN 20.9](https://e-gov.github.io/MFN/#20.9)
+- elutukse nõue tõstetud eraldi jaotisse "monitooring" [MFN 24.1](https://e-gov.github.io/MFN/#24.1)
 
 ___29\.03.2018___
 
