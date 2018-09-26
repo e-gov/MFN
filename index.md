@@ -6,7 +6,7 @@ nouded: true
 # Mittefunktsionaalsed nõuded
 {: .no_toc}
 
-v 4.0
+v 4.1
 
 <div style='margin-bottom: 1rem;'>
   <span>Kiirelt leitav </span> 
