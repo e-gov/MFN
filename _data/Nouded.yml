@@ -239,12 +239,15 @@
       son: 'Rakendused ehitatakse ja paigaldatakse ainult lähtekoodihoidlast, selle üheselt viidatud harust.'
       sel: ''
     - nr: 4
+      son: 'Lähtekoodi kompileerimine peab olema teostatav ka välisvõrguühenduse puudumise korral. Selle nõude täitmise võimaldamiseks on RIAs kasutusel sisemised tarkvarakomponentide repod.'
+      sel: 'Vt täpsemalt sisenõuete dokumendist.'
+    - nr: 5
       son: 'Fat jar-id ei sobi (Java rakendustes).'
       sel: ''
-    - nr: 5
+    - nr: 6
       son: 'Java rakenduse tööks vajalikud teegid peavad olema rakenduse osa.'
       sel: 'Nt PostgreSQL JDBC ohjur.'
-    - nr: 6
+    - nr: 7
       son: 'Fondid, laadilehed ja Javascripti failid serveerida rakendusest endast.'
       sel: ''
 - kategooria:
