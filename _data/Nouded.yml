@@ -338,3 +338,9 @@
       - issue:
         nimetus: 'Rakenduse laadimine sirvikusse võib olla liiga aeglane'
         url: 'https://github.com/e-gov/MFN/issues/1'
+    - nr: 2
+      son: 'Kõrgkäideldavuse võimekus. Kui ei lepita kokku eraldi, peab iga eraldipaigaldatav tarkvarakomponent olema paigaldatav mitmes eksemplaris.'
+      sel: ''
+    - nr: 3
+      son: 'Kõrgkäideldavate rakenduste puhul tuleb sessioonihalduse lahendus kokku leppida kohe arenduse projekti algul. Sessiooni hoidmine jagatud failisüsteemis (nt. NFS) ei ole lubatud.'
+      sel: ''

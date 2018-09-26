@@ -4,6 +4,13 @@ permalink: Muutelugu
 
 ## Muutelugu
 
+___26\.09.2018___
+
+- lisatud koodi RIA reposse tarnimise nõue [MFN 18.4](https://e-gov.github.io/MFN/#18.4)
+- lisatud sisemiste komponendirepode kasutamise nõue [MFN 18.5](https://e-gov.github.io/MFN/#18.5)
+- lisatud kõrgkäideldavuse võimekuse nõue [MFN 23.2](https://e-gov.github.io/MFN/#23.2)
+- lisatud sisemiste komponendirepode kasutamise nõue [MFN 23.3](https://e-gov.github.io/MFN/#23.3)
+
 ___29\.03.2018___
 
 - lisatud rakendusserveri andmebaasiühenduste puuli kasutamise nõue [MFN 16.10](https://e-gov.github.io/MFN/#16.10)
