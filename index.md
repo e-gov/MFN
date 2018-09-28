@@ -3,7 +3,7 @@ permalink: /
 nouded: true
 ---
 
-# Mittefunktsionaalsed nõuded v {{ site.baseurl }}
+# Mittefunktsionaalsed nõuded v {{ site.version }}
 {: .no_toc}
 
 <div style='margin-bottom: 1rem;'>

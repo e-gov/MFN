@@ -11,14 +11,13 @@ body {
   }
 
 /* Päis ja jalus */
-.jalus {
+.pais, .jalus {
   padding-top: 1em;
 }
 .pais { 
   background-color: whitesmoke;
   margin-bottom: 8px;
   padding-bottom: 0.6em;
-  margin-bottom: 4em;
 }
 .jalus {
   border-top: 1px solid #607D8B;
