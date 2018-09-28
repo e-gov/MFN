@@ -1,13 +1,9 @@
-<div class='pais'
-  style='display: flex;'>
-  <div style='margin-left: auto;'>
-    {% unless page.nouded %}
-      <a href='{{ site.baseurl }}/'>Nõuded</a> · 
-    {% endunless %}
-    <a href='{{ site.baseurl }}/Puhas' target='_new'>Puhastekst</a> · 
-    <a href='{{ site.baseurl }}/Muutelugu' target='_new'>Muutelugu</a> · <a href='{{ site.baseurl }}/TeeEttepanek' target='_new'>Probleem?</a> 
-  </div> 
+<div class='pais' style='text-align: right;'>
+  {% unless page.nouded %}
+  <a href='{{ site.baseurl }}/'>Nõuded</a> · {% endunless %}
+  <a href='{{ site.baseurl }}/Puhas' target='_new'>Puhastekst</a> ·
+  <a href='{{ site.baseurl }}/Muutelugu' target='_new'>Muutelugu</a> ·
+  <a href='{{ site.baseurl }}/TeeEttepanek' target='_new'>Probleem?</a>
 </div>
 {% if page.nouded %}
-  <img src='img/infosys_3lovi_est_black.png' style='width: 80px;'>
-{% endif %}
+<img src='img/infosys_3lovi_est_black.png' style='width: 350px;'> {% endif %}

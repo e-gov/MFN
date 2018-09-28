@@ -3,15 +3,12 @@ permalink: /
 nouded: true
 ---
 
-# Mittefunktsionaalsed nõuded v 4.1
+# Mittefunktsionaalsed nõuded v {{ site.baseurl }}
 {: .no_toc}
 
 <div style='margin-bottom: 1rem;'>
   {% include Kiirelt.html %}
 </div>
-
-Tundlikku teavet sisaldavad nõuded tehakse lepingulistele arendajatele kättesaadavaks eraldi ("sisenõuete dokument").
-{: .adv}
 
 Nõuetekogum on mõeldud kasutamiseks: 1) RIA arhitektidele, toote- ja projektijuhtidele tarkvara kavandamisel ja arendustööde tellimisel ning kontrollimisel; 2) arendajatele arenduslepingute täitmisel.
 
@@ -19,4 +16,8 @@ Nõuded on sõnastatud RIA arendusprojektide pikaajalise kogemuse põhjal ja mar
 
 Üksikule nõudele saab viidata kohaleviiva URL-ga: [https://e-gov.github.io/MFN/#6.1](https://e-gov.github.io/MFN/#6.1). Lühiviitena on soovitatav kuju [MFN 6.1](https://e-gov.github.io/MFN/#6.1).
 
+Tundlikku teavet sisaldavad nõuded tehakse lepingulistele arendajatele kättesaadavaks eraldi ("sisenõuete dokument").
+{: .adv}
+
 Keskkonnanõuded (op-süsteem, süsteemitarkvara) antakse RIA IT profiilis.
+
