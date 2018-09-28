@@ -342,7 +342,7 @@
       son: 'Kõrgkäideldavuse võimekus. Kui ei lepita kokku eraldi, peab iga eraldipaigaldatav tarkvarakomponent olema paigaldatav mitmes eksemplaris.'
       sel: ''
     - nr: 3
-      son: 'Kõrgkäideldavate rakenduste puhul tuleb sessioonihalduse lahendus kokku leppida kohe arenduse projekti algul. Sessiooni hoidmine jagatud failisüsteemis (nt. NFS) ei ole lubatud.'
+      son: 'Kõrgkäideldavate rakenduste puhul tuleb seansihalduse lahendus kokku leppida kohe arendusprojekti algul. Seansi hoidmine jagatud failisüsteemis (nt. NFS) ei ole lubatud.'
       sel: ''
 - kategooria:
   nimetus: 'monitooring'
