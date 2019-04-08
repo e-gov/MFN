@@ -4,6 +4,10 @@ permalink: Muutelugu
 
 ## Muutelugu
 
+___08\.04.2019___
+
+- täpsustatud isikuandmete URL-des mittekasutamise nõuet [MFN 10.3](https://e-gov.github.io/MFN/#10.3)
+
 ___26\.09.2018___
 
 - lisatud koodi RIA reposse tarnimise nõue [MFN 18.4](https://e-gov.github.io/MFN/#18.4)

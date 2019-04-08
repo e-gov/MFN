@@ -118,7 +118,7 @@
       sel: ''
     - nr: 3
       son: 'URL ei tohi sisaldada isikuandmeid.'
-      sel: 'Vt [IKS](https://www.riigiteataja.ee/akt/130122010011?leiaKehtiv) § 11. Isikuandmete avalikustamine.'
+      sel: 'Vt [IKS](https://www.riigiteataja.ee/akt/130122010011?leiaKehtiv) § 11. Isikuandmete avalikustamine. Märkus: Võimalikud on erandid, kui isikuandmete kaitseks on rakendatud asjakohaseid tehnilisi ja organisatsioonilisi meetmeid. Meetmetega peab tagama kaitse vähemalt järgmiste riskide vastu: isikuandmete lekkimine sirviku ajaloost, HTTP seansi pealtkuulamine, isikuandmete lekkimine vahendusserveri (proxy) logist, isikuandmete lekkimine serveri logist.'
     - nr: 4
       son: 'URL ei tohi sisaldada sessioonivõtit.'
       sel: ''
