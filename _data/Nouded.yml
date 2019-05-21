@@ -180,7 +180,7 @@
   nouded:
     - nr: 1
       son: 'Andmebaasi kasutaval rakendusel on vähemalt kaks andmebaasikasutajat:<br>`<rakendus>` nimeline andmebaasi skeem kuulub andmebaasi kasutajale `<rakendus>` (roll `db owner`, skeemid ja seal paiknevad objektid kuuluvad sellele kasutajale).<br>`<rakendus>` nimelises andmebaasi skeemis on defineeritud `<rakendus>_app` nimeline kasutaja, kes omab ligipääsu (`SELECT`, `INSERT`, `UPDATE`, `DELETE`) ainult rakenduse käitamiseks vajalikele tabelitele, protseduuridele või funktsioonidele.'
-      sel: ''
+      sel: 'Nõue tuleneb eelkõige sellest, et vahel kasutame andmebaaside ""koosmajutamist" s.t erinevate süsteemide või ka ühe süsteemi erinevate komponentide (mikroteenuste) andmebaase hoiame ühes PostgreSQL instantsis. Sellisel juhul on vaja tagada eristatus: iga andmebaas peab olema eraldi skeemis; rakendus ei tohi teise rakenduse skeemile ligi pääseda (suheldakse API-de kaudu); rakendus ei tohi ise skeeme moodustada s.t skeemi tohib moodustada ainult paigaldusprotsess. Ka siis, kui koosmajutust hetkel ei kasutata, on eristamine hea praktika.'
     - nr: 2
       son: 'Ühest andmetabelist teise viitamisel tuleb kasutada välisvõtmeid (_foreign key_). Kõik välisvõtmed peavad olema indekseeritud mitteunikaalse indeksiga ja välisvõtmetena kirjeldatud.'
       sel: ''
