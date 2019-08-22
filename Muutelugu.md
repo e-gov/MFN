@@ -4,6 +4,10 @@ permalink: Muutelugu
 
 ## Muutelugu
 
+___22\.08.2019___
+
+- eemaldatud nõue, et süsteem ei tohi ise teostada pääsuhaldust [MFN 14.1](https://e-gov.github.io/MFN/#14.1)
+
 ___08\.04.2019___
 
 - täpsustatud isikuandmete URL-des mittekasutamise nõuet [MFN 10.3](https://e-gov.github.io/MFN/#10.3)
