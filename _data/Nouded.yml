@@ -153,7 +153,7 @@
   nimetus: 'autentimine'
   nouded:
     - nr: 1
-      son: 'Väliste kasutajate, so. Eesti Vabariigi residentide ja EL teiste liikmesriikide residentide autentimislahenduse loomisel lähtuda dokumendist [Autentimislahendustele kehtivad nõuded](https://www.ria.ee/public/Arhitektuur/Autentimislahendustele-kehtivad-nouded-kavand.pdf).'
+      son: 'Väliste kasutajate, so. Eesti Vabariigi residentide ja EL teiste liikmesriikide residentide autentimislahenduse loomisel lähtuda dokumendist [Autentimislahendustele kehtivad nõuded](https://www.ria.ee/sites/default/files/content-editors/EID/autentimislahendustele-kehtivad-nouded.pdf).'
       sel: ''
     - nr: 2  
       son: 'ID-kaardiga autentimisel ei kasutata serdi edastamise päises side- (`-`) ega alakriipse (`_`).'
