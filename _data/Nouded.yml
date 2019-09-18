@@ -348,5 +348,5 @@
   nimetus: 'monitooring'
   nouded:
     - nr: 1
-      son: 'Süsteemi iga eraldi paigaldatav osa peab logimisel (näiteks aadressilt `heartbeat.json`) väljastama masinloetaval kujul oma nime ja versiooninumbri, oluliste väliste süsteemide oleku, viimase käivitamise aja, pakendamise aja ning serveriaja.'
+      son: 'Süsteemi iga eraldi paigaldatav osa peab väljastama  RIA monitooringusüsteemile (näiteks aadressilt `heartbeat.json`) masinloetaval kujul oma nime ja versiooninumbri, oluliste väliste süsteemide oleku, viimase käivitamise aja, pakendamise aja ning serveriaja.'
       sel: ''
