@@ -4,6 +4,10 @@ permalink: Muutelugu
 
 ## Muutelugu
 
+___11\.11.2019___
+
+- Lisatud abistav viide nõudele [MFN 8.4](https://e-gov.github.io/MFN/#8.4) (veebisirvijate toetamine)
+
 ___22\.08.2019___
 
 - eemaldatud nõue, et süsteem ei tohi ise teostada pääsuhaldust [MFN 14.1](https://e-gov.github.io/MFN/#14.1)

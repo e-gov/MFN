@@ -97,7 +97,7 @@
       sel: 'HTML5, CSS3 jms.'
     - nr: 4
       son: 'Rakendus peab töötama veebisirvijates, mis toetavad eID baastarkvara kaht viimast versiooni.'
-      sel: ''
+      sel: 'Vt sirvikute loetelu ID-tarkvara abikeskuse lehel [ID-tarkvara paigaldamine].(https://installer.id.ee/?lang=est)'
     - nr: 5
       son: 'Veebisirvija toe puudumisel andku rakendus veateate.'
       sel: 'Kui kasutajaliides, mille poole kasutaja pöördub, ei ole ühilduv kasutatava veebisirvijaga, peab rakendus arusaadaval ja juhendaval viisil sellest kasutajat teavitama.'
