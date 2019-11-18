@@ -1,3 +1,26 @@
+/*#region Valgustusrežiim */
+html, html[data-theme='light'] {
+  --tavaline-tekst: #222325;
+  --taust: White;
+  --note-taust: #F6F9F8;
+  --adv-taust: LavenderBlush;
+  --kood: #222325;
+  --koodi-taust: #f6f8fa; /* nagu GitHubis */
+  --koodi-serv: Whitesmoke;
+  --arenduses: Tomato;
+}
+
+html[data-theme='dark'] {
+  --tavaline-tekst: Silver;
+  --taust: Black;
+  --note-taust: DimGray;
+  --adv-taust: DimGray;
+  --kood: Silver;
+  --koodi-taust: Black;
+  --koodi-serv: DimGrey;
+  --arenduses: Gray;
+}
+
 /*#region Paigutus */
 body {
   max-width: 55em;
@@ -95,15 +118,24 @@ th, td { padding: 6px; }
 
 /*#region Kood; asciiflow joonised */
 pre, code, samp {
-  font-family: 'Anonymous Pro', monospace;
-  font-size: 16px; color: black !important;
-  background-color: lavender !important;
+  font-family: monospace;
+  font-size: 17px;
+  color: var(--kood) !important;
+  background-color: var(--koodi-taust);
+  border: 1px solid var(--koodi-serv);
+  border-radius: 4px;
+  padding: 4px;
+  white-space:pre-wrap;
   overflow-y: hidden; overflow-x: hidden;
   page-break-inside: avoid; hyphens: none;
   text-transform: none;
 }
+/* Mitmerealised kooditükid, nn "tarade" vahel esitatakse
+  <pre><code> ... kujul. Nendel ääris sea ainult pre elemendile
+*/
 pre code,
 code code {
+  border: none;
   font-size: 100%;
 }
 pre { margin-top: 1em; margin-bottom: 1em; }
