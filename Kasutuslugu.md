@@ -41,14 +41,6 @@ Kommentaarid lisatakse reaalguse tärgi `#` abil.
 
 ## Näide
 
-````json
-{
-  "jti": "0c597356-3771-4315-a129-c7bc1f02a1b2",
-  "iss": "https://tara-test.ria.ee",
-  "at_hash": "X0MVjwrmMQs/IBzfU2osvw=="
-}
-````
-
 ```gherkin
 # X süsteemitestid 
 # Käsitsitestimise stsenaarim TS-016
