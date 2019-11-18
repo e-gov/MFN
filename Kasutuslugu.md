@@ -14,7 +14,7 @@ Formaadi aluseks on BDD (*Behavior Driven Development*, "käitumispõhine arendu
 
 Formaati saab kasutada nii kasutuslugude ja -juhtude (ingl *use case*, *user story*) kui ka testilugude ja -stsenaariumite kirjapanemiseks. (Kasutuslugu on tavaliselt ühtlasi ka testilugu). Järgnevas kasutame mõistet "testilugu".
 
-##Formaat
+## Formaat
 
 Testilood salvestatakse failides. Faili nimekuju on `<omaduse-kirjeldus>.feature`. Iga  `.feature` fail sisaldab ühe testitava omaduse (ingl *feature*) testilugusid.
 
@@ -41,7 +41,7 @@ Kommentaarid lisatakse reaalguse tärgi `#` abil.
 
 ## Näide
 
-```Gherkin
+```gherkin
 # X süsteemitestid 
 # Käsitsitestimise stsenaarim TS-016
 
