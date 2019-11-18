@@ -45,21 +45,6 @@ Kommentaarid lisatakse reaalguse tärgi `#` abil.
 {
   "jti": "0c597356-3771-4315-a129-c7bc1f02a1b2",
   "iss": "https://tara-test.ria.ee",
-  "aud": "TARA-Demo",
-  "exp": 1530295852,
-  "iat": 1530267052,
-  "nbf": 1530266752,
-  "sub": "EE60001019906",
-  "profile_attributes": {
-    "date_of_birth": "2000-01-01",
-    "family_name": "O’CONNEŽ-ŠUSLIK TESTNUMBER",
-    "given_name": "MARY ÄNN"
-  },
-  "amr": [
-    "mID"
-  ],
-  "state": "1OnH3qwltWy81fKqcmjYTqnco9yVQ2gGZXws/DBLNvQ=",
-  "nonce": "",
   "at_hash": "X0MVjwrmMQs/IBzfU2osvw=="
 }
 ````
