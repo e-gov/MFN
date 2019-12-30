@@ -47,7 +47,7 @@
       son: 'Kõik liidesed rakenduse eri osade vahel peavad olema vajadusel kaitstavad kahepoolset tuvastamist ja krüpteerimist võimaldava protokolliga.'
       sel: ''
     - nr: 6
-      son: 'Rakenduse pakutav(ad) HTTP masinliidesed (API-d) kirjeldatakse masinloetavas OpenAPI vormingus.'
+      son: 'Rakenduse pakutav(ad) HTTP REST masinliidesed (API-d) kirjeldatakse masinloetavas OpenAPI vormingus.'
       sel: 'Masinloetav kirjeldus ei välista täiendavat, paremini inimloetavat vabavormilist kirjeldust.'
 - kategooria:
   nimetus: 'keel'
