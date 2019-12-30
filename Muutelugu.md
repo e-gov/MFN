@@ -4,6 +4,10 @@ permalink: Muutelugu
 
 ## Muutelugu
 
+___30\.12.2019___
+
+- lisatud HTTP API-de masinloetava, OpenAPI vormingus kirjeldamise nõue [MFN 8.4](https://e-gov.github.io/MFN/#8.5)
+
 ___11\.11.2019___
 
 - Lisatud abistav viide nõudele [MFN 8.4](https://e-gov.github.io/MFN/#8.4) (veebisirvijate toetamine)
