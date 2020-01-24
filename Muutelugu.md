@@ -4,6 +4,10 @@ permalink: Muutelugu
 
 ## Muutelugu
 
+___24\.01.2020___
+
+- e-posti saatmist käsitlevasse nõudesse sisse viidud RIA SMTP edastusteenuse kasutamine. [MFN 8.4](https://e-gov.github.io/MFN/#19.1)
+
 ___30\.12.2019___
 
 - lisatud HTTP API-de masinloetava, OpenAPI vormingus kirjeldamise nõue [MFN 8.4](https://e-gov.github.io/MFN/#8.5)

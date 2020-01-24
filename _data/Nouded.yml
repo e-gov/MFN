@@ -257,8 +257,8 @@
   nimetus: 'paigaldamine'
   nouded:
     - nr: 1
-      son: 'Rakendus tohib e-kirja saata ainult välise postiagendi (näiteks Postfix) kaudu.'
-      sel: ''
+      son: 'Rakendus saadab e-kirju RIA SMTP edastusteenuse kaudu.'
+      sel: 'Täpsemad nõuded vt SMTP edastusteenuse kirjeldusest.'
     - nr: 2
       son: 'Rakendus peab olema loodud sõltumatuna rakendusserveri tarkvarast.'
       sel: 'Rakendust peab olema võimalik konfiguratsioonimuudatuste abil paigaldada teisele samatüübilisele rakendusserverile. Kui see ei ole võimalik tuleb rakendusele luua sobituspaketid põhiliselt kasutatavate rakendusserverite jaoks.'
