@@ -4,6 +4,10 @@ permalink: Muutelugu
 
 ## Muutelugu
 
+___27\.01.2020___
+
+- lisatud digiriigi ristfunktsionaalsete nõuetega kooskõla kinnitus.
+
 ___24\.01.2020___
 
 - e-posti saatmist käsitlevasse nõudesse sisse viidud RIA SMTP edastusteenuse kasutamine. [MFN 8.4](https://e-gov.github.io/MFN/#19.1)
