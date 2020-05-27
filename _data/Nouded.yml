@@ -121,7 +121,7 @@
       sel: ''
     - nr: 3
       son: 'URL ei tohi sisaldada isikuandmeid.'
-      sel: 'Vt [IKS](https://www.riigiteataja.ee/akt/130122010011?leiaKehtiv) § 11. Isikuandmete avalikustamine. Märkus: Võimalikud on erandid, kui isikuandmete kaitseks on rakendatud asjakohaseid tehnilisi ja organisatsioonilisi meetmeid. Meetmetega peab tagama kaitse vähemalt järgmiste riskide vastu: isikuandmete lekkimine sirviku ajaloost, HTTP seansi pealtkuulamine, isikuandmete lekkimine vahendusserveri (proxy) logist, isikuandmete lekkimine serveri logist.'
+      sel: 'Võimalikud on erandid, kui isikuandmete kaitseks on rakendatud asjakohaseid tehnilisi ja organisatsioonilisi meetmeid. Meetmetega peab tagama kaitse vähemalt järgmiste riskide vastu: isikuandmete lekkimine sirviku ajaloost, HTTP seansi pealtkuulamine, isikuandmete lekkimine vahendusserveri (proxy) logist, isikuandmete lekkimine serveri logist.'
     - nr: 4
       son: 'URL ei tohi sisaldada sessioonivõtit.'
       sel: ''
@@ -253,6 +253,9 @@
     - nr: 8
       son: 'Fondid, laadilehed ja Javascripti failid serveerida rakendusest endast.'
       sel: ''
+    - nr: 9
+      son: 'Toodangusse evitatavas tarkvaras peavad sõltuvuste versioonid olema fikseeritud.'
+      sel: 'Eesmärgiks on ehitamise korratavus (*repeatable build*). Näiteks: Node.js platvormil toodangusse evitatavate moodulite package.json failis, jaotises dependencies ei tohi olla versioonimärkeid ^, ~, *, x.'
 - kategooria:
   nimetus: 'paigaldamine'
   nouded:
@@ -330,7 +333,11 @@
   nouded:
     - nr: 1
       son: 'Rakendustes tuleb tagada isikuandmete kaitse nõuded.'
-      sel: 'Eriti isiku õigus olla unustatud ja meie kohustus seejärel kustutada kõik isikuandmed, mida me ei vaja tööks või mida me ei pea seaduse alusel töötlema. Vt [isikuandmete kaitse üldmäärus](http://eur-lex.europa.eu/legal-content/ET/TXT/?uri=CELEX%3A32016R0679). Samuti peame alati olema valmis vastama isiku nõudmisele välja anda [IKS](https://www.riigiteataja.ee/akt/130122010011?leiaKehtiv) § 19 sätestatud teave.'
+      sel: 'Eriti isiku õigus olla unustatud ja meie kohustus seejärel kustutada kõik isikuandmed, mida me ei vaja tööks või mida me ei pea seaduse alusel töötlema. Vt [isikuandmete kaitse üldmäärus](http://eur-lex.europa.eu/legal-content/ET/TXT/?uri=CELEX%3A32016R0679). Samuti peame alati olema valmis vastama isiku nõudmisele välja anda [IKS](https://www.riigiteataja.ee/akt/104012019011?leiaKehtiv#para24) § 24 sätestatud teave.'
+  nouded:
+    - nr: 2
+      son: 'Rakendus ei tohi kasutada RIA taristu väliseid kasutaja tegevust analüüsivaid teenuseid (nt Google Analytics).'
+      sel: 'Andmekaitse ja turvalisuse kaalutlustel.'
 - kategooria:
   nimetus: 'käideldavus'
   nouded:

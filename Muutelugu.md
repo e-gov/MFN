@@ -4,6 +4,12 @@ permalink: Muutelugu
 
 ## Muutelugu
 
+___27\.05.2020___
+
+- Lisatud toodangusse evitatavas tarkvaras sõltuvuste fikseerimise nõue. [MFN 18.9](https://e-gov.github.io/MFN/#18.9)
+- Ajakohastatud õigusviiteid. [MFN 10.3](https://e-gov.github.io/MFN/#10.3), [MFN 22.1](https://e-gov.github.io/MFN/#22.1)
+- Lisatud RIA-väliste kasutaja tegevust analüüsivate teenuste keeld. [MFN 22.2](https://e-gov.github.io/MFN/#22.2)
+
 ___27\.01.2020___
 
 - lisatud digiriigi ristfunktsionaalsete nõuetega kooskõla kinnitus.
