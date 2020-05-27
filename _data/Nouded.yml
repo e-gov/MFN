@@ -255,7 +255,7 @@
       sel: ''
     - nr: 9
       son: 'Toodangusse evitatavas tarkvaras peavad sõltuvuste versioonid olema fikseeritud.'
-      sel: 'Eesmärgiks on ehitamise korratavus (*repeatable build*). Näiteks: Node.js platvormil toodangusse evitatavate moodulite package.json failis, jaotises dependencies ei tohi olla versioonimärkeid ^, ~, *, x.'
+      sel: 'Eesmärgiks on ehitamise korratavus (*repeatable build*). Näiteks: Node.js platvormil toodangusse evitatavate moodulite `package.json` failis, jaotises `dependencies` ei tohi olla versioonimärkeid `^`, `~`, `*`, `x`.
 - kategooria:
   nimetus: 'paigaldamine'
   nouded:
@@ -334,7 +334,6 @@
     - nr: 1
       son: 'Rakendustes tuleb tagada isikuandmete kaitse nõuded.'
       sel: 'Eriti isiku õigus olla unustatud ja meie kohustus seejärel kustutada kõik isikuandmed, mida me ei vaja tööks või mida me ei pea seaduse alusel töötlema. Vt [isikuandmete kaitse üldmäärus](http://eur-lex.europa.eu/legal-content/ET/TXT/?uri=CELEX%3A32016R0679). Samuti peame alati olema valmis vastama isiku nõudmisele välja anda [IKS](https://www.riigiteataja.ee/akt/104012019011?leiaKehtiv#para24) § 24 sätestatud teave.'
-  nouded:
     - nr: 2
       son: 'Rakendus ei tohi kasutada RIA taristu väliseid kasutaja tegevust analüüsivaid teenuseid (nt Google Analytics).'
       sel: 'Andmekaitse ja turvalisuse kaalutlustel.'
