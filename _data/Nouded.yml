@@ -38,7 +38,7 @@
       son: 'Rakendus peab olema väliste süsteemide tõrgete suhtes vastupanuvõimeline (_resilient_).'
       sel: 'Välise süsteemi tõrge tohib mõjutada ainult sellest otseselt sõltuvate kasutuslugude toimimist.'
     - nr: 3
-      son: 'Rakendus peab olema tehniliselt tükeldatud vastavalt loogilisele jaotusele. Saadud osised peavad olema eraldi versioneeritavad ja paigaldatavad.'
+      son: 'Rakendus peab olema tehniliselt tükeldatud vastavalt loogilisele jaotusele. Saadud osised peavad olema eraldi versioneeritavad ja paigaldatavad. Muuhulgas peab andmebaas olema rakendusest eraldi paigaldatav.'
       sel: 'Näiteks, kui rakendusel on eraldi turvakontekstidega liidesed ametnikule ja kodanikule, peab rakendus olema jaotatud kaheks eraldi liidesekomponendiks ning nende mõlema poolt kasutatavaks andmebaasiks.'
     - nr: 4
       son: 'Rakenduse funktsionaalsuses tuleb selgelt eraldada avaliku teenuse liides muudest mitteavalikest, sisemistest, konfigureerimis jms. liidestest.'

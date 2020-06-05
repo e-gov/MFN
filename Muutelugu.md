@@ -4,6 +4,10 @@ permalink: Muutelugu
 
 ## Muutelugu
 
+___05\.06.2020___
+
+- Täpsustatud nõuet 4.3: muuhulgas ka andmebaas peab olema rakendusest eraldi paigaldatav. [MFN 18.9](https://e-gov.github.io/MFN/#4.3)
+
 ___27\.05.2020___
 
 - Lisatud toodangusse evitatavas tarkvaras sõltuvuste fikseerimise nõue. [MFN 18.9](https://e-gov.github.io/MFN/#18.9)
