@@ -4,6 +4,10 @@ permalink: Muutelugu
 
 ## Muutelugu
 
+___16\.12.2020___
+
+- Täpsustatud nõuete rakendamist arenduslepingutes. Vt avaleht, eessõna. Kui MFN lisatakse hankedokumenti või arenduslepingusse, siis on kõik nõuded kohustuslikud. Siiski peab nõuete rakendamisel olema paindlik. Erisused (mitte- või osaline rakendamine, kui nii on otstarbekas) on lubatud tellija nõusolekul. 
+
 ___05\.06.2020___
 
 - Täpsustatud nõuet 4.3: muuhulgas ka andmebaas peab olema rakendusest eraldi paigaldatav. [MFN 18.9](https://e-gov.github.io/MFN/#4.3)
