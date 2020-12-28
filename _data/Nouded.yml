@@ -256,8 +256,17 @@
     - nr: 9
       son: 'Toodangusse evitatavas tarkvaras peavad sõltuvuste versioonid olema fikseeritud.'
       sel: 'Eesmärgiks on ehitamise korratavus (*repeatable build*). Näiteks: Node.js platvormil toodangusse evitatavate moodulite `package.json` failis, jaotises `dependencies` ei tohi olla versioonimärkeid `^`, `~`, `*`, `x`.'
+    - nr: 10
+      son: 'Pakk peab olema versioneeritud.'
+      sel: ''
+    - nr: 11
+      son: 'Pakitud tarkvara peab olema võimalik siduda lähtekoodiga.'
+      sel: ''
+    - nr: 12
+      son: 'Lähtekoodi peab olema võimalik siduda pakiga.'
+      sel: ''
 - kategooria:
-  nimetus: 'paigaldamine'
+  nimetus: 'paigaldamine ja seadistamine'
   nouded:
     - nr: 1
       son: 'Rakendus saadab e-kirju RIA SMTP edastusteenuse kaudu.'
@@ -286,6 +295,18 @@
     - nr: 9
       son: 'Rakenduse andmebaasi või andmeskeemi paigaldamine ei tohi nõuda punktis erilisi kasutajaõigusi.'
       sel: ''
+    - nr: 10
+      son: 'Tarkvara peab olema pärast paigaldust kasutamiseks ettevalmistatud.'
+      sel: 'Peidetud sõltuvusi ei tohi olla. Kõik sõltuvused peavad saama lahendatud paigaldamisel.'
+    - nr: 11
+      son: 'Paigaldada peab saama versiooni täpsusega.'
+      sel: ''
+    - nr: 12
+      son: 'Seadistamine peab toimuma paigaldamise väliselt.'
+      sel: 'Paki paigaldamine on üks protess ning seadistamine teine. Need peab loogiliselt lahus hoidma, kuid see ei välista automaatset paigaldust ja seadistust.'
+    - nr: 13
+      son: 'Paigaldatud tarkvara peab käivituma, kuid seadistuste puudumisel see ei pea suutma täita ärifunktsionaalsust.'
+      sel: 'Näiteks elutukse saab olemuselt töötada ilma seadistusteta.'
 - kategooria:
   nimetus: 'infoturve'
   nouded:
@@ -301,7 +322,7 @@
     - nr: 4
       son: 'Vastavalt rakenduse olemusele ja riskianalüüsile rakendada meetmed OWASP ohuedetabelites (Top 10) jm tekstides antud soovituste järgimiseks.'
       sel: 'vt [OWASP](https://www.owasp.org) ja [OWASP Application Security Verification Standard (ASVS)](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project).'
-    - nr: 5  
+    - nr: 5
       son: 'Kaitsta seansiküpsiseid (`secure` ja `http only` parameetrid).'
       sel: ''
     - nr: 6  
