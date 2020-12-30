@@ -233,7 +233,7 @@
       son: 'Rakenduse (RIA poolt hallatavasse serverisse) pakendamine, paigaldamine, uuendamine, muudatuse taastamine ja testide käivitamine peavad olema automatiseeritud standardse üldkasutatava vahendi abil.'
       sel: 'Kasutusel on Maven ja Jenkins.'
     - nr: 2
-      son: 'Ehitatud paki nimi peab sisaldama projekti nime ja versiooni ning tohib sisaldada ainult tähemärke `[a-z;0-9]` ja `-` (miinus) ja `_` (alakriips) (nt `projektinimi-keskkond—1_0_23`).'
+      son: 'Ehitatud paki nimi peab sisaldama projekti nime ja paki versiooni ning tohib sisaldada ainult tähemärke `[a-z;0-9]` ja `-` (miinus) ja `_` (alakriips) (nt `projektinimi-1_0_23`).'
       sel: 'Pakk peab olema keskkonnaagnostiline s.t arendus-, toodangu- jm keskkondade jaoks normaalselt ei tehta eraldi pakke. Tarkvara muutub konkreetse keskkonna osaks pärast keskkonda paigaldamist ja keskkonnas seadistamist.'
     - nr: 3
       son: 'Rakendused ehitatakse ja paigaldatakse ainult lähtekoodihoidlast, selle üheselt viidatud harust.'
