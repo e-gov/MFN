@@ -4,6 +4,11 @@ permalink: Muutelugu
 
 ## Muutelugu
 
+___07\.05.2021___
+
+- WCAG versioon uuendatud 2.0 -> 2.1. [MFN 9.1](https://e-gov.github.io/MFN/#9.1)
+
+
 ___16\.12.2020___
 
 - Täpsustatud nõuete rakendamist arenduslepingutes. Vt avaleht, eessõna. Kui MFN lisatakse hankedokumenti või arenduslepingusse, siis on kõik nõuded kohustuslikud. Siiski peab nõuete rakendamisel olema paindlik. Erisused (mitte- või osaline rakendamine, kui nii on otstarbekas) on lubatud tellija nõusolekul. 

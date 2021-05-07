@@ -108,8 +108,8 @@
   nimetus: 'kasutatavus'
   nouded:
     - nr: 1
-      son: 'Veebirakenduse kasutajaliides peab olema juurdepääsetav. Tuleb täita WCAG 2.0 taseme AA nõuded.'
-      sel: 'Vt [Veebi sisu juurdepääsetavussuunised (WCAG) 2.0](https://www.w3.org/Translations/WCAG20-et/)'
+      son: 'Veebirakenduse kasutajaliides peab olema juurdepääsetav. Tuleb täita WCAG 2.1 taseme AA nõuded.'
+      sel: 'Vt: [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/). (Eestikeelne tõlge on v2.0 kohta: [Veebi sisu juurdepääsetavussuunised (WCAG) 2.0](https://www.w3.org/Translations/WCAG20-et/))'
 - kategooria:
   nimetus: 'URL-id'
   nouded:
