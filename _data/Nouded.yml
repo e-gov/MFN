@@ -314,7 +314,7 @@
       son: 'Veebirakendustes määratleda ja rakendada sisuturbepoliitika.'
       sel: 'Vt [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).'
     - nr: 9
-      son: 'Eraldipaigaldatavate komponentide vahelistel liidestel peab olema TSL võimekus (vastastikune autentimine sertide abil). Vastavad konfigureerimisjuhised peavad sisalduma rakenduse paigaldusjuhendis.'
+      son: 'Eraldipaigaldatavate komponentide vahelistel liidestel peab olema TLS võimekus (vastastikune autentimine sertide abil). Vastavad konfigureerimisjuhised peavad sisalduma rakenduse paigaldusjuhendis.'
       sel: ''
 - kategooria:
   nimetus: 'krüpto'
