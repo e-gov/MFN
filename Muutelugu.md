@@ -3,6 +3,12 @@ permalink: Muutelugu
 ---
 
 ## Muutelugu
+___08\.03.2022___
+
+- Täpsustatud Java rakendusserveri kasutamist. [MFN 18.7](https://e-gov.github.io/MFN/#18.7)
+- Täpsustatud andmebaasiühenduste ohjamist Javas. [MFN 16.10](https://e-gov.github.io/MFN/#16.10)
+- Lisatud minimaalse võrgupääsu nõue. [MFN 20.10](https://e-gov.github.io/MFN/#20.10)
+- Lisatud telemeetria standardi rakendamise nõue. [MFN 17.5](https://e-gov.github.io/MFN/#17.5)
 
 ___07\.05.2021___
 

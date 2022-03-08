@@ -209,7 +209,7 @@
       son: 'Rakendus peab olema tabelite [partitsioneerimise](http://en.wikipedia.org/wiki/Partition_%28database%29) suhtes agnostiline st. tabelite partitsioneerimisstruktuuride muutmine ei tohi mõjutada rakenduse tööd.'
       sel: ''
     - nr: 10
-      son: 'Kasutada rakendusserveri (Tomcat) võimalusi andmebaasiühenduste (JDBC) puulimiseks.'
+      son: 'Rakendusserveri, nt Tomcat kasutamisel, tuleks võimalusel kasutada rakendusserverit ka andmebaasiühenduste (JDBC) halduseks.'
       sel: 'Rakendus ei puuli ise, vaid küsib JNDI abil rakendusserveri puuli aadressi. Nõude eesmärk on jõudluse parem hallatavus.'
 - kategooria:
   nimetus: 'logimine'
@@ -226,6 +226,9 @@
     - nr: 4
       son: 'Turvalisuse seisukohalt kriitilised sündmused (sisenemine, väljumine, rolli muut(u)mine) ning tegevused, mis toovad kaasa rahalisi või juriidilisi tagajärgi, logitakse eraldi konfigureeritavasse ___turvalogisse___.'
       sel: ''
+    - nr: 5
+      son: 'Telemeetria.'
+      sel: 'Infosüsteemi arendustes tuleb juhul, kui otsustatakse rakendada kasutaja teekonna (ja muu telemeetria) kogumist, juhinduda CNCF OpenTelemetry spetsifikatsioonidest. Vt: https://opentelemetry.io ja https://github.com/open-telemetry/opentelemetry-specification.'
 - kategooria:
   nimetus: 'ehitamine'
   nouded:
@@ -248,8 +251,8 @@
       son: 'Fat jar-id ei sobi (Java rakendustes).'
       sel: ''
     - nr: 7
-      son: 'Java rakenduse tööks vajalikud teegid peavad olema rakenduse osa.'
-      sel: 'Nt PostgreSQL JDBC ohjur.'
+      son: 'Java rakenduse tööks vajalikud teegid peavad olema rakenduse osa. Kui Java rakenduse käitamiseks on kasutatud mõnd rakendusserverit (näiteks Tomcat), siis võivad selle tööks vajalikud üldteegid olla rakendusserveri lib kaustas.'
+      sel: 'Näide: JNDI konfiguratsioon eeldab, et andmebaasiohjur oleks rakendusserveri sees (nt. Tomcat), mitte rakenduse WAR failis. Juhul kui andmebaasiohjur on osa WAR failist, võib andmebaasiühenduste probleemide tekkimisel kohe tekkida ka probleem rakendusserveri (taas)käivitamisega.'
     - nr: 8
       son: 'Fondid, laadilehed ja Javascripti failid serveerida rakendusest endast.'
       sel: ''
@@ -316,6 +319,9 @@
     - nr: 9
       son: 'Eraldipaigaldatavate komponentide vahelistel liidestel peab olema TLS võimekus (vastastikune autentimine sertide abil). Vastavad konfigureerimisjuhised peavad sisalduma rakenduse paigaldusjuhendis.'
       sel: ''
+    - nr: 10
+      son: 'Minimaalne võrgupääs.'
+      sel: 'Infosüsteemi komponentide pääs avalikku võrku peab olema reguleeritud vähima juurdepääsu printsiibil - infosüsteem tohib pääseda ainult sinna, kuhu pääs on teenuse toimimiseks hädavajalik. Pääsukontroll peaks eelistatult toimima dünaamiliselt ning toetama automatiseerimisvahendeid. Standardlahendusena tuleb eelistada pääsukontrolli välisvõrku rakendusest sõltumatult toimiva lüüsi abil.'
 - kategooria:
   nimetus: 'krüpto'
   nouded:
