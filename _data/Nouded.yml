@@ -228,7 +228,7 @@
       sel: ''
     - nr: 5
       son: 'Telemeetria.'
-      sel: 'Infosüsteemi arendustes tuleb juhul, kui otsustatakse rakendada kasutaja teekonna (ja muu telemeetria) kogumist, juhinduda CNCF OpenTelemetry spetsifikatsioonidest. Vt: https://opentelemetry.io ja https://github.com/open-telemetry/opentelemetry-specification.'
+      sel: 'Infosüsteemi arendustes tuleb juhul, kui otsustatakse rakendada kasutaja teekonna (ja muu telemeetria) kogumist, juhinduda CNCF OpenTelemetry spetsifikatsioonidest. Vt: [https://opentelemetry.io](https://opentelemetry.io) ja [https://github.com/open-telemetry/opentelemetry-specification](https://github.com/open-telemetry/opentelemetry-specification).'
 - kategooria:
   nimetus: 'ehitamine'
   nouded:
