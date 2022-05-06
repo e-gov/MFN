@@ -17,7 +17,7 @@
       son: 'Ühe faili piires kasutada alati sama reavahetuse kodeeringut - kas Windowsi (`CR+LF; 0x0D0A; U+000D U+000A`) või Linux/Unix standardile vastavat (`LF; 0x0A; U+000A`).'
       sel: ''
     - nr: 3
-      son: 'Aja esitamisel andmevahetusprotokollides kasutada Internet Date/Time vorminguid ([RFC 3339 Date and Time on the Internet: Timestamps](https://tools.ietf.org/html/rfc3339)). Aja esitamisel inimkasutajale lähtuda vastava keele reeglitest (eesti keele puhul [Eesti õigekeelsuskäsiraamat 2019, ptk "Arvukirjutus"](https://keeleabi.eki.ee/viki/Arvukirjutus.html).'
+      son: 'Aja esitamisel andmevahetusprotokollides kasutada Internet Date/Time vorminguid ([RFC 3339 Date and Time on the Internet: Timestamps](https://tools.ietf.org/html/rfc3339)). Aja esitamisel inimkasutajale lähtuda vastava keele reeglitest (eesti keele puhul [Eesti õigekeelsuskäsiraamat 2019, ptk "Arvukirjutus"](https://keeleabi.eki.ee/viki/Arvukirjutus.html)).'
       sel: 'Nt: "1961-07-12T10:05:00Z", "2020-02-18T09:31:20.463+02:00". Märkus. Mõned standardid nõuavad aja esitamist [Unix epoch](https://en.wikipedia.org/wiki/Unix_time) vormingus, nt: 1) nt OpenID Connect ja 2) [W3C veebiliidesed](https://w3ctag.github.io/design-principles/#times-and-dates).' 
 - kategooria:
   nimetus: 'litsents'
