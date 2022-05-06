@@ -3,6 +3,10 @@ permalink: Muutelugu
 ---
 
 ## Muutelugu
+___06\.05.2022___
+
+- Täpsustatud aja esitamist andmevahetuses. [MFN 2.3](https://e-gov.github.io/MFN/#2.3)
+
 ___08\.03.2022___
 
 - Täpsustatud Java rakendusserveri kasutamist. [MFN 18.7](https://e-gov.github.io/MFN/#18.7)
