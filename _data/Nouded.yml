@@ -109,7 +109,7 @@
   nouded:
     - nr: 1
       son: 'Veebirakenduse kasutajaliides peab olema juurdepääsetav. Tuleb täita WCAG 2.1 taseme AA nõuded.'
-      sel: 'Vt: [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/). (Eestikeelne tõlge on v2.0 kohta: [Veebi sisu juurdepääsetavussuunised (WCAG) 2.0](https://www.w3.org/Translations/WCAG20-et/))'
+      sel: 'Vt: [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/). (Eestikeelne tõlge on olemas v2.0 kohta: [Veebi sisu juurdepääsetavussuunised (WCAG) 2.0](https://www.w3.org/Translations/WCAG20-et/))'
 - kategooria:
   nimetus: 'URL-id'
   nouded:
@@ -194,7 +194,7 @@
       son: 'Kõik primaarvõtmed (_primary key_) peavad olema indekseeritud unikaalse indeksiga.'
       sel: ''
     - nr: 5
-      son: 'Kui andmebaasis olevate andmete ISKE tervikluse klass on 2 või kõrgem, siis tuleb kõik klass 2 infot sisaldavad andmebaasi kirjed versioneerida.'
+      son: 'Kui andmebaasis olevate andmete ISKE tervikluse klass on 2 (E-ITS rakendamisel IS) või kõrgem, siis tuleb kõik klass 2 infot sisaldavad andmebaasi kirjed versioneerida.'
       sel: ''
     - nr: 6
       son: 'Andmebaasi väljade pikkused tuleb andmekirjelduskeeles (DDL-is) kirjeldada sümbolites, mitte baitides.'
@@ -293,8 +293,8 @@
   nimetus: 'infoturve'
   nouded:
     - nr: 1
-      son: 'Kui ei ole määratud teisiti, peab rakendus olema kasutatav ISKE klassile `K2T2S2` vastavate süsteemide loomisel.'
-      sel: 'Turvameetmetega tutvu [ISKE portaalis](https://iske.ria.ee).'
+      son: 'Kui ei ole määratud teisiti, peab rakendus olema kasutatav ISKE klassile `K2T2S2` (E-ITS rakendamisel - vastavale turbetasemele) vastavate süsteemide loomisel.'
+      sel: 'Turvameetmetega tutvu [ISKE portaalis](https://iske.ria.ee), E-ITS rakendamisel - [E-ITS portaalis](https://eits.ria.ee/).'
     - nr: 2
       son: 'Süsteem ei tohi võimaldada kasutajale ligipääsu süsteemi toimimise informatsioonile, nagu failide täisnimed, kutsepinud (_stack trace_) jms.'
       sel: ''

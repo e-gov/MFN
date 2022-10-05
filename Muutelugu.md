@@ -3,6 +3,11 @@ permalink: Muutelugu
 ---
 
 ## Muutelugu
+___05\.10.2022___
+
+- WCAG versioon uuendatud 2.1 → 2.2. [MFN 9.1](https://e-gov.github.io/MFN/#9.1)
+- Viited ISKE-le uuendatud viideteks E-ITS-le. [MFN 16.5](https://e-gov.github.io/MFN/#16.5), [MFN 20.1](https://e-gov.github.io/MFN/#20.1)
+
 ___06\.05.2022___
 
 - Täpsustatud aja esitamist andmevahetuses. [MFN 2.3](https://e-gov.github.io/MFN/#2.3)
