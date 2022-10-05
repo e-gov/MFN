@@ -108,7 +108,7 @@
   nimetus: 'kasutatavus'
   nouded:
     - nr: 1
-      son: 'Veebirakenduse kasutajaliides peab olema juurdepääsetav. Tuleb täita WCAG 2.1 taseme AA nõuded.'
+      son: 'Veebirakenduse kasutajaliides peab olema juurdepääsetav. Tuleb täita WCAG 2.2 taseme AA nõuded.'
       sel: 'Vt: [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/). (Eestikeelne tõlge on olemas v2.0 kohta: [Veebi sisu juurdepääsetavussuunised (WCAG) 2.0](https://www.w3.org/Translations/WCAG20-et/))'
 - kategooria:
   nimetus: 'URL-id'
@@ -293,7 +293,7 @@
   nimetus: 'infoturve'
   nouded:
     - nr: 1
-      son: 'Kui ei ole määratud teisiti, peab rakendus olema kasutatav ISKE klassile `K2T2S2` (E-ITS rakendamisel - vastavale turbetasemele) vastavate süsteemide loomisel.'
+      son: 'Kui ei ole määratud teisiti, peab rakendus olema kasutatav ISKE klassile `K2T2S2` (E-ITS rakendamisel - samaväärsele turbetasemele) vastavate süsteemide loomisel.'
       sel: 'Turvameetmetega tutvu [ISKE portaalis](https://iske.ria.ee), E-ITS rakendamisel - [E-ITS portaalis](https://eits.ria.ee/).'
     - nr: 2
       son: 'Süsteem ei tohi võimaldada kasutajale ligipääsu süsteemi toimimise informatsioonile, nagu failide täisnimed, kutsepinud (_stack trace_) jms.'
