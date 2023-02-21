@@ -3,6 +3,10 @@ permalink: Muutelugu
 ---
 
 ## Muutelugu
+___21\.02.2023___
+
+- Lisatud viited EL standardile EN 301 549 "Accessibility requirements for ICT products and services" ja määrusele "Veebilehe ja mobiilirakenduse ligipääsetavuse nõuded ning ligipääsetavust kirjeldava teabe avaldamise kord"  [MFN 9.1](https://e-gov.github.io/MFN/#9.1)
+
 ___05\.10.2022___
 
 - WCAG versioon uuendatud 2.1 → 2.2. [MFN 9.1](https://e-gov.github.io/MFN/#9.1)
