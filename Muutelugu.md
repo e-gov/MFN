@@ -3,6 +3,10 @@ permalink: Muutelugu
 ---
 
 ## Muutelugu
+___17\.03.2023___
+
+- Täpsustatud nõuete rakendamist arenduslepingutes. Vt avaleht, eessõna. "Käesolev nõuetekogum on soovituslik lisada arendustööde hankedokumenti või arenduslepingusse, seejuures kaaluda kõigi nõuete kohaldatavust ning lisada vaid kohalduvad. Tööde vastuvõtmisel tuleb selgitada realisatsiooni vastavust nõudele."
+
 ___21\.02.2023___
 
 - Lisatud viited EL standardile EN 301 549 "Accessibility requirements for ICT products and services" ja määrusele "Veebilehe ja mobiilirakenduse ligipääsetavuse nõuded ning ligipääsetavust kirjeldava teabe avaldamise kord"  [MFN 9.1](https://e-gov.github.io/MFN/#9.1)
