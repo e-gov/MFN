@@ -248,7 +248,7 @@
       son: 'Lähtekoodi kompileerimine peab olema teostatav ka välisvõrguühenduse puudumise korral. Selle nõude täitmise võimaldamiseks on RIAs kasutusel sisemised tarkvarakomponentide repod.'
       sel: 'Vt täpsemalt sisenõuete dokumendist.'
     - nr: 6
-      son: 'Fat jar-id ei sobi (Java rakendustes).'
+      son: '(kehtetu)'
       sel: ''
     - nr: 7
       son: 'Java rakenduse tööks vajalikud teegid peavad olema rakenduse osa. Kui Java rakenduse käitamiseks on kasutatud mõnd rakendusserverit (näiteks Tomcat), siis võivad selle tööks vajalikud üldteegid olla rakendusserveri lib kaustas.'
