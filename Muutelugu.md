@@ -3,6 +3,10 @@ permalink: Muutelugu
 ---
 
 ## Muutelugu
+___12.2023___
+
+- Andmebaasitabeli primaarvõti võib olla ka `UUID`-tüüpi. [MFN 16.3](https://e-gov.github.io/MFN/#16.3)
+
 ___02\.05.2023___
 
 - Java fat jar-de nõue tunnistatud kehtetuks.  [MFN 18.6](https://e-gov.github.io/MFN/#18.6)
