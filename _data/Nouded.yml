@@ -188,7 +188,7 @@
       son: 'Ühest andmetabelist teise viitamisel tuleb kasutada välisvõtmeid (_foreign key_). Kõik välisvõtmed peavad olema indekseeritud mitteunikaalse indeksiga ja välisvõtmetena kirjeldatud.'
       sel: ''
     - nr: 3
-      son: 'Kõigis andmebaasi tabelites peab olema defineeritud `integer`-tüüpi primaarvõti, mis on surrogaatvõti. Primaarvõtmena ei tohi kasutada reaalse eluga seotud andmevälju.'
+      son: 'Kõigis andmebaasi tabelites peab olema defineeritud `integer`-tüüpi või `UUID`-tüüpi primaarvõti, mis on surrogaatvõti. Primaarvõtmena ei tohi kasutada reaalse eluga seotud andmevälju.'
       sel: ''
     - nr: 4
       son: 'Kõik primaarvõtmed (_primary key_) peavad olema indekseeritud unikaalse indeksiga.'
