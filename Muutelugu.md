@@ -3,7 +3,11 @@ permalink: Muutelugu
 ---
 
 ## Muutelugu
-___12.2023___
+___19.\08..2024___
+
+- Telefoninumbrite käsitlemisel taodelda koosvõimelisust. [MFN 12.5](https://e-gov.github.io/MFN/#12.5)
+
+___15.\12.2023___
 
 - Andmebaasitabeli primaarvõti võib olla ka `UUID`-tüüpi. [MFN 16.3](https://e-gov.github.io/MFN/#16.3)
 
