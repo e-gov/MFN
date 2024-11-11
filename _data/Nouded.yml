@@ -260,8 +260,8 @@
       son: 'Fondid, laadilehed ja Javascripti failid serveerida rakendusest endast.'
       sel: ''
     - nr: 9
-      son: 'Toodangusse evitatavas tarkvaras peavad sõltuvuste versioonid olema fikseeritud.'
-      sel: 'Eesmärgiks on ehitamise korratavus (*repeatable build*). Näiteks: Node.js platvormil toodangusse evitatavate moodulite `package.json` failis, jaotises `dependencies` ei tohi olla versioonimärkeid `^`, `~`, `*`, `x`.'
+      son: 'Pakendatavas tarkvaras peavad sõltuvuste versioonid olema fikseeritud'
+      sel: 'Nõude eesmärgiks on tagada tarkvara ehitamise korratavus (ingl repeatable build) ja tagada võimalikult hea ülevaade kasutatavatest tarkvarakomponentidest (tarkvara koostenimekiri, ingl software bill of materials, SBOM). Nõue on täidetud, kui on tagatud võimekus korrata tarkvara ehitusprotsessi lähtekoodist, saavutades igakordselt sama lõpptulemuse.'
 - kategooria:
   nimetus: 'paigaldamine'
   nouded:

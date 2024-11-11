@@ -3,6 +3,10 @@ permalink: Muutelugu
 ---
 
 ## Muutelugu
+___11\.11..2024___
+
+- Versioonide fikseerimise nõude täpsustamine, koos tarkvara koostenimekirja (SBOM) mõiste sissetoomisega. [MFN 18.9](https://e-gov.github.io/MFN/#18.9)
+
 ___19\.08..2024___
 
 - Telefoninumbrite käsitlemisel taodelda koosvõimelisust. [MFN 12.5](https://e-gov.github.io/MFN/#12.5)
