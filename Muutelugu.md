@@ -9,7 +9,6 @@ ___22\.01.2025___
 - MIT litsensi selgem väljatoomine [MFN 3.1](https://e-gov.github.io/MFN/#3.1)
 - Keelekorrektuur  [MFN 5.1](https://e-gov.github.io/MFN/#5.1)
 - Automaattestide parameteriseerimise nõue (endine MFN 6.3) eemaldatud
-- Keelekorrektuur  [MFN 3.1](https://e-gov.github.io/MFN/#3.1)
 - Komponentidevahelistes liidestes TLS-i, aga samuti täiendavate autentimis- ja autoriseerumisskeemide kasutamise täpsustamine [MFN 20.9](https://e-gov.github.io/MFN/#20.9)
 
 ___11\.11.2024___
