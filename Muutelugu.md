@@ -3,6 +3,10 @@ permalink: Muutelugu
 ---
 
 ## Muutelugu
+___25\.07.2025___
+
+- Java-spetsiifiline logimisenõue asendatud ajakohasema üldnõudega. [MFN 17.2](https://e-gov.github.io/MFN/#17.2)
+
 ___22\.01.2025___
 
 - Kehtivuse kaotanud nõudekogumitele viidete eemaldamine [MFN 1.2](https://e-gov.github.io/MFN/#1.2)

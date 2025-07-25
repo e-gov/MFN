@@ -214,8 +214,8 @@
       son: 'Rakenduse logimine peab olema organiseeritud kasutades selleks ettenähtud standardseid vahendeid viisil, mis võimaldab rakenduse administraatoril määratleda ja muuta logide väljundit (vähemalt fail, andmebaas, `syslogd`), logimise taset ja logimise formaati.'
       sel: ''
     - nr: 2
-      son: 'Java rakenduste korral logitakse [SLF4J](vt http://www.slf4j.org) raamistiku abil.'
-      sel: 'Ühtlustatud selleks, et rakendusi saaks seadistada ühtemoodi.'
+      son: 'Iga infosüsteemi komponent/rakendus logib sündmused struktureeritult JSON-formaadis. Logikirjete sisu vastab OpenTelemetry (OTel) standardile.'
+      sel: 'Struktureeritud JSON-logimine võimaldab logide tõhusat töötlemist ja analüüsi. OTel standardi järgimine tagab logiväljade ühtlustamise süsteemide vahel, lihtsustades logide koondamist ja seiret. OTel kirjeldus vt. https://opentelemetry.io/docs/specs/otel/ '
     - nr: 3
       son: 'Logid kirjutatakse inglise keeles (välja arvatud kasutajale näidatud teated).'
       sel: ''
