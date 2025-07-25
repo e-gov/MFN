@@ -43,9 +43,6 @@
     - nr: 4
       son: 'Rakenduse funktsionaalsuses tuleb selgelt eraldada avaliku teenuse liides muudest mitteavalikest, sisemistest, konfigureerimis jms. liidestest.'
       sel: ''
-    - nr: 5
-      son: 'Kõik liidesed rakenduse eri osade vahel peavad olema vajadusel kaitstavad kahepoolset tuvastamist ja krüpteerimist võimaldava protokolliga.'
-      sel: ''
     - nr: 6
       son: 'Rakenduse pakutav(ad) HTTP REST masinliidesed (API-d) kirjeldatakse masinloetavas OpenAPI vormingus.'
       sel: 'Masinloetav kirjeldus ei välista täiendavat, paremini inimloetavat vabavormilist kirjeldust.'
