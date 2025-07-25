@@ -43,7 +43,7 @@
     - nr: 4
       son: 'Rakenduse funktsionaalsuses tuleb selgelt eraldada avaliku teenuse liides muudest mitteavalikest, sisemistest, konfigureerimis jms. liidestest.'
       sel: ''
-    - nr: 6
+    - nr: 5
       son: 'Rakenduse pakutav(ad) HTTP REST masinliidesed (API-d) kirjeldatakse masinloetavas OpenAPI vormingus.'
       sel: 'Masinloetav kirjeldus ei välista täiendavat, paremini inimloetavat vabavormilist kirjeldust.'
 - kategooria:
