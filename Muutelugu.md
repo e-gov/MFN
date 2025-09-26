@@ -3,6 +3,10 @@ permalink: Muutelugu
 ---
 
 ## Muutelugu
+___26\.09.2025___
+
+- Lisatud SBOM loomise nõue. [MFN 20.11](https://e-gov.github.io/MFN/#20.11)
+
 ___25\.07.2025___
 
 - Java-spetsiifiline logimisenõue asendatud ajakohasema üldnõudega. [MFN 17.2](https://e-gov.github.io/MFN/#17.2)
