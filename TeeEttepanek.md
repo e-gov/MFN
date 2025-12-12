@@ -32,4 +32,4 @@ Probleemide arutamiseks on hea kasutada GitHub repo _issue_-sid. Tehniliselt kir
   - muudatuse kuupäev
   - muudatuse lühikirjeldus, soovitavalt viitega vastavale nõudele.
 
-___Vt ka___: [mittefunktsionaalsed nõuded](https://et.wikipedia.org/wiki/Mittefunktsionaalsed_n%C3%B5uded) (Vikipeedia);  Riigi Infosüsteemide Arenduskeskus (2006) [Mittefunktsionaalsete nõuete kirjeldamise juhend](https://www.ria.ee/public/publikatsioonid/Mittefunk_nouded.doc) v 0.2.
+___Vt ka___: [mittefunktsionaalsed nõuded](https://et.wikipedia.org/wiki/Mittefunktsionaalsed_n%C3%B5uded) (Vikipeedia).
