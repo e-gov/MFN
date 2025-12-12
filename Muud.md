@@ -10,7 +10,7 @@ permalink: Muud
 
 [RIA mittefunktsionaalsed nõuded](https://confluence.ria.ee/pages/viewpage.action?pageId=47548375) &#128274;
 
-RIK arendusnõuded &#128274;<br>[IT profiil](http://www.rik.ee/et/asutusest/it-profiil) 
+RIK nõuded arendustele &#128274;<br>[IT profiil](https://www.rik.ee/et/asutusest/nouded-arendustele) 
 
 RMIT üldised mittefunktsionaalsed ja tehnilised nõuded &#128274;<br>
 IT profiil &#128274;
