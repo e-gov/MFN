@@ -12,7 +12,7 @@
     - `issue`
       - `nimetus` - probleem, mida nõue aitab lahendada
       - `url` - GitHub issue URL
-- Muudatuste tegemisel tuleks täiendada ka muutelugu (failis `Muutelugu.md`):
+- Muudatuste tegemisel täiendada ka muutelugu (failis `Muutelugu.md`):
   - muudatuse kuupäev
   - muudatuse lühikirjeldus, soovitavalt viitega vastavale nõudele.
 
