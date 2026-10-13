@@ -3,6 +3,10 @@ permalink: Muutelugu
 ---
 
 ## Muutelugu
+___13\.10.2026___
+
+- Telefoninumbrid tuleb salvestada ja edastada koos riigikoodiga ühel väljal E.164 vormingus (varem nõuti riigikoodi ja numbri hoidmist ja edastamist eraldi number-tüüpi väljadel). [MFN 12.5](https://e-gov.github.io/MFN/#12.5)
+
 ___26\.09.2025___
 
 - Lisatud SBOM loomise nõue. [MFN 20.11](https://e-gov.github.io/MFN/#20.11)
