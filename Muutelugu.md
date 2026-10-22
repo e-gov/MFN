@@ -3,6 +3,10 @@ permalink: Muutelugu
 ---
 
 ## Muutelugu
+___22\.10.2026___
+
+- ID-kaardi serdi edastamise päise nõue tunnistatud kehtetuks, sest autentimiseks kasutatakse TARA või GovSSO teenust. [MFN 13.2](https://e-gov.github.io/MFN/#13.2)
+
 ___26\.09.2025___
 
 - Lisatud SBOM loomise nõue. [MFN 20.11](https://e-gov.github.io/MFN/#20.11)
