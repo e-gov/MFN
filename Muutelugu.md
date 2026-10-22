@@ -3,6 +3,10 @@ permalink: Muutelugu
 ---
 
 ## Muutelugu
+___22\.10.2026___
+
+- `heartbeat.json` nõue asendatud käitusplatvormi tervisekontrolli otspunktide (_startup_, _liveness_, _readiness_) nõudega. [MFN 24.1](https://e-gov.github.io/MFN/#24.1)
+
 ___26\.09.2025___
 
 - Lisatud SBOM loomise nõue. [MFN 20.11](https://e-gov.github.io/MFN/#20.11)
