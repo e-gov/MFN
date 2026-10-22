@@ -208,8 +208,8 @@
   nimetus: 'logimine'
   nouded:
     - nr: 1
-      son: 'Rakenduse logimine peab olema organiseeritud kasutades selleks ettenähtud standardseid vahendeid viisil, mis võimaldab rakenduse administraatoril määratleda ja muuta logide väljundit (vähemalt fail, andmebaas, `syslogd`), logimise taset ja logimise formaati.'
-      sel: ''
+      son: 'Rakendus kirjutab logid standardväljundisse (`stdout`/`stderr`). Logide kogumise, edastamise ja säilitamise eest vastutab käituskeskkond, mitte rakendus. Logimise tase peab olema seadistatav rakendust uuesti ehitamata.'
+      sel: 'Konteineris käivituv rakendus ei kirjuta logisid faili, andmebaasi, `syslog`-i ega otse logiserverisse: platvorm (nt Kubernetes) kogub standardväljundi ja edastab selle kesksesse logihaldusesse. Nii on logimine ühesugune kõigis keskkondades, rakendus ei vaja logi sihtkoha seadistust ega kettamahtu logifailide jaoks ning logid ei kao koos konteineriga.'
     - nr: 2
       son: 'Iga infosüsteemi komponent/rakendus logib sündmused struktureeritult JSON-formaadis. Logikirjete sisu vastab OpenTelemetry (OTel) standardile.'
       sel: 'Struktureeritud JSON-logimine võimaldab logide tõhusat töötlemist ja analüüsi. OTel standardi järgimine tagab logiväljade ühtlustamise süsteemide vahel, lihtsustades logide koondamist ja seiret. OTel kirjeldus vt. https://opentelemetry.io/docs/specs/otel/ '
@@ -217,8 +217,8 @@
       son: 'Logid kirjutatakse inglise keeles (välja arvatud kasutajale näidatud teated).'
       sel: ''
     - nr: 4
-      son: 'Turvalisuse seisukohalt kriitilised sündmused (sisenemine, väljumine, rolli muut(u)mine) ning tegevused, mis toovad kaasa rahalisi või juriidilisi tagajärgi, logitakse eraldi konfigureeritavasse ___turvalogisse___.'
-      sel: ''
+      son: 'Turvalisuse seisukohalt kriitilised sündmused (sisenemine, väljumine, rolli muut(u)mine) ning tegevused, mis toovad kaasa rahalisi või juriidilisi tagajärgi, logitakse ___turvalogi___ kirjetena, mis on tavalogist eraldi märgendatud.'
+      sel: 'Turvalogi ei ole eraldi väljund ega fail: kirjed lähevad samasse standardväljundi voogu (vt [17.1](https://e-gov.github.io/MFN/#17.1)), kuid kannavad struktureeritud logikirjes (vt [17.2](https://e-gov.github.io/MFN/#17.2)) kokkulepitud märgendit, nt välja `log.type: security` või eraldi loggeri nime. Märgendi järgi suunab käituskeskkond turvalogi kirjed eraldi hoidlasse, kus neil on tavalogist erinev säilitusaeg ja ligipääsupiirang. Turvalogi kirjes on alati sündmuse liik, aeg, tegutseja identifikaator ja tulemus (õnnestus/ebaõnnestus). Turvalogi kirjeid ei tohi logitaseme muutmisega välja lülitada.'
     - nr: 5
       son: 'Telemeetria.'
       sel: 'Infosüsteemi arendustes tuleb juhul, kui otsustatakse rakendada kasutaja teekonna (ja muu telemeetria) kogumist, juhinduda CNCF OpenTelemetry spetsifikatsioonidest. Vt: [https://opentelemetry.io](https://opentelemetry.io) ja [https://github.com/open-telemetry/opentelemetry-specification](https://github.com/open-telemetry/opentelemetry-specification).'
