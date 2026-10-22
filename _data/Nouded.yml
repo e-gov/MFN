@@ -202,8 +202,8 @@
       son: 'Rakendus peab olema tabelite [partitsioneerimise](http://en.wikipedia.org/wiki/Partition_%28database%29) suhtes agnostiline st. tabelite partitsioneerimisstruktuuride muutmine ei tohi mõjutada rakenduse tööd.'
       sel: ''
     - nr: 10
-      son: 'Rakendusserveri, nt Tomcat kasutamisel, tuleks võimalusel kasutada rakendusserverit ka andmebaasiühenduste (JDBC) halduseks.'
-      sel: 'Rakendus ei puuli ise, vaid küsib JNDI abil rakendusserveri puuli aadressi. Nõude eesmärk on jõudluse parem hallatavus.'
+      son: '(kehtetu)'
+      sel: 'Kehtetu alates 22.10.2026. Nõudis andmebaasiühenduste (JDBC) _pool_-i haldamist rakendusserveris (nt Tomcat) ja _pool_-i küsimist JNDI kaudu. Eeldab rakendusserverit, mida konteineris iseseisvalt käivituval rakendusel (nt Spring Boot) ei ole - seal haldab ühenduste _pool_-i rakendus ise.'
 - kategooria:
   nimetus: 'logimine'
   nouded:
@@ -244,8 +244,8 @@
       son: '(kehtetu)'
       sel: ''
     - nr: 7
-      son: 'Java rakenduse tööks vajalikud teegid peavad olema rakenduse osa. Kui Java rakenduse käitamiseks on kasutatud mõnd rakendusserverit (näiteks Tomcat), siis võivad selle tööks vajalikud üldteegid olla rakendusserveri lib kaustas.'
-      sel: 'Näide: JNDI konfiguratsioon eeldab, et andmebaasiohjur oleks rakendusserveri sees (nt. Tomcat), mitte rakenduse WAR failis. Juhul kui andmebaasiohjur on osa WAR failist, võib andmebaasiühenduste probleemide tekkimisel kohe tekkida ka probleem rakendusserveri (taas)käivitamisega.'
+      son: '(kehtetu)'
+      sel: 'Kehtetu alates 22.10.2026. Nõudis, et Java rakenduse teegid oleksid rakenduse osa, kuid rakendusserveri (nt Tomcat) kasutamisel võiks üldteegid, sh andmebaasiohjur, olla rakendusserveri `lib` kaustas. Konteineris käivituval rakendusel eraldiseisvat rakendusserverit ei ole ja kõik teegid, sh andmebaasiohjur, on alati rakenduse osa.'
     - nr: 8
       son: 'Fondid, laadilehed ja Javascripti failid serveerida rakendusest endast.'
       sel: ''
@@ -259,8 +259,8 @@
       son: 'Rakendus saadab e-kirju RIA SMTP edastusteenuse kaudu.'
       sel: 'Täpsemad nõuded vt SMTP edastusteenuse kirjeldusest.'
     - nr: 2
-      son: 'Rakendus peab olema loodud sõltumatuna rakendusserveri tarkvarast.'
-      sel: 'Rakendust peab olema võimalik konfiguratsioonimuudatuste abil paigaldada teisele samatüübilisele rakendusserverile. Kui see ei ole võimalik tuleb rakendusele luua sobituspaketid põhiliselt kasutatavate rakendusserverite jaoks.'
+      son: '(kehtetu)'
+      sel: 'Kehtetu alates 22.10.2026. Nõudis rakenduse sõltumatust rakendusserveri tarkvarast ja paigaldatavust teisele samatüübilisele rakendusserverile. Rakendusserveri eeldus on aegunud; seadistuse koodist eraldamise katavad nõuded [19.6](https://e-gov.github.io/MFN/#19.6) ja [19.10](https://e-gov.github.io/MFN/#19.10).'
     - nr: 3
       son: 'Kõik rakenduse versiooniuuendused (sealhulgas muudatused andmebaasi struktuuris ja koodis) peavad kuni järgmise versiooniuuenduseni olema täielikult tagasi pööratavad st. koos versiooni uuendusega peavad olema loodud vahendid ja kirjeldatud protseduurid versiooniuuenduse tagasi võtmiseks.'
       sel: ''
@@ -268,20 +268,23 @@
       son: 'Rakendus ei tohi eeldada paigalduskeskkonna turvalisust.'
       sel: ''
     - nr: 5
-      son: 'Rakendusservereid peab olema võimalik lisada teenust pakkuvasse klastrisse ja sealt eemaldada vastavalt vajadusele.'
-      sel: ''
+      son: '(kehtetu)'
+      sel: 'Kehtetu alates 22.10.2026. Nõudis, et rakendusservereid saaks teenust pakkuvasse klastrisse lisada ja sealt eemaldada vastavalt vajadusele. Eraldi rakendusserveri olemasoleu eeldus on aegunud; horisontaalse skaleeritavuse katab nõue [23.2](https://e-gov.github.io/MFN/#23.2).'
     - nr: 6
       son: 'Rakendus ei tohi kasutada konfigureerimata viiteid failidele või välistele süsteemidele st. kõik viited peavad olema programmikoodi välised.'
       sel: ''
     - nr: 7
-      son: 'Kõik andmebaasiühendused tuleb kirjeldada täispika URI abil. Java rakendustes kasutatakse JNDI ühendusi.'
-      sel: ''
+      son: '(kehtetu)'
+      sel: 'Kehtetu alates 22.10.2026. Nõudis andmebaasiühenduste kirjeldamist täispika URI abil ja Java rakendustes JNDI ühenduste kasutamist. JNDI eeldab eraldiseisvat rakendusserverit, mida konteineris käivituval rakendusel ei ole;'
     - nr: 8
-      son: ' Andmebaasi JNDI objekti Datasource-i nimetamisel tuleb kasutada prefiksit `jdbc` ning ühesõnaliste lühendite korral väiketähti. Nt: `jdbc/system1`, `jdbc/system2` jne.'
-      sel: ''
+      son: '(kehtetu)'
+      sel: 'Kehtetu alates 22.10.2026. Nõudis JNDI andmeallika nimetamist prefiksiga `jdbc` ja väiketähtedega (nt `jdbc/system1`). JNDI eeldab eraldiseisvat rakendusserverit, mida konteineris käivituval rakendusel ei ole.'
     - nr: 9
       son: 'Rakenduse andmebaasi või andmeskeemi paigaldamine ei tohi nõuda punktis erilisi kasutajaõigusi.'
       sel: ''
+    - nr: 10
+      son: 'Saladuste hoidlas hoitakse ainult tegelikke saladusi (paroolid, võtmed, tõendid, sertifikaatide privaatosad). Mittesensitiivsed seadistusväärtused hoitakse paigaldusrepo (_deployment repo_) koodis.'
+      sel: 'Mittesensitiivsed väärtused on nt teenuste aadressid, pordid, andmebaasi nimi ja kasutajanimi, ajapiirangud, funktsionaalsuse lülitid. Kui need on paigaldusrepos versioonihalduse all, on kõigi keskkondade seadistus arendajale nähtav ja keskkondade vahel võrreldav, muudatus on jälgitav (kes, millal, miks) ja seadistusvead leitakse kiiremini.'
 - kategooria:
   nimetus: 'infoturve'
   nouded:
