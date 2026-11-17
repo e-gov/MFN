@@ -83,8 +83,8 @@
       son: 'Stiiliteave asetada CSS-failidesse.'
       sel: 'Stiile ei tohiks sisse kirjutada HTML-teksti, ei `style`-taagide vahelise tekstina ega `style`-atribuutidena.'
     - nr: 2
-      son: 'Mahukate laadilehtede puhul kaaluda [Sass](http://sass-lang.com/)-i kasutamist.'
-      sel: 'Sass võib suurendada laadilehtede loetavust ja hallatavust.'
+      son: '(kehtetu)'
+      sel: 'Kehtetu alates 22.10.2026. Soovitas mahukate laadilehtede puhul kaaluda [Sass](https://sass-lang.com/)-i kasutamist loetavuse ja hallatavuse parandamiseks.'
     - nr: 3
       son: 'Järgida ajakohaseid veebistandardeid.'
       sel: 'HTML5, CSS3 jms.'
