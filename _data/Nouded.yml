@@ -151,11 +151,9 @@
     - nr: 1
       son: 'Väliste kasutajate, so. Eesti Vabariigi residentide ja EL teiste liikmesriikide residentide autentimislahenduse loomisel lähtuda dokumendist [Autentimislahendustele kehtivad nõuded](https://www.ria.ee/sites/default/files/content-editors/EID/autentimislahendustele-kehtivad-nouded.pdf).'
       sel: ''
-    - nr: 2  
-      son: 'ID-kaardiga autentimisel ei kasutata serdi edastamise päises side- (`-`) ega alakriipse (`_`).'
-      issues:
-      - issue:
-        nimetus: 'Erinevad rakendusserverid võivad tõlgendada neid sümboleid erinevalt.'
+    - nr: 2
+      son: '(kehtetu)'
+      sel: 'Kehtetu alates 22.10.2026. Nõudis, et ID-kaardiga autentimisel ei kasutataks serdi edastamise päises side- (`-`) ega alakriipse (`_`), sest erinevad rakendusserverid võivad neid sümboleid erinevalt tõlgendada. Rakendus ei töötle ID-kaardi serti ise - autentimiseks kasutatakse [TARA](https://e-gov.github.io/TARA-Doku/) või [GovSSO](https://e-gov.github.io/GOVSSO/) teenust.'
 - kategooria:
   nimetus: 'rollihaldus'
   nouded:

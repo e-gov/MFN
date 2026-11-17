@@ -5,9 +5,11 @@ permalink: Muutelugu
 ## Muutelugu
 ___22\.10.2026___
 
+- ID-kaardi serdi edastamise päise nõue tunnistatud kehtetuks, sest autentimiseks kasutatakse TARA või GovSSO teenust. [MFN 13.2](https://e-gov.github.io/MFN/#13.2)
 - Sass-i kasutamise soovitus tunnistatud kehtetuks, sest tänapäevane CSS juba katab Sass-i peamised kasutusjuhud [MFN 8.2](https://e-gov.github.io/MFN/#8.2)
 
 ___13\.10.2026___
+
 - Eemaldatud [MFN 4.3](https://e-gov.github.io/MFN/#4.3) näide, kuna see on vastuolus [MFN 16.1](https://e-gov.github.io/MFN/#16.1)-ga.
 - Telefoninumbrid tuleb salvestada ja edastada koos riigikoodiga ühel väljal E.164 vormingus (varem nõuti riigikoodi ja numbri hoidmist ja edastamist eraldi number-tüüpi väljadel). [MFN 12.5](https://e-gov.github.io/MFN/#12.5)
 - Jenkinsi asemel vaikimisi GitLab. [MFN 6.5](https://e-gov.github.io/MFN/#6.5)
