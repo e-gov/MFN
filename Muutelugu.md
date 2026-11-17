@@ -5,6 +5,8 @@ permalink: Muutelugu
 ## Muutelugu
 ___22\.10.2026___
 
+- Logimise nõue viidud konteineripaigaldusele vastavaks: logid kirjutatakse standardväljundisse ja nende kogumise, edastamise ja säilitamise eest vastutab käituskeskkond, sest konteineris ei ole rakendusel püsivat logifaili ega oma logiserverit; [MFN 17.1](https://e-gov.github.io/MFN/#17.1)
+- Turvalogi täpsustatud: mitte rakenduse seadistatav eraldi väljund, vaid samas standardväljundi voos eraldi märgendatud kirjed, mille käituskeskkond märgendi järgi eraldi hoidlasse suunab; lisatud turvalogi kirje kohustuslik sisu ja keeld turvalogi logitasemega välja lülitada. [MFN 17.4](https://e-gov.github.io/MFN/#17.4)
 - ID-kaardi serdi edastamise päise nõue tunnistatud kehtetuks, sest autentimiseks kasutatakse TARA või GovSSO teenust. [MFN 13.2](https://e-gov.github.io/MFN/#13.2)
 - Sass-i kasutamise soovitus tunnistatud kehtetuks, sest tänapäevane CSS juba katab Sass-i peamised kasutusjuhud [MFN 8.2](https://e-gov.github.io/MFN/#8.2)
 
