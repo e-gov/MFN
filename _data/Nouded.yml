@@ -39,7 +39,7 @@
       sel: 'Välise süsteemi tõrge tohib mõjutada ainult sellest otseselt sõltuvate kasutuslugude toimimist.'
     - nr: 3
       son: 'Rakendus peab olema tehniliselt tükeldatud vastavalt loogilisele jaotusele. Saadud osised peavad olema eraldi versioneeritavad ja paigaldatavad. Muuhulgas peab andmebaas olema rakendusest eraldi paigaldatav.'
-      sel: 'Näiteks, kui rakendusel on eraldi turvakontekstidega liidesed ametnikule ja kodanikule, peab rakendus olema jaotatud kaheks eraldi liidesekomponendiks ning nende mõlema poolt kasutatavaks andmebaasiks.'
+      sel: ''
     - nr: 4
       son: 'Rakenduse funktsionaalsuses tuleb selgelt eraldada avaliku teenuse liides muudest mitteavalikest, sisemistest, konfigureerimis jms. liidestest.'
       sel: ''
@@ -68,7 +68,7 @@
       son: 'Automaattestid peavad raporteerima tulemusi inim- ja masinloetaval kujul (näiteks JUnit XML ja HTML).'
       sel: ''
     - nr: 5
-      son: 'Automaatteste käivitatakse RIA CI vahendi Jenkins vahendusel.'
+      son: 'Automaatteste käivitatakse RIA CI vahendi GitLab (vanemates projektides ka Jenkins) vahendusel.'
       sel: ''
 - kategooria:
   nimetus: 'koodi kvaliteet'
@@ -83,8 +83,8 @@
       son: 'Stiiliteave asetada CSS-failidesse.'
       sel: 'Stiile ei tohiks sisse kirjutada HTML-teksti, ei `style`-taagide vahelise tekstina ega `style`-atribuutidena.'
     - nr: 2
-      son: 'Mahukate laadilehtede puhul kaaluda [Sass](http://sass-lang.com/)-i kasutamist.'
-      sel: 'Sass võib suurendada laadilehtede loetavust ja hallatavust.'
+      son: '(kehtetu)'
+      sel: 'Kehtetu alates 22.10.2026. Soovitas mahukate laadilehtede puhul kaaluda [Sass](https://sass-lang.com/)-i kasutamist loetavuse ja hallatavuse parandamiseks.'
     - nr: 3
       son: 'Järgida ajakohaseid veebistandardeid.'
       sel: 'HTML5, CSS3 jms.'
@@ -143,19 +143,17 @@
       son: 'Rakendada klassifikaatorite süsteemi nõudeid.'
       sel: 'Eesti tegevusalade andmete sisestamisel, kuvamisel ja hoidmisel lähtuda Vabariigi Valitsuse 10. jaanuari 2008. a määrusest nr 11 „Klassifikaatorite süsteem“ ja kasutada EMTAK infosüsteemis kehtivat klassifikaatorit.'
     - nr: 5
-      son: 'Telefoninumbrite käsitlemisel taodelda koosvõimelisust.'
-      sel: 'Kui telefoninumbrite kasutamise ja talletamise meetodid ei ole infosüsteemides standardiseeritud, siis see võib põhjustada probleeme süsteemide koostalitluses ja ka telefoninumbrite kasutamises kasutajaliidestes. Edaspidistes arendustes lähtuda infosüsteemides telefoninumbrite esitlusse, salvestusse ja API kaudu pakkumisse ühetaoliselt: 1) API otspunktist peab telefoninumber olema tarbitav nii, et rahvusvaheline suunakood (ilma plussita) ja number ise on eri väljadel; 2) kasutajaliideses on suunakood dropdown valikuga; telefoninumber on eraldi väljal; 3) andmebaasis hoitakse suunakoodi ja telefoninumbrit eraldi väljadel, numbriliste väärtustena.'
+      son: 'Telefoninumbrid tuleb salvestada ja edastada alati koos riigikoodiga.'
+      sel: 'Kui telefoninumbrite kasutamise ja talletamise meetodid ei ole infosüsteemides standardiseeritud, siis see võib põhjustada probleeme süsteemide koostalitluses ja ka telefoninumbrite kasutamises kasutajaliidestes. Edaspidistes arendustes lähtuda infosüsteemides telefoninumbrite esitlusse, salvestusse ja API kaudu pakkumisse ühetaoliselt: 1) andmebaasis hoitakse telefoninumbrit ühel väljal, tekstilise väärtusena E.164 vormingus, st `+`, riigikood ja number ilma tühikute ja muude eraldajateta (nt `+37251234567`, vt [What is E.164?](https://www.twilio.com/docs/glossary/what-e164)); 2) API otspunktist on telefoninumber tarbitav samal kujul ühe väljana; 3) kasutajaliideses võib sisestamise hõlbustamiseks pakkuda riigikoodi valikut ja kuvada numbrit loetavamalt vormindatuna, kuid enne salvestamist tuleb sisend valideerida ja teisendada E.164 kujule.'
 - kategooria:
   nimetus: 'autentimine'
   nouded:
     - nr: 1
       son: 'Väliste kasutajate, so. Eesti Vabariigi residentide ja EL teiste liikmesriikide residentide autentimislahenduse loomisel lähtuda dokumendist [Autentimislahendustele kehtivad nõuded](https://www.ria.ee/sites/default/files/content-editors/EID/autentimislahendustele-kehtivad-nouded.pdf).'
       sel: ''
-    - nr: 2  
-      son: 'ID-kaardiga autentimisel ei kasutata serdi edastamise päises side- (`-`) ega alakriipse (`_`).'
-      issues:
-      - issue:
-        nimetus: 'Erinevad rakendusserverid võivad tõlgendada neid sümboleid erinevalt.'
+    - nr: 2
+      son: '(kehtetu)'
+      sel: 'Kehtetu alates 22.10.2026. Nõudis, et ID-kaardiga autentimisel ei kasutataks serdi edastamise päises side- (`-`) ega alakriipse (`_`), sest erinevad rakendusserverid võivad neid sümboleid erinevalt tõlgendada. Rakendus ei töötle ID-kaardi serti ise - autentimiseks kasutatakse [TARA](https://e-gov.github.io/TARA-Doku/) või [GovSSO](https://e-gov.github.io/GOVSSO/) teenust.'
 - kategooria:
   nimetus: 'rollihaldus'
   nouded:
@@ -227,9 +225,9 @@
   nouded:
     - nr: 1
       son: 'Rakenduse (RIA poolt hallatavasse serverisse) pakendamine, paigaldamine, uuendamine, muudatuse taastamine ja testide käivitamine peavad olema automatiseeritud standardse üldkasutatava vahendi abil.'
-      sel: 'Kasutusel on Maven ja Jenkins.'
+      sel: 'Kasutusel on Maven, Docker ja GitLab (vanemates projektides Jenkins).'
     - nr: 2
-      son: 'Ehitatud paki nimi peab sisaldama projekti nime ja paki versiooni ning tohib sisaldada ainult tähemärke `[a-z;0-9]` ja `-` (miinus) ja `_` (alakriips) (nt `projektinimi-1_0_23`).'
+      son: 'Ehitatud paki nimi peab sisaldama projekti nime ja paki versiooni ning tohib sisaldada ainult tähemärke `[a-z;0-9]` ja `-` (miinus), `_` (alakriips) ja `.` (punkt) (nt `projektinimi-1.0.23`).'
       sel: 'Pakk peab olema keskkonnaagnostiline s.t arendus-, toodangu- jm keskkondade jaoks normaalselt ei tehta eraldi pakke. Tarkvara muutub konkreetse keskkonna osaks pärast keskkonda paigaldamist ja keskkonnas seadistamist.'
     - nr: 3
       son: 'Rakendused ehitatakse ja paigaldatakse ainult lähtekoodihoidlast, selle üheselt viidatud harust.'
