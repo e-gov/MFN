@@ -143,8 +143,8 @@
       son: 'Rakendada klassifikaatorite süsteemi nõudeid.'
       sel: 'Eesti tegevusalade andmete sisestamisel, kuvamisel ja hoidmisel lähtuda Vabariigi Valitsuse 10. jaanuari 2008. a määrusest nr 11 „Klassifikaatorite süsteem“ ja kasutada EMTAK infosüsteemis kehtivat klassifikaatorit.'
     - nr: 5
-      son: 'Telefoninumbrite käsitlemisel taodelda koosvõimelisust.'
-      sel: 'Kui telefoninumbrite kasutamise ja talletamise meetodid ei ole infosüsteemides standardiseeritud, siis see võib põhjustada probleeme süsteemide koostalitluses ja ka telefoninumbrite kasutamises kasutajaliidestes. Edaspidistes arendustes lähtuda infosüsteemides telefoninumbrite esitlusse, salvestusse ja API kaudu pakkumisse ühetaoliselt: 1) API otspunktist peab telefoninumber olema tarbitav nii, et rahvusvaheline suunakood (ilma plussita) ja number ise on eri väljadel; 2) kasutajaliideses on suunakood dropdown valikuga; telefoninumber on eraldi väljal; 3) andmebaasis hoitakse suunakoodi ja telefoninumbrit eraldi väljadel, numbriliste väärtustena.'
+      son: 'Telefoninumbrid tuleb salvestada ja edastada alati koos riigikoodiga.'
+      sel: 'Kui telefoninumbrite kasutamise ja talletamise meetodid ei ole infosüsteemides standardiseeritud, siis see võib põhjustada probleeme süsteemide koostalitluses ja ka telefoninumbrite kasutamises kasutajaliidestes. Edaspidistes arendustes lähtuda infosüsteemides telefoninumbrite esitlusse, salvestusse ja API kaudu pakkumisse ühetaoliselt: 1) andmebaasis hoitakse telefoninumbrit ühel väljal, tekstilise väärtusena E.164 vormingus, st `+`, riigikood ja number ilma tühikute ja muude eraldajateta (nt `+37251234567`, vt [What is E.164?](https://www.twilio.com/docs/glossary/what-e164)); 2) API otspunktist on telefoninumber tarbitav samal kujul ühe väljana; 3) kasutajaliideses võib sisestamise hõlbustamiseks pakkuda riigikoodi valikut ja kuvada numbrit loetavamalt vormindatuna, kuid enne salvestamist tuleb sisend valideerida ja teisendada E.164 kujule.'
 - kategooria:
   nimetus: 'autentimine'
   nouded:
